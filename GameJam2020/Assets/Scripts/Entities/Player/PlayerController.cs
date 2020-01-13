@@ -12,7 +12,11 @@ public class PlayerController : MonoBehaviour
     [SerializeField]
     private float YeetStrength = 5.0f;
 
+
     public Rigidbody2D Head;
+
+    // Determines if the head can be yeeted.
+    private bool CanYeet;
 
 
     public void Start()
@@ -26,7 +30,10 @@ public class PlayerController : MonoBehaviour
     {
         if (Input.GetButtonDown("Yeet"))
         {
-            Yeet(Camera.main.ScreenToWorldPoint(Input.mousePosition));
+            if (CanYeet)
+            {
+                Yeet(Camera.main.ScreenToWorldPoint(Input.mousePosition));
+            }
         }
 
         Vector3 Pos = Head.transform.position;
@@ -35,10 +42,20 @@ public class PlayerController : MonoBehaviour
     }
 
 
+    public void FixedUpdate()
+    {
+        if (!CanYeet && Head.IsSleeping())
+        {
+            CanYeet = true;
+        }
+    }
+
+
 
     public void Yeet(Vector2 YeetDirection)
     {
         Vector2 Direction = YeetDirection - new Vector2(Head.transform.position.x, Head.transform.position.y);
         Head.AddForce(Direction * YeetStrength);
+        CanYeet = false;
     }
 }
