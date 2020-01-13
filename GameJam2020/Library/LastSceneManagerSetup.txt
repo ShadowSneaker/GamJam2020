@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Scenes/Testing/ByronTestScene.unity
+- path: Assets/Scenes/Testing/SamTestScene.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0
