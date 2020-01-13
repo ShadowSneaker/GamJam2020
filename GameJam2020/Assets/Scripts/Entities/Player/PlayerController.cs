@@ -28,11 +28,17 @@ public class PlayerController : MonoBehaviour
     [SerializeField]
     private Color EndColour = Color.red;
 
+    [Tooltip("a refernce to the ui displayed")]
+    [SerializeField]
+    private OverlayUI UI = null;
 
     public Rigidbody2D Head;
 
     // Determines if the head can be yeeted.
     private bool CanYeet;
+
+    //determines if the player can switch weapons
+    private bool CanSwitch;
 
     // A reference to the attached line renderer.
     private LineRenderer Line = null;
@@ -57,6 +63,15 @@ public class PlayerController : MonoBehaviour
             }
         }
 
+        if(Input.GetButtonDown("SwitchWeapon"))
+        {
+            if (CanSwitch)
+            {
+                Debug.Log("HMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM");
+                UI.SwitchHead();
+            }
+        }
+
         Vector3 Pos = Head.transform.position;
         Pos.z = -5.0f;
         transform.position = Pos;
@@ -68,7 +83,7 @@ public class PlayerController : MonoBehaviour
         if (!CanYeet && Head.IsSleeping())
         {
             CanYeet = true;
-
+            CanSwitch = true;
 
         }
 
@@ -95,5 +110,6 @@ public class PlayerController : MonoBehaviour
         Vector2 Direction = YeetDirection - new Vector2(Head.transform.position.x, Head.transform.position.y);
         Head.AddForce(Direction * YeetStrength);
         CanYeet = false;
+        CanSwitch = false;
     }
 }
