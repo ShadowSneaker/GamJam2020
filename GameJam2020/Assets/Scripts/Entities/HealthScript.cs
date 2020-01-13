@@ -17,7 +17,7 @@ public class HealthScript : MonoBehaviour
 
     [Tooltip("")]
     [SerializeField]
-    private bool Invincible = true;
+    private bool Invincible = false;
 
     [Tooltip("")]
     [SerializeField]

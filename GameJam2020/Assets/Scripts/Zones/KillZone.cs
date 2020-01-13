@@ -13,7 +13,7 @@ public class KillZone : MonoBehaviour
         HealthScript Health = Other.GetComponent<HealthScript>();
         if (Health)
         {
-            Health.ApplyDamage(Mathf.Infinity);
+            Health.ApplyDamage(99999999.0f);
         }
     }
 }
