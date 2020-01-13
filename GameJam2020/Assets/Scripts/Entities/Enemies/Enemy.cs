@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
-    //Refernce to the Nodes for the enemy to move between
     //Refernce to the Nodes for the enemy to move between 
     [Tooltip("these are the nodes that the enemy can move to")]
     [SerializeField]
