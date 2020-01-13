@@ -5,9 +5,14 @@ using UnityEngine;
 public class Enemy : MonoBehaviour
 {
     //Refernce to the Nodes for the enemy to move between
-    public List<GameObject> Nodes;
+    //Refernce to the Nodes for the enemy to move between 
+    [Tooltip("these are the nodes that the enemy can move to")]
+    [SerializeField]
+    private List<GameObject> Nodes;
 
     // an integer to store what node we are currently moving towards
+    [Tooltip(" this is the node the enemy will be moving towards")]
+    [SerializeField]
     public int MoveToNode;
 
     // an enum to determine what kind of movement the AI will exert
@@ -19,7 +24,10 @@ public class Enemy : MonoBehaviour
     // the amount that you want the enemy to move by
     public float MovementDistance;
 
-
+    // the amount of damage the enemy can do to the player
+    [Tooltip("the amount of damage the enemy can deal to the player")]
+    [SerializeField]
+    private int Damage;
 
     // Start is called before the first frame update
     void Start()
@@ -32,14 +40,12 @@ public class Enemy : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
         MoveTo(MoveToNode);
-
     }
 
 
     //a function to move to the node selected
-    // refernces an integer that is the node you want the enemy to mvoe to 
+    // refernces an integer that is the node you want the enemy to move to 
     public void MoveTo(int node)
     {
         if(CurrentMovement == Movement.Node)
@@ -66,6 +72,11 @@ public class Enemy : MonoBehaviour
                 MoveToNode = 0;
             }
 
+        }
+
+        if(collision.CompareTag("Player"))
+        {
+            collision.GetComponent<HealthScript>().ApplyDamage(Damage);
         }
 
     }
