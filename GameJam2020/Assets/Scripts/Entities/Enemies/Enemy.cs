@@ -73,12 +73,22 @@ public class Enemy : MonoBehaviour
 
         }
 
-        if(collision.CompareTag("Player"))
-        {
-            collision.GetComponent<HealthScript>().ApplyDamage(Damage);
-        }
-
+        
     }
+
+
+    private void OnCollisionStay2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            HealthScript Health = collision.gameObject.GetComponent<HealthScript>();
+            if (Health)
+            {
+                Health.ApplyDamage(Damage);
+            }
+        }
+    }
+
 
     private void OnTriggerExit2D(Collider2D collision)
     {
