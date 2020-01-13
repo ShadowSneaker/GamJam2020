@@ -42,6 +42,10 @@ ExportedObj/
 *.mdb
 *.opendb
 *.VC.db
+*.log
+*.info
+*.json
+*.bin
 
 # Unity3D generated meta files
 *.pidb.meta
@@ -62,12 +66,18 @@ GameJam2020/Temp/UnityLockFile
 GameJam2020/Library/shadercompiler-UnityShaderCompiler.exe0.log
 GameJam2020/Library/shadercompiler-UnityShaderCompiler.exe0.log
 GameJam2020/Library/shadercompiler-UnityShaderCompiler.exe0.log
-*.log
-*.log
+
 GameJam2020/Library/shadercompiler-UnityShaderCompiler.exe0.log
 GameJam2020/Library/metadata/a7/a78c49c35ec24834493c407298e818de
 GameJam2020/Library/metadata/a7/a78c49c35ec24834493c407298e818de
 GameJam2020/Library/metadata/a7/a78c49c35ec24834493c407298e818de
 GameJam2020/Library/metadata/a7/a78c49c35ec24834493c407298e818de
 GameJam2020/Library/metadata/a7/a78c49c35ec24834493c407298e818de.info
-*.info
+
+GameJam2020/Library/metadata/80/80586c5f47de79c40894f9dd984957ee
+GameJam2020/Library/metadata/14/14212e57cf883744b8d31335648aa8fa
+GameJam2020/Library/metadata/0a/0a673c086b55ba344bbb59feadb00fc7
+GameJam2020/Library/assetDatabase3
+
+GameJam2020/Library/shadercompiler-UnityShaderCompiler.exe0.log
+GameJam2020/Temp/UnityTempFile-a30a1d77a8a29f14cbd29ba05c9e8d04
