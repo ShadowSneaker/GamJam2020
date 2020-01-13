@@ -16,6 +16,14 @@ public class FollowScript : MonoBehaviour
     [SerializeField]
     private Transform FollowObject = null;
 
+    [Tooltip("Should this object use the origional Z location instead of an offset.")]
+    [SerializeField]
+    private bool UseZ = false;
+
+    [Tooltip("The offset of the following object")]
+    [SerializeField]
+    private Vector3 Offset = Vector3.zero;
+
 
 
     // Update is called once per frame
@@ -25,15 +33,25 @@ public class FollowScript : MonoBehaviour
         {
             if (UseLerp)
             {
-                Vector2 Pos = transform.position;
+                Vector3 Pos = transform.position;
                 Vector2 Other = FollowObject.position;
                 Vector3 NewLocation = Vector2.Lerp(Pos, Other, Vector2.Distance(Pos, Other) * LerpStrength * Time.fixedDeltaTime);
-                NewLocation.z = transform.position.z;
-                transform.position = NewLocation;
+                //NewLocation.z = transform.position.z;
+
+                if (UseZ)
+                {
+                    transform.position = NewLocation + Offset;
+                }
+                else
+                {
+                    Vector3 Position = NewLocation;
+                    Position.z = transform.position.z;
+                    transform.position = Position;
+                }
             }
             else
             {
-                transform.position = FollowObject.position;
+                transform.position = FollowObject.position + Offset;
             }
         }
     }

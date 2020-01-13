@@ -15,19 +15,19 @@ public class HealthScript : MonoBehaviour
     }
 
 
-    [Tooltip("")]
+    [Tooltip("Prevents this object from taking any damage.")]
     [SerializeField]
     private bool Invincible = false;
 
-    [Tooltip("")]
+    [Tooltip("Represents if this object is dead.")]
     [SerializeField]
     private bool Dead = false;
 
-    [Tooltip("")]
+    [Tooltip("The current amount of health this object has.")]
     [SerializeField]
     private float Health = 100.0f;
 
-    [Tooltip("")]
+    [Tooltip("The total health this object can have.")]
     [SerializeField]
     private float MaxHealth = 100.0f;
 
@@ -35,14 +35,18 @@ public class HealthScript : MonoBehaviour
     [Header("Events")]
 
 
-    [Tooltip("")]
+    [Tooltip("Runs when this object is hurt.")]
     [SerializeField]
     private UnityEvent OnHurt = null;
 
-    [Tooltip("")]
+    [Tooltip("Runs when this object is killed.")]
     [SerializeField]
     private UnityEvent OnDeath = null;
 
+
+    [Tooltip("Runs when this object is healed.")]
+    [SerializeField]
+    private UnityEvent OnHeal = null;
 
 
 
@@ -77,5 +81,23 @@ public class HealthScript : MonoBehaviour
             }
         }
         return Info;
+    }
+
+
+    public void ApplyHeal(float Amount)
+    {
+        if (!Dead && Amount != 0.0f)
+        {
+            Health += Amount;
+            if (Health > MaxHealth)
+            {
+                Health = MaxHealth;
+            }
+
+            if (OnHeal != null)
+            {
+                OnHeal.Invoke();
+            }
+        }
     }
 }
