@@ -4,15 +4,16 @@ using UnityEngine;
 
 public class HealthScript : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public struct SDamageInfo
     {
-        
+
     }
 
-    // Update is called once per frame
-    void Update()
+
+
+
+    public SDamageInfo ApplyDamage(float Amount)
     {
-        
+        return new SDamageInfo();
     }
 }
