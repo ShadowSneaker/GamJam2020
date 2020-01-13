@@ -1,2 +1,0 @@
-D:\_GameDev\Unity\GamJam2020\GameJam2020\obj\Debug\Assembly-CSharp.csprojAssemblyReference.cache
-D:\_GameDev\Unity\GamJam2020\GameJam2020\obj\Debug\Assembly-CSharp.csproj.CoreCompileInputs.cache
