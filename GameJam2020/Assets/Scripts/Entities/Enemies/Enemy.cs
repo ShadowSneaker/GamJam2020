@@ -7,7 +7,7 @@ public class Enemy : MonoBehaviour
     //Refernce to the Nodes for the enemy to move between 
     [Tooltip("these are the nodes that the enemy can move to")]
     [SerializeField]
-    private List<GameObject> Nodes;
+    private List<GameObject> Nodes = new List<GameObject>();
 
     // an integer to store what node we are currently moving towards
     [Tooltip(" this is the node the enemy will be moving towards")]
@@ -26,7 +26,7 @@ public class Enemy : MonoBehaviour
     // the amount of damage the enemy can do to the player
     [Tooltip("the amount of damage the enemy can deal to the player")]
     [SerializeField]
-    private int Damage;
+    private float Damage = 0.0f;
 
     // Start is called before the first frame update
     void Start()
