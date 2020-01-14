@@ -23,8 +23,7 @@ public class Friction : MonoBehaviour
             Rigidbody2D Rigid = Other.gameObject.GetComponent<Rigidbody2D>();
             if (Rigid)
             {
-                Rigid.angularDrag = AngularDrag;
-                Rigid.drag = LinearDrag;
+                SetDrag(Rigid);
             }
         }
     }
@@ -64,6 +63,20 @@ public class Friction : MonoBehaviour
     private IEnumerator StayDelay(Rigidbody2D Rigid)
     {
         yield return new WaitForSeconds(0.05f);
+        SetDrag(Rigid);
+    }
+
+
+    private void SetDrag(Rigidbody2D Rigid)
+    {
+        HeadScript Head = Rigid.GetComponent<HeadScript>();
+        if (Head)
+        {
+            if (Head.KeepDrag)
+            {
+                return;
+            }
+        }
         Rigid.angularDrag = AngularDrag;
         Rigid.drag = LinearDrag;
     }

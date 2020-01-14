@@ -133,6 +133,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ConsumeHead: 0
   YeetCount: 3
+  KeepDrag: 0
   YeetSounds:
     RandomClip: 1
     ClipIndex: 0
@@ -148,7 +149,7 @@ MonoBehaviour:
   RestDelay:
     Min: 1
     Max: 10
-  Image: {fileID: 0}
+  Image: {fileID: 21300000, guid: a33b4d89c3e3a844f94f57793d5f1a2a, type: 3}
 --- !u!114 &1742428272920684441
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -202,7 +203,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0

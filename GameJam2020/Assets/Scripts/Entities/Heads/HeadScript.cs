@@ -15,6 +15,9 @@ public class HeadScript : MonoBehaviour
     // Keeps track of how many throws this head has left.
     internal int ThrowsLeft = 3;
 
+    [Tooltip("Forces this object to keep it's angular and velocity drag.")]
+    public bool KeepDrag = false;
+
 
     [Header("Sounds")]
 
@@ -48,17 +51,20 @@ public class HeadScript : MonoBehaviour
     private AudioSource Audio = null;
 
     // A refernce to the attached rigid body component.
-    private Rigidbody2D Rigid = null;
+    protected Rigidbody2D Rigid = null;
 
 
 
     public virtual void Reset()
     {
-
+        
+        Rigid.angularDrag = 0.01f;
+        Rigid.drag = 0.01f;
+        
     }
 
 
-    private void Start()
+    protected virtual void Start()
     {
         Audio = GetComponent<AudioSource>();
         YeetSounds = new SoundScript(Audio);
@@ -100,7 +106,7 @@ public class HeadScript : MonoBehaviour
     {
         if (Rigid)
         {
-            if (Rigid.IsSleeping())
+            if (Rigid.IsAwake())
             {
                 HitSounds.Play();
             }

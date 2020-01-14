@@ -7,14 +7,16 @@ public class ExpoldyHead : HeadScript
     ExplosionScript Explosion = null;
 
 
-    public void Start()
+    protected override void Start()
     {
+        base.Start();
         Explosion = GetComponent<ExplosionScript>();
         Explosion.Exploded = true;
     }
 
     public override void Reset()
     {
+        base.Reset();
         Explosion.Reset();
     }
 }

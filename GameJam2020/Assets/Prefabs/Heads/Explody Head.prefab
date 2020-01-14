@@ -38,6 +38,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ConsumeHead: 1
   YeetCount: 3
+  KeepDrag: 0
   YeetSounds:
     RandomClip: 0
     ClipIndex: 0
@@ -53,7 +54,7 @@ MonoBehaviour:
   RestDelay:
     Min: 1
     Max: 10
-  Image: {fileID: 0}
+  Image: {fileID: 21300000, guid: 37dde35d2bb16c846856d0ca40f06455, type: 3}
 --- !u!1001 &7863287347886466102
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -125,6 +126,11 @@ PrefabInstance:
         type: 3}
       propertyPath: OnDeath.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
+      objectReference: {fileID: 3869456351935962548}
+    - target: {fileID: 1742428272920684441, guid: 365bea58de813164aa5a18becd603945,
+        type: 3}
+      propertyPath: OnDeath.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Restart
       objectReference: {fileID: 0}
     - target: {fileID: 613818267, guid: 365bea58de813164aa5a18becd603945, type: 3}
       propertyPath: m_PlayOnAwake

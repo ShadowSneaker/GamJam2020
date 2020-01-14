@@ -34,10 +34,6 @@ public class PlayerController : MonoBehaviour
     [SerializeField]
     private float MinZoom = 20.0f;
 
-    [Tooltip("Should the head keep the linear and angular drag after colliding with this object (if false after a short time the drag will be reset).")]
-    [SerializeField]
-    private bool KeepDrag = false;
-
     [Tooltip("The strength the user has to yeet heads.")]
     [SerializeField]
     private float YeetStrength = 5.0f;
@@ -106,6 +102,13 @@ public class PlayerController : MonoBehaviour
     private FollowScript Follow = null;
 
 
+    // Settings
+
+
+    internal bool EnableControls = true;
+    internal bool DrawPowerBar = true;
+
+
 
 
 
@@ -126,30 +129,33 @@ public class PlayerController : MonoBehaviour
 
     public void Update()
     {
-        if (Input.GetButtonDown("Yeet"))
+        if (EnableControls)
         {
-            if (CanYeet)
+            if (Input.GetButtonDown("Yeet"))
             {
-                Yeet(Direction);
+                if (CanYeet)
+                {
+                    Yeet(Direction);
+                }
             }
-        }
 
-        if (Input.GetButtonDown("SwitchWeapon"))
-        {
-            if (CanSwitch)
+            if (Input.GetButtonDown("SwitchWeapon"))
             {
-                //UIInstance.SwitchHead();
-                SetHead(Heads[CycleHead()].Head);
-                //UIInstance.SetHeadImage(CurrentHead.Head.Image);
+                if (CanSwitch)
+                {
+                    //UIInstance.SwitchHead();
+                    SetHead(Heads[CycleHead()].Head);
+                    
+                }
             }
-        }
 
-        if (Input.mouseScrollDelta.y != 0.0f)
-        {
-            Vector3 NewPos = transform.position;
-            NewPos.z += Input.mouseScrollDelta.y;
-            NewPos.z = Mathf.Clamp(NewPos.z, -MinZoom, -MaxZoom);
-            transform.position = NewPos;
+            if (Input.mouseScrollDelta.y != 0.0f)
+            {
+                Vector3 NewPos = transform.position;
+                NewPos.z += Input.mouseScrollDelta.y;
+                NewPos.z = Mathf.Clamp(NewPos.z, -MinZoom, -MaxZoom);
+                transform.position = NewPos;
+            }
         }
     }
 
@@ -168,19 +174,11 @@ public class PlayerController : MonoBehaviour
             }
 
             UIInstance.SetCounter((CurrentHead.Head.ConsumeHead) ? Heads[HeadIndex].Count : 1);
-
-
-
-            if (!KeepDrag)
-            {
-                HeadRigid.angularDrag = 0.01f;
-                HeadRigid.drag = 0.01f;
-            }
         }
 
         Line.enabled = CanYeet;
 
-        if (Line)
+        if (Line && DrawPowerBar)
         {
             Ray Hit = Camera.main.ScreenPointToRay(Input.mousePosition);
             Plane HitPlane = new Plane(Vector3.forward, new Vector3(0.0f, 0.0f, 0.0f));
@@ -206,9 +204,9 @@ public class PlayerController : MonoBehaviour
 
     public void Yeet(Vector2 YeetDirection)
     {
+        CurrentHead.Head.Reset();
         HeadRigid.AddForce(Direction * YeetStrength);
         CurrentHead.Head.GetYeetSounds().Play();
-        CurrentHead.Head.Reset();
 
         if (Heads[HeadIndex].Head.ConsumeHead)
             --Heads[HeadIndex].Count;
@@ -238,6 +236,7 @@ public class PlayerController : MonoBehaviour
             Follow.FollowObject = CurrentHead.Head.transform;
 
             UIInstance.SetCounter((CurrentHead.Head.ConsumeHead) ? CurrentHead.Count : 1);
+            UIInstance.SetHeadImage(CurrentHead.Head.Image);
         }
     }
 
@@ -292,5 +291,21 @@ public class PlayerController : MonoBehaviour
             if (Heads[i].Head == Head) return Heads[i];
         }
         return Heads[0];
+    }
+
+
+    public void LockPlayer()
+    {
+        HeadRigid.Sleep();
+        EnableControls = false;
+        DrawPowerBar = false;
+    }
+
+
+    public void UnlockPlayer()
+    {
+        HeadRigid.WakeUp();
+        EnableControls = true;
+        DrawPowerBar = true;
     }
 }

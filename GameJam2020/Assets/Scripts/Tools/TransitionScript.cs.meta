@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: ad4a468168165454d8987f94a6980c1d
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - FadeInClip: {fileID: 7400000, guid: 6b60b50e988bc2947abcdf2d9d013104, type: 2}
+  - FadeOutClip: {fileID: 7400000, guid: cfef0b5ac9092984f9702a63868c7716, type: 2}
+  - transitionUI: {fileID: 6453048312499934040, guid: 42084fa756a3b9845a9f00ce1ce84ae2,
+      type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
