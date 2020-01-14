@@ -13,8 +13,7 @@ public class FollowScript : MonoBehaviour
     private float LerpStrength = 5.0f;
 
     [Tooltip("The object this object should follow.")]
-    [SerializeField]
-    private Transform FollowObject = null;
+    public Transform FollowObject = null;
 
     [Tooltip("Should this object use the origional Z location instead of an offset.")]
     [SerializeField]

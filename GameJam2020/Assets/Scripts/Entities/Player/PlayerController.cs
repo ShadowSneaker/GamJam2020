@@ -44,6 +44,22 @@ public class PlayerController : MonoBehaviour
     [SerializeField]
     private OverlayUI UI = null;
 
+
+    [Header("Heads")]
+
+
+    [Tooltip("A list of head prefabs the user has.")]
+    [SerializeField]
+    private List<HeadScript> Heads = new List<HeadScript>();
+
+    [Tooltip("The idnex that is currently being used.")]
+    [SerializeField]
+    private int HeadIndex = 0;
+
+    private HeadScript CurrentHead = null;
+
+
+
     private OverlayUI UIInstance = null;
 
     // A reference to the head object.
@@ -64,6 +80,10 @@ public class PlayerController : MonoBehaviour
     // The current direction the head is aimed in.
     private Vector2 Direction = Vector2.zero;
 
+    // A reference to the follow script.
+    private FollowScript Follow = null;
+
+
 
     public void Start()
     {
@@ -76,6 +96,9 @@ public class PlayerController : MonoBehaviour
         Line.startColor = StartColour;
 
         UIInstance = Instantiate(UI);
+
+        CurrentHead = Instantiate(Heads[HeadIndex]);
+        Follow.FollowObject = CurrentHead.transform;
     }
 
 
@@ -160,5 +183,17 @@ public class PlayerController : MonoBehaviour
     {
         Head = NewHead;
         HeadRigid = Head.GetComponent<Rigidbody2D>();
+    }
+
+
+    public void AddHead(HeadScript NewHead)
+    {
+        if (NewHead)
+        {
+            if (!Heads.Contains(NewHead))
+            {
+                Heads.Add(NewHead);
+            }
+        }
     }
 }
