@@ -122,7 +122,7 @@ public class PlayerController : MonoBehaviour
             {
                 //UIInstance.SwitchHead();
                 SetHead(Heads[CycleHead()]);
-                UIInstance.WeaponIndex = HeadIndex;
+                UIInstance.SetHeadImage(CurrentHead.Image);
             }
         }
 
@@ -224,7 +224,6 @@ public class PlayerController : MonoBehaviour
         {
             HeadIndex = 0;
         }
-        Debug.Log(HeadIndex);
         return HeadIndex;
     }
 }

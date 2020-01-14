@@ -27,7 +27,8 @@ public class HeadScript : MonoBehaviour
     // Determines if this is the frame the rigid body has fallen asleep.
     private bool JustFellAsleep = false;
 
-
+    [Tooltip("The sprite that is displayed on the UI when the user switches to this head.")]
+    public Sprite Image = null;
 
     // A reference to the attached audio component.
     private AudioSource Audio = null;

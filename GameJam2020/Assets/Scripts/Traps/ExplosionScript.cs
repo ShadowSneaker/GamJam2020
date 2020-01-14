@@ -33,7 +33,7 @@ public class ExplosionScript: MonoBehaviour
     private ParticleSystem ExplosionPrefab = null;
 
 
-    private bool Exploded = false;
+    internal bool Exploded = false;
 
 
     private ParticleSystem Particle = null;
@@ -111,5 +111,4 @@ public class ExplosionScript: MonoBehaviour
     {
         Exploded = false;
     }
-
 }

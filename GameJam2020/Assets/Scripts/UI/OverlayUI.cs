@@ -16,34 +16,6 @@ public class OverlayUI : MonoBehaviour
     [SerializeField]
     private Image Head = null;
 
-    // this number is to determine how many weapons the head will be able to use
-    [Tooltip("The current weapon we have selected.")]
-    public int WeaponIndex = 1;
-
-    // a number for how many heads can be used
-    //[Tooltip("the maximum number of how many heads thier are to use")]
-    //[SerializeField]
-    //private int MaxHeadNumber = 3;
-
-    // an array for the weapon colours (will be changed to images later)
-    [Tooltip("An array for all the coulors you want the differnt weapons to be")]
-    [SerializeField]
-    private List<Color> WeaponNumberArray = new List<Color>();
-
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        Head.color = WeaponNumberArray[WeaponIndex];
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
-
     public void SettingButton()
     {
         PauseScript.TogglePause();
@@ -51,20 +23,9 @@ public class OverlayUI : MonoBehaviour
         
     }
 
-    public void SwitchHead()
+
+    public void SetHeadImage(Sprite NewImage)
     {
-        
-
-        WeaponIndex++;
-        if(WeaponIndex >=  WeaponNumberArray.Count)
-        {
-            WeaponIndex = 0;
-        }
-
-        Head.color = WeaponNumberArray[WeaponIndex];
-
-        //change the head image
-        // call a function to change the head weapon
+        Head.sprite = NewImage;
     }
-
 }

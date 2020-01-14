@@ -10,6 +10,7 @@ public class ExpoldyHead : HeadScript
     public void Start()
     {
         Explosion = GetComponent<ExplosionScript>();
+        Explosion.Exploded = true;
     }
 
     public override void Reset()
