@@ -114,6 +114,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SettingsOverlay: {fileID: 4639304333111888983}
   Head: {fileID: 4639304332796393615}
+  WeaponIndex: 0
+  WeaponNumberArray:
+  - {r: 1, g: 0, b: 0, a: 1}
+  - {r: 0.061599493, g: 1, b: 0, a: 1}
+  - {r: 0, g: 0.12074661, b: 1, a: 1}
 --- !u!1 &4639304331791550271
 GameObject:
   m_ObjectHideFlags: 0
@@ -225,8 +230,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -76.16, y: 61.690002}
-  m_SizeDelta: {x: 92.31, y: 77.67001}
+  m_AnchoredPosition: {x: -64.171, y: 55.4}
+  m_SizeDelta: {x: 118.92, y: 100.06}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4639304332796393614
 CanvasRenderer:
@@ -249,7 +254,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0.15586233, b: 1, a: 1}
+  m_Color: {r: 0, g: 0.15686274, b: 1, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -300,8 +305,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -39.26, y: -31.47}
-  m_SizeDelta: {x: 69.1, y: 56.02}
+  m_AnchoredPosition: {x: -63.450012, y: -51.079956}
+  m_SizeDelta: {x: 117.48, y: 95.24}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4639304332946481962
 CanvasRenderer:
@@ -383,7 +388,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 2832894356078247415}
         m_MethodName: SettingButton
         m_Mode: 1
         m_Arguments:

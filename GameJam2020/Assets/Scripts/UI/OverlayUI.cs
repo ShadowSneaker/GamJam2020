@@ -16,18 +16,26 @@ public class OverlayUI : MonoBehaviour
     [SerializeField]
     private Image Head = null;
 
-    // a number to determine what head should be shown
-    private int HeadNumber = 1;
+    // this number is to determine how many weapons the head will be able to use
+    [Tooltip("The current weapon we have selected.")]
+    [SerializeField]
+    private int WeaponIndex = 1;
 
     // a number for how many heads can be used
     //[Tooltip("the maximum number of how many heads thier are to use")]
     //[SerializeField]
     //private int MaxHeadNumber = 3;
 
+    // an array for the weapon colours (will be changed to images later)
+    [Tooltip("An array for all the coulors you want the differnt weapons to be")]
+    [SerializeField]
+    private List<Color> WeaponNumberArray = new List<Color>();
+
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        Head.color = WeaponNumberArray[WeaponIndex];
     }
 
     // Update is called once per frame
@@ -41,34 +49,20 @@ public class OverlayUI : MonoBehaviour
     {
         PauseScript.TogglePause();
         SettingsOverlay.gameObject.SetActive(!SettingsOverlay.gameObject.activeSelf);
+        
     }
 
     public void SwitchHead()
     {
-        //for now it changes the colour
-        switch(HeadNumber)
+        
+
+        WeaponIndex++;
+        if(WeaponIndex >=  WeaponNumberArray.Count)
         {
-            case (1):
-                {
-
-                    Head.color = Color.red;
-                    HeadNumber++;
-                    break;
-                }
-            case (2):
-                {
-                    Head.color = Color.blue;
-                    HeadNumber++;
-                    break;
-                }
-            case (3):
-                {
-                    Head.color = Color.green;
-                    HeadNumber = 1;
-                    break;
-                }
-
+            WeaponIndex = 0;
         }
+
+        Head.color = WeaponNumberArray[WeaponIndex];
 
         //change the head image
         // call a function to change the head weapon
