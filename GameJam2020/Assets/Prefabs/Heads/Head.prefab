@@ -131,6 +131,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6902e173e824af64c956b61294a44240, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ConsumeHead: 0
+  YeetCount: 3
   YeetSounds:
     RandomClip: 1
     ClipIndex: 0
@@ -146,6 +148,7 @@ MonoBehaviour:
   RestDelay:
     Min: 1
     Max: 10
+  Image: {fileID: 0}
 --- !u!114 &1742428272920684441
 MonoBehaviour:
   m_ObjectHideFlags: 0

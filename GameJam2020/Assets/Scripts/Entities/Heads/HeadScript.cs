@@ -5,6 +5,20 @@ using UnityEngine.SceneManagement;
 
 public class HeadScript : MonoBehaviour
 {
+    [Tooltip("Consumes the head when everytime the head is yeeted.")]
+    public bool ConsumeHead = true;
+
+    [Tooltip("The amount of times the user can use this head type.")]
+    [SerializeField]
+    private int YeetCount = 3;
+
+    // Keeps track of how many throws this head has left.
+    internal int ThrowsLeft = 3;
+
+
+    [Header("Sounds")]
+
+
     [Tooltip("The sound this head makes when being launched.")]
     [SerializeField]
     SoundScript YeetSounds = null;
@@ -40,7 +54,7 @@ public class HeadScript : MonoBehaviour
 
     public virtual void Reset()
     {
-        
+
     }
 
 
@@ -52,6 +66,7 @@ public class HeadScript : MonoBehaviour
         RestSounds = new SoundScript(Audio);
 
         Rigid = GetComponent<Rigidbody2D>();
+        ThrowsLeft = YeetCount;
     }
 
 

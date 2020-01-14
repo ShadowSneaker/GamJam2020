@@ -4,6 +4,10 @@ using UnityEngine;
 
 public class ExplosionScript: MonoBehaviour
 {
+    [Tooltip("Forces the explosions to be used on trigger instead of collision")]
+    [SerializeField]
+    private bool UseTrigger = false;
+
     // the power of the explosion
     [Tooltip("The power you want the explosion to be")]
     [SerializeField]
@@ -65,7 +69,7 @@ public class ExplosionScript: MonoBehaviour
             foreach (Collider2D hit in colliders)
             {
                 Rigidbody2D rb = hit.attachedRigidbody;//hit.GetComponent<Rigidbody2D>();
-                if (rb)
+                if (rb && rb.gameObject != gameObject)
                 {
                     Vector2 Direction = (rb.transform.position - transform.position).normalized;
                     float Percentage = Vector2.Distance(transform.position, rb.transform.position) / Radius;
@@ -90,20 +94,25 @@ public class ExplosionScript: MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        
-        AddExplosionForce();
-        if(Destroys)
+        if (!UseTrigger)
         {
-            Destroy(gameObject);
+            AddExplosionForce();
+            if (Destroys)
+            {
+                Destroy(gameObject);
+            }
         }
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        AddExplosionForce();
-        if (Destroys)
+        if (UseTrigger)
         {
-            Destroy(gameObject);
+            AddExplosionForce();
+            if (Destroys)
+            {
+                Destroy(gameObject);
+            }
         }
     }
 

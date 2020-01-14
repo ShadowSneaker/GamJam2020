@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 876d988d57e70fa4e83f4717079feb46, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  UseTrigger: 0
   Power: 10
   Radius: 10
   ExplodeSound:
@@ -35,6 +36,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63a4c6e5bc24ffb45bf1a036c1225cdc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ConsumeHead: 1
+  YeetCount: 3
   YeetSounds:
     RandomClip: 0
     ClipIndex: 0
@@ -50,6 +53,7 @@ MonoBehaviour:
   RestDelay:
     Min: 1
     Max: 10
+  Image: {fileID: 0}
 --- !u!1001 &7863287347886466102
 PrefabInstance:
   m_ObjectHideFlags: 0

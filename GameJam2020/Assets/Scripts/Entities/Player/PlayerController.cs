@@ -4,6 +4,24 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
+    [System.Serializable]
+    public class SHeadPair
+    {
+        [Tooltip("A reference to the had prefab.")]
+        public HeadScript Head;
+
+        [Tooltip("The amount of uses this head has left.")]
+        public int Count;
+
+
+        public SHeadPair(HeadScript InHead)
+        {
+            Head = InHead;
+            Count = InHead.ThrowsLeft;
+        }
+    }
+
+
     [Tooltip("Displays the cursor on the screen")]
     [SerializeField]
     private bool ShowCursor = true;
@@ -50,13 +68,13 @@ public class PlayerController : MonoBehaviour
 
     [Tooltip("A list of head prefabs the user has.")]
     [SerializeField]
-    private List<HeadScript> Heads = new List<HeadScript>();
+    private List<SHeadPair> Heads = new List<SHeadPair>();
 
     [Tooltip("The idnex that is currently being used.")]
     [SerializeField]
     private int HeadIndex = 0;
 
-    public HeadScript CurrentHead = null;
+    public SHeadPair CurrentHead = null;
 
     [Tooltip("The inital spawn location of head")]
     [SerializeField]
@@ -102,7 +120,7 @@ public class PlayerController : MonoBehaviour
         UIInstance = Instantiate(UI);
         Follow = GetComponent<FollowScript>();
 
-        SetHead(Heads[HeadIndex]);
+        SetHead(Heads[HeadIndex].Head);
     }
 
 
@@ -121,8 +139,8 @@ public class PlayerController : MonoBehaviour
             if (CanSwitch)
             {
                 //UIInstance.SwitchHead();
-                SetHead(Heads[CycleHead()]);
-                UIInstance.SetHeadImage(CurrentHead.Image);
+                SetHead(Heads[CycleHead()].Head);
+                //UIInstance.SetHeadImage(CurrentHead.Head.Image);
             }
         }
 
@@ -142,6 +160,16 @@ public class PlayerController : MonoBehaviour
         {
             CanYeet = true;
             CanSwitch = true;
+
+            if (Heads[HeadIndex].Count <= 0 && Heads[HeadIndex].Head.ConsumeHead)
+            {
+                Heads.Remove(Heads[HeadIndex]);
+                SetHead(Heads[CycleHead()].Head);
+            }
+
+            UIInstance.SetCounter((CurrentHead.Head.ConsumeHead) ? Heads[HeadIndex].Count : 1);
+
+
 
             if (!KeepDrag)
             {
@@ -179,8 +207,12 @@ public class PlayerController : MonoBehaviour
     public void Yeet(Vector2 YeetDirection)
     {
         HeadRigid.AddForce(Direction * YeetStrength);
-        CurrentHead.GetYeetSounds().Play();
-        CurrentHead.Reset();
+        CurrentHead.Head.GetYeetSounds().Play();
+        CurrentHead.Head.Reset();
+
+        if (Heads[HeadIndex].Head.ConsumeHead)
+            --Heads[HeadIndex].Count;
+
         CanYeet = false;
         CanSwitch = false;
     }
@@ -188,19 +220,24 @@ public class PlayerController : MonoBehaviour
 
     public void SetHead(HeadScript NewHead)
     {
-        if (Heads.Contains(NewHead))
+        if (ContainsHead(NewHead))
         {
+            //Heads[GetHeadIndex(CurrentHead.Head)].SetCount(CurrentHead.Count);
+            CurrentHead.Count = Heads[GetHeadIndex(NewHead)].Count;
+
             Vector3 Location = (InitialLocation) ? InitialLocation.position : Vector3.zero;
-            if (CurrentHead)
+            if (CurrentHead.Head)
             {
-                Location = CurrentHead.transform.position;
-                Destroy(CurrentHead.gameObject);
+                Location = CurrentHead.Head.transform.position;
+                Destroy(CurrentHead.Head.gameObject);
             }
 
 
-            CurrentHead = Instantiate(NewHead, Location, Quaternion.identity);
-            HeadRigid = CurrentHead.GetComponent<Rigidbody2D>();
-            Follow.FollowObject = CurrentHead.transform;
+            CurrentHead.Head = Instantiate(NewHead, Location, Quaternion.identity);
+            HeadRigid = CurrentHead.Head.GetComponent<Rigidbody2D>();
+            Follow.FollowObject = CurrentHead.Head.transform;
+
+            UIInstance.SetCounter((CurrentHead.Head.ConsumeHead) ? CurrentHead.Count : 1);
         }
     }
 
@@ -209,9 +246,9 @@ public class PlayerController : MonoBehaviour
     {
         if (NewHead)
         {
-            if (!Heads.Contains(NewHead))
+            if (!ContainsHead(NewHead))
             {
-                Heads.Add(NewHead);
+                Heads.Add(new SHeadPair(NewHead));
             }
         }
     }
@@ -225,5 +262,35 @@ public class PlayerController : MonoBehaviour
             HeadIndex = 0;
         }
         return HeadIndex;
+    }
+
+
+    private bool ContainsHead(HeadScript Head)
+    {
+        for (int i = 0; i < Heads.Count; ++i)
+        {
+            if (Heads[i].Head == Head) return true;
+        }
+        return false;
+    }
+
+    
+    private int GetHeadIndex(HeadScript Head)
+    {
+        for (int i = 0; i < Heads.Count; ++i)
+        {
+            if (Heads[i].Head == Head) return i;
+        }
+        return -1;
+    }
+
+
+    private SHeadPair GetHeadPair(HeadScript Head)
+    {
+        for (int i = 0; i < Heads.Count; ++i)
+        {
+            if (Heads[i].Head == Head) return Heads[i];
+        }
+        return Heads[0];
     }
 }

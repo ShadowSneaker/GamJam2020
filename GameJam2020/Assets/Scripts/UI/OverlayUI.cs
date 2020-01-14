@@ -16,16 +16,26 @@ public class OverlayUI : MonoBehaviour
     [SerializeField]
     private Image Head = null;
 
+    [Tooltip("A reference to the text coutner.")]
+    [SerializeField]
+    private Text TextCounter = null;
+
+
     public void SettingButton()
     {
         PauseScript.TogglePause();
         SettingsOverlay.gameObject.SetActive(!SettingsOverlay.gameObject.activeSelf);
-        
     }
 
 
     public void SetHeadImage(Sprite NewImage)
     {
         Head.sprite = NewImage;
+    }
+
+
+    public void SetCounter(int Counter)
+    {
+        TextCounter.text = Counter.ToString();
     }
 }
