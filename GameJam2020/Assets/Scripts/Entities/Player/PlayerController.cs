@@ -103,11 +103,6 @@ public class PlayerController : MonoBehaviour
             NewPos.z += Input.mouseScrollDelta.y;
             NewPos.z = Mathf.Clamp(NewPos.z, -MinZoom, -MaxZoom);
             transform.position = NewPos;
-
-            //Vector3 Off = Vector3.zero;
-            //Off.z = Input.mouseScrollDelta.y;
-            //transform.position += Off;
-
         }
     }
 
@@ -146,7 +141,7 @@ public class PlayerController : MonoBehaviour
             Color LerpColor = Color.Lerp(StartColour, EndColour, Percent);
             Line.endColor = LerpColor;
 
-            Line.endWidth = Mathf.Lerp(0.01f, THICC_ness, Percent);
+            Line.endWidth = Mathf.Lerp(0.01f, THICC_ness, Percent) + 0.1f;
         }
     }
 
