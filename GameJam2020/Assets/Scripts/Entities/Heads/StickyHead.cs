@@ -37,7 +37,7 @@ public class StickyHead : HeadScript
 
     private IEnumerator StayDelay()
     {
-        yield return new WaitForSeconds(0.05f);
+        yield return new WaitForSeconds(0.1f);
         Rigid.angularDrag = AngularDrag;
         Rigid.drag = LinearDrag;
     }
