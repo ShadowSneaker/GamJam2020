@@ -44,6 +44,8 @@ public class PlayerController : MonoBehaviour
     [SerializeField]
     private OverlayUI UI = null;
 
+    private OverlayUI UIInstance = null;
+
     // A reference to the head object.
     public HeadScript Head = null;
 
@@ -73,6 +75,7 @@ public class PlayerController : MonoBehaviour
         Line = GetComponent<LineRenderer>();
         Line.startColor = StartColour;
 
+        UIInstance = Instantiate(UI);
     }
 
 
@@ -90,7 +93,7 @@ public class PlayerController : MonoBehaviour
         {
             if (CanSwitch)
             {
-                UI.SwitchHead();
+                UIInstance.SwitchHead();
             }
         }
 

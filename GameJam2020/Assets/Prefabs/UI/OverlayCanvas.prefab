@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 4639304331708611198}
   - component: {fileID: 4639304331708611199}
   - component: {fileID: 4639304331708611196}
+  - component: {fileID: 2832894356078247415}
   m_Layer: 5
   m_Name: OverlayCanvas
   m_TagString: Untagged
@@ -72,7 +73,7 @@ MonoBehaviour:
   m_Script: {fileID: 1980459831, guid: f70555f144d8491a825f0804e09c671c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}
@@ -99,6 +100,20 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
+--- !u!114 &2832894356078247415
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4639304331708611197}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 99b75774080178c418898567f11ccf50, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SettingsOverlay: {fileID: 4639304333111888983}
+  Head: {fileID: 4639304332796393615}
 --- !u!1 &4639304331791550271
 GameObject:
   m_ObjectHideFlags: 0
@@ -110,7 +125,6 @@ GameObject:
   - component: {fileID: 4639304331791550270}
   - component: {fileID: 4639304331791550240}
   - component: {fileID: 4639304331791550241}
-  - component: {fileID: 4639304331791550243}
   m_Layer: 5
   m_Name: OverlayUI
   m_TagString: Untagged
@@ -177,21 +191,6 @@ MonoBehaviour:
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
---- !u!114 &4639304331791550243
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4639304331791550271}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 99b75774080178c418898567f11ccf50, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  SettingsOverlay: {fileID: 4639304333111888983}
-  Head: {fileID: 0}
-  MaxHeadNumber: 3
 --- !u!1 &4639304332796393613
 GameObject:
   m_ObjectHideFlags: 0
@@ -224,10 +223,10 @@ RectTransform:
   m_Father: {fileID: 4639304331791550270}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 369.5, y: -202}
-  m_SizeDelta: {x: -799, y: -449.7}
+  m_AnchorMin: {x: 1, y: 0}
+  m_AnchorMax: {x: 1, y: 0}
+  m_AnchoredPosition: {x: -76.16, y: 61.690002}
+  m_SizeDelta: {x: 92.31, y: 77.67001}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4639304332796393614
 CanvasRenderer:
@@ -299,10 +298,10 @@ RectTransform:
   m_Father: {fileID: 4639304331791550270}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 369, y: 207}
-  m_SizeDelta: {x: -798, y: -449.7}
+  m_AnchoredPosition: {x: -39.26, y: -31.47}
+  m_SizeDelta: {x: 69.1, y: 56.02}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4639304332946481962
 CanvasRenderer:
@@ -384,7 +383,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 4639304331791550243}
+      - m_Target: {fileID: 0}
         m_MethodName: SettingButton
         m_Mode: 1
         m_Arguments:
