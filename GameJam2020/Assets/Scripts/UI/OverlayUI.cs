@@ -18,8 +18,7 @@ public class OverlayUI : MonoBehaviour
 
     // this number is to determine how many weapons the head will be able to use
     [Tooltip("The current weapon we have selected.")]
-    [SerializeField]
-    private int WeaponIndex = 1;
+    public int WeaponIndex = 1;
 
     // a number for how many heads can be used
     //[Tooltip("the maximum number of how many heads thier are to use")]

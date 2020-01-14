@@ -37,6 +37,11 @@ public class HeadScript : MonoBehaviour
 
 
 
+    public virtual void Reset()
+    {
+        
+    }
+
 
     private void Start()
     {

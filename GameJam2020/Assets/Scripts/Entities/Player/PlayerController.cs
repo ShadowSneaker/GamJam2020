@@ -56,14 +56,18 @@ public class PlayerController : MonoBehaviour
     [SerializeField]
     private int HeadIndex = 0;
 
-    private HeadScript CurrentHead = null;
+    public HeadScript CurrentHead = null;
+
+    [Tooltip("The inital spawn location of head")]
+    [SerializeField]
+    private Transform InitialLocation = null;
 
 
 
     private OverlayUI UIInstance = null;
 
     // A reference to the head object.
-    public HeadScript Head = null;
+    //public HeadScript Head = null;
 
     // A reference to the head's rigid body.
     private Rigidbody2D HeadRigid = null;
@@ -85,10 +89,10 @@ public class PlayerController : MonoBehaviour
 
 
 
+
+
     public void Start()
     {
-        HeadRigid = Head.GetComponent<Rigidbody2D>();
-
         Cursor.visible = ShowCursor;
         Cursor.lockState = (ShowCursor) ? CursorLockMode.Confined : CursorLockMode.Locked;
 
@@ -96,9 +100,9 @@ public class PlayerController : MonoBehaviour
         Line.startColor = StartColour;
 
         UIInstance = Instantiate(UI);
+        Follow = GetComponent<FollowScript>();
 
-        CurrentHead = Instantiate(Heads[HeadIndex]);
-        Follow.FollowObject = CurrentHead.transform;
+        SetHead(Heads[HeadIndex]);
     }
 
 
@@ -116,7 +120,9 @@ public class PlayerController : MonoBehaviour
         {
             if (CanSwitch)
             {
-                UIInstance.SwitchHead();
+                //UIInstance.SwitchHead();
+                SetHead(Heads[CycleHead()]);
+                UIInstance.WeaponIndex = HeadIndex;
             }
         }
 
@@ -173,7 +179,8 @@ public class PlayerController : MonoBehaviour
     public void Yeet(Vector2 YeetDirection)
     {
         HeadRigid.AddForce(Direction * YeetStrength);
-        Head.GetYeetSounds().Play();
+        CurrentHead.GetYeetSounds().Play();
+        CurrentHead.Reset();
         CanYeet = false;
         CanSwitch = false;
     }
@@ -181,8 +188,20 @@ public class PlayerController : MonoBehaviour
 
     public void SetHead(HeadScript NewHead)
     {
-        Head = NewHead;
-        HeadRigid = Head.GetComponent<Rigidbody2D>();
+        if (Heads.Contains(NewHead))
+        {
+            Vector3 Location = (InitialLocation) ? InitialLocation.position : Vector3.zero;
+            if (CurrentHead)
+            {
+                Location = CurrentHead.transform.position;
+                Destroy(CurrentHead.gameObject);
+            }
+
+
+            CurrentHead = Instantiate(NewHead, Location, Quaternion.identity);
+            HeadRigid = CurrentHead.GetComponent<Rigidbody2D>();
+            Follow.FollowObject = CurrentHead.transform;
+        }
     }
 
 
@@ -195,5 +214,17 @@ public class PlayerController : MonoBehaviour
                 Heads.Add(NewHead);
             }
         }
+    }
+
+
+    public int CycleHead()
+    {
+        ++HeadIndex;
+        if (HeadIndex >= Heads.Count)
+        {
+            HeadIndex = 0;
+        }
+        Debug.Log(HeadIndex);
+        return HeadIndex;
     }
 }
