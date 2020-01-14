@@ -19,6 +19,12 @@ public class PlayerController : MonoBehaviour
             Head = InHead;
             Count = InHead.ThrowsLeft;
         }
+
+
+        public void Reset()
+        {
+            Count = Head.ThrowsLeft;
+        }
     }
 
 
@@ -248,6 +254,10 @@ public class PlayerController : MonoBehaviour
             if (!ContainsHead(NewHead))
             {
                 Heads.Add(new SHeadPair(NewHead));
+            }
+            else
+            {
+                Heads[GetHeadIndex(NewHead)].Reset();
             }
         }
     }

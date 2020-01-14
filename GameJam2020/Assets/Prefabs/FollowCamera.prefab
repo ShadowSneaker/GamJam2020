@@ -127,10 +127,6 @@ MonoBehaviour:
   Heads:
   - Head: {fileID: 1742428272920684446, guid: 365bea58de813164aa5a18becd603945, type: 3}
     Count: 0
-  - Head: {fileID: 3869456351935962548, guid: fd073f87ce06fe54b83c6473a1815908, type: 3}
-    Count: 3
-  - Head: {fileID: 1660766824610482427, guid: 18972427e62a2dd4285f7fc895903f27, type: 3}
-    Count: 3
   HeadIndex: 0
   CurrentHead:
     Head: {fileID: 0}
