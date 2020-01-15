@@ -28,14 +28,21 @@ public class Enemy : MonoBehaviour
     [SerializeField]
     private float Damage = 0.0f;
 
-    //
+    //the rigid body of the enemy
     private Rigidbody2D RB;
+
+    // the time in which the enemy will recoil for once they have attacked
+    private float RecoilTime = 3.0f;
+
 
     // Start is called before the first frame update
     void Start()
     {
         // the first node within the list
         MoveToNode = 0;
+
+        // gets the rigid bidy for later use
+        RB = gameObject.GetComponent<Rigidbody2D>();
         
     }
 
@@ -50,16 +57,29 @@ public class Enemy : MonoBehaviour
     // refernces an integer that is the node you want the enemy to move to 
     public void MoveTo(int node)
     {
-        if(CurrentMovement == Movement.Node)
+        switch(CurrentMovement)
         {
-            
-            gameObject.transform.position = Vector2.MoveTowards(gameObject.transform.position, Nodes[node].transform.position, MovementDistance * Time.deltaTime);
-        }
-        if(CurrentMovement == Movement.Recoil)
-        {
-            
-            gameObject.GetComponent<Rigidbody2D>().AddForce(-transform.forward * 100);
-            CurrentMovement = Movement.Node;
+            case (Movement.Idle):
+                {
+                    break;
+                }
+            case (Movement.Node):
+                {
+                    gameObject.transform.position = Vector2.MoveTowards(gameObject.transform.position, Nodes[node].transform.position, MovementDistance * Time.deltaTime);
+                    break;
+                }
+            case (Movement.Recoil):
+                {
+                    RB.AddForce(-transform.forward * 1000);
+                    RecoilTime -= Time.deltaTime;
+                    if(RecoilTime <= 0.0f)
+                    {
+                        CurrentMovement = Movement.Node;
+                        RecoilTime = 3.0f;
+                    }
+                    
+                    break;
+                }
         }
 
 
