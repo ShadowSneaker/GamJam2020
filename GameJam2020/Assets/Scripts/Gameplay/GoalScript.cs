@@ -12,6 +12,11 @@ public class GoalScript : MonoBehaviour
     [SerializeField]
     private WinUI UI = null;
 
+    [Tooltip("The thresholds for reaching the stars")]
+    [SerializeField]
+    private int[] StarThresholds = new int[3];
+
+
     private PlayerController Player = null;
 
 
@@ -29,17 +34,17 @@ public class GoalScript : MonoBehaviour
 
             UI = Instantiate(UI);
             UI.UpdateInfo(Player.GetTimer(), Player.GetScore());
-
-            // For some reason just doing:
-            // UI.SetNextScene(NextLevel);
-            // doesn't work. This is because it runs before the UI.Start() dispite being after the instantiate.
-            StartCoroutine(LevelDelay());
+            UI.SetStars(GetStarCount(Player.GetScore()));
         }
     }
 
-    private IEnumerator LevelDelay()
+
+    private int GetStarCount(int Score)
     {
-        yield return new WaitForSeconds(0.01f);
-        UI.SetNextScene(NextLevel);
+        for (int i = 0; i < StarThresholds.Length; ++i)
+        {
+            if (Score < StarThresholds[i]) return i;
+        }
+        return 3;
     }
 }

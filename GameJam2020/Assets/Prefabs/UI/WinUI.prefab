@@ -824,7 +824,7 @@ GameObject:
   - component: {fileID: 6378039568778857213}
   - component: {fileID: 7895826314169089663}
   m_Layer: 5
-  m_Name: Image
+  m_Name: Star1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1098,6 +1098,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 4062384594753272617}
   DurationText: {fileID: 5445429719448509379}
+  StarImages:
+  - {fileID: 7895826314169089663}
+  - {fileID: 6578025437165468885}
+  - {fileID: 324281189806399449}
 --- !u!114 &8210592631919669928
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1114,7 +1118,7 @@ MonoBehaviour:
   FadeOutClip: {fileID: 7400000, guid: cfef0b5ac9092984f9702a63868c7716, type: 2}
   TransitionUI: {fileID: 6453048312499934040, guid: 42084fa756a3b9845a9f00ce1ce84ae2,
     type: 3}
-  SceneName: 
+  SceneName: Map
 --- !u!1 &4548001814018343579
 GameObject:
   m_ObjectHideFlags: 0
@@ -1127,7 +1131,7 @@ GameObject:
   - component: {fileID: 7188063938736084328}
   - component: {fileID: 324281189806399449}
   m_Layer: 5
-  m_Name: Image (1)
+  m_Name: Star3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1909,7 +1913,7 @@ GameObject:
   - component: {fileID: 3039015994428967846}
   - component: {fileID: 6578025437165468885}
   m_Layer: 5
-  m_Name: Image
+  m_Name: Star2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

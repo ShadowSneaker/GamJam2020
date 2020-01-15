@@ -1111,6 +1111,11 @@ PrefabInstance:
       propertyPath: InitialLocation
       value: 
       objectReference: {fileID: 856265863}
+    - target: {fileID: 4056281678471978302, guid: 435d7248e7a2cbd4daaf56b4b89aacf5,
+        type: 3}
+      propertyPath: Score
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 435d7248e7a2cbd4daaf56b4b89aacf5, type: 3}
 --- !u!1001 &7950488205142489759
@@ -1258,6 +1263,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3725655527762214568, guid: 628fa6550107f4b48bd8261be402232f,
+        type: 3}
+      propertyPath: StarThresholds.Array.data[0]
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3725655527762214568, guid: 628fa6550107f4b48bd8261be402232f,
+        type: 3}
+      propertyPath: StarThresholds.Array.data[1]
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3725655527762214568, guid: 628fa6550107f4b48bd8261be402232f,
+        type: 3}
+      propertyPath: StarThresholds.Array.data[2]
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 628fa6550107f4b48bd8261be402232f, type: 3}

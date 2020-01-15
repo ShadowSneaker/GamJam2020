@@ -77,7 +77,7 @@ public class PlayerController : MonoBehaviour
     private bool EnableTimer = false;
 
     // The amount of time the user has been playing.
-    public float Timer = 0.0f;
+    private float Timer = 0.0f;
 
 
     [Header("Heads")]
