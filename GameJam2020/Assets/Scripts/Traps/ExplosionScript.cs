@@ -68,19 +68,18 @@ public class ExplosionScript: MonoBehaviour
             Collider2D[] colliders = Physics2D.OverlapCircleAll(ExplosionPosition, Radius);
             foreach (Collider2D hit in colliders)
             {
-                if(hit.CompareTag("Water"))
+                if (!hit.CompareTag("Water"))
                 {
-                    return;
-                }
-                Rigidbody2D rb = hit.attachedRigidbody;//hit.GetComponent<Rigidbody2D>();
-                if (rb && rb.gameObject != gameObject)
-                {
-                    Vector2 Direction = (rb.transform.position - transform.position).normalized;
-                    float Percentage = Vector2.Distance(transform.position, rb.transform.position) / Radius;
-                    rb.velocity = Direction * Power * (1.0f - Percentage);
-                    if (rb.GetComponent<HealthScript>())
+                    Rigidbody2D rb = hit.attachedRigidbody;//hit.GetComponent<Rigidbody2D>();
+                    if (rb && rb.gameObject != gameObject)
                     {
-                        rb.GetComponent<HealthScript>().ApplyDamage(Damage);
+                        Vector2 Direction = (rb.transform.position - transform.position).normalized;
+                        float Percentage = Vector2.Distance(transform.position, rb.transform.position) / Radius;
+                        rb.velocity = Direction * Power * (1.0f - Percentage);
+                        if (rb.GetComponent<HealthScript>())
+                        {
+                            rb.GetComponent<HealthScript>().ApplyDamage(Damage);
+                        }
                     }
                 }
             }
