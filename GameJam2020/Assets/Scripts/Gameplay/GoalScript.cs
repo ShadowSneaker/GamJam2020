@@ -6,9 +6,9 @@ using System.Runtime.Serialization.Formatters.Binary;
 
 public class GoalScript : MonoBehaviour
 {
-    [Tooltip("The next level in the game.")]
-    [SerializeField]
-    private string NextLevel = "";
+    //[Tooltip("The next level in the game.")]
+    //[SerializeField]
+    //private string NextLevel = "";
 
     [Tooltip("A reference to the game completed UI.")]
     [SerializeField]

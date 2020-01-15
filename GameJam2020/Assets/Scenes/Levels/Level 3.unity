@@ -6456,6 +6456,11 @@ PrefabInstance:
       propertyPath: StarThresholds.Array.data[2]
       value: 100
       objectReference: {fileID: 0}
+    - target: {fileID: 3725655527762214568, guid: 628fa6550107f4b48bd8261be402232f,
+        type: 3}
+      propertyPath: LevelCount
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 628fa6550107f4b48bd8261be402232f, type: 3}
 --- !u!1 &1551998066

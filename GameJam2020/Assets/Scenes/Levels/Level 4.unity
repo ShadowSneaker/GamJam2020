@@ -1067,20 +1067,15 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 9206215139088218001, guid: d48c1cb2b26440c4c91261c51fba91c2,
+    - target: {fileID: 9206215139098482095, guid: d48c1cb2b26440c4c91261c51fba91c2,
         type: 3}
-      propertyPath: BlowStrength
-      value: 10
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9206215139088218005, guid: d48c1cb2b26440c4c91261c51fba91c2,
         type: 3}
       propertyPath: m_LocalPosition.y
       value: 5.73
-      objectReference: {fileID: 0}
-    - target: {fileID: 9206215139098482095, guid: d48c1cb2b26440c4c91261c51fba91c2,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9206215139088218000, guid: d48c1cb2b26440c4c91261c51fba91c2,
         type: 3}
@@ -1101,6 +1096,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Size.x
       value: 4.2815156
+      objectReference: {fileID: 0}
+    - target: {fileID: 9206215139088218001, guid: d48c1cb2b26440c4c91261c51fba91c2,
+        type: 3}
+      propertyPath: BlowStrength
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d48c1cb2b26440c4c91261c51fba91c2, type: 3}
@@ -4244,6 +4244,11 @@ PrefabInstance:
         type: 3}
       propertyPath: StarThresholds.Array.data[1]
       value: 75
+      objectReference: {fileID: 0}
+    - target: {fileID: 3725655527762214568, guid: 628fa6550107f4b48bd8261be402232f,
+        type: 3}
+      propertyPath: LevelCount
+      value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 628fa6550107f4b48bd8261be402232f, type: 3}
@@ -7835,11 +7840,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 90.00001
       objectReference: {fileID: 0}
-    - target: {fileID: 9206215139088218001, guid: d48c1cb2b26440c4c91261c51fba91c2,
-        type: 3}
-      propertyPath: BlowStrength
-      value: 10
-      objectReference: {fileID: 0}
     - target: {fileID: 9206215139098482095, guid: d48c1cb2b26440c4c91261c51fba91c2,
         type: 3}
       propertyPath: m_Enabled
@@ -7864,6 +7864,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Size.x
       value: 3.2193718
+      objectReference: {fileID: 0}
+    - target: {fileID: 9206215139088218001, guid: d48c1cb2b26440c4c91261c51fba91c2,
+        type: 3}
+      propertyPath: BlowStrength
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d48c1cb2b26440c4c91261c51fba91c2, type: 3}

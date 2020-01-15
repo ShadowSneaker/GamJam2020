@@ -84,11 +84,25 @@ public class LevelObject : MonoBehaviour
         {
             if (IsCompleted)
             {
-                Mat.material = Completed;
+                if (Completed)
+                {
+                    if (!Mat)
+                    {
+                        Mat = GetComponent<MeshRenderer>();
+                    }
+                    if (Mat) Mat.material = Completed;
+                }
             }
             else
             {
-                Mat.material = Incomplete;
+                if (Incomplete)
+                {
+                    if (!Mat)
+                    {
+                        Mat = GetComponent<MeshRenderer>();
+                    }
+                    if (Mat) Mat.material = Incomplete;
+                }
             }
         }
         else

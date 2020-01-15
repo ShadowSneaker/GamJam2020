@@ -10,10 +10,6 @@ public class MapPlayer : MonoBehaviour
     [SerializeField]
     private GameObject Target = null;
 
-    [Tooltip("How fast do you want the player to move")]
-    [SerializeField]
-    private float PlayerSpeed = 5.0f;
-
     // A list of all levels on this map.
     private LevelObject[] Levels = null;
 

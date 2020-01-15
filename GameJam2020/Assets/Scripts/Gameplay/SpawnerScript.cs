@@ -16,17 +16,33 @@ public class SpawnerScript : MonoBehaviour
     [SerializeField]
     private HeadScript Head = null;
 
+    [Tooltip("The speed the head spins.")]
+    [SerializeField]
+    private float SpinStrength = 5.0f;
+
     private GameObject HeadInst = null;
     private PlayerController Player = null;
     private ParticleSystem Particle = null;
+    private Light Highlight = null;
 
 
 
     private void Start()
     {
-        Player = GameObject.FindObjectOfType<PlayerController>();
+        Player = FindObjectOfType<PlayerController>();
 
         HeadInst = Instantiate(Head.transform.GetChild(0).gameObject, transform);
+        Particle = GetComponentInChildren<ParticleSystem>();
+        Highlight = GetComponentInChildren<Light>();
+    }
+
+
+    private void FixedUpdate()
+    {
+        if (HeadInst)
+        {
+            HeadInst.transform.Rotate(new Vector3(0.0f, SpinStrength * Time.fixedDeltaTime, 0.0f));
+        }
     }
 
 
@@ -40,6 +56,8 @@ public class SpawnerScript : MonoBehaviour
             if (AllowRespawn)
             {
                 StartCoroutine(RespawnDelay());
+                Particle.Stop();
+                Highlight.enabled = false;
             }
         }
     }
@@ -49,6 +67,8 @@ public class SpawnerScript : MonoBehaviour
     {
         yield return new WaitForSeconds(SpawnDelay);
         if (AllowRespawn) Respawn();
+        Particle.Play();
+        Highlight.enabled = true;
     }
 
 

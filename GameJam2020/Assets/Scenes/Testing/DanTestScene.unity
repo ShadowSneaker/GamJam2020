@@ -2578,6 +2578,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2299081177672611278, guid: fd073f87ce06fe54b83c6473a1815908,
         type: 3}
+    - target: {fileID: 3366033747603380519, guid: 0b6c1de9fca68ff4d919f84d2faaa0c9,
+        type: 3}
+      propertyPath: SpinStrength
+      value: 100
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0b6c1de9fca68ff4d919f84d2faaa0c9, type: 3}
 --- !u!1 &1830728105

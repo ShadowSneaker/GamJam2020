@@ -55,7 +55,7 @@ public class TransitionScript : MonoBehaviour
         
         yield return new WaitForSeconds(Anim.clip.length);
         SceneManager.LoadScene(Name);
-        yield return new WaitForSeconds(0.05f);
+        yield return new WaitForSeconds(0.1f);
 
         Anim.clip = FadeOutClip;
         Anim.Play("FadeOut");

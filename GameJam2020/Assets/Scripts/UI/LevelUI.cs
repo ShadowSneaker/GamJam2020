@@ -28,6 +28,7 @@ public class LevelUI : MonoBehaviour
 
     public void PlayLevel()
     {
+        GameObject.FindGameObjectWithTag("Player").SetActive(false);
         Transition.LoadScene();
     }
 
