@@ -51,7 +51,9 @@ public class Friction : MonoBehaviour
             Rigidbody2D Rigid = Other.gameObject.GetComponent<Rigidbody2D>();
             if (Rigid)
             {
-                if (!TMath.NearlyEqual(Rigid.velocity, Vector2.zero, 0.1f))
+                float Speed = Rigid.velocity.magnitude;
+                //if (!TMath.NearlyEqual(Rigid.velocity, Vector2.zero, 0.1f))
+                if (!TMath.NearlyEqual(Speed, 0.0f, 0.05f))
                 {
                     if (Delay != null) StopCoroutine(Delay);
                     Delay = StartCoroutine(StayDelay(Rigid));
@@ -63,7 +65,7 @@ public class Friction : MonoBehaviour
 
     private IEnumerator StayDelay(Rigidbody2D Rigid)
     {
-        yield return new WaitForSeconds(0.05f);
+        yield return new WaitForSeconds(0.01f);
         SetDrag(Rigid);
     }
 

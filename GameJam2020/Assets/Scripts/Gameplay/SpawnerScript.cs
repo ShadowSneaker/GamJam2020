@@ -18,6 +18,7 @@ public class SpawnerScript : MonoBehaviour
 
     private GameObject HeadInst = null;
     private PlayerController Player = null;
+    private ParticleSystem Particle = null;
 
 
 

@@ -10,18 +10,25 @@ public class LevelUI : MonoBehaviour
     // the level that is to be loaded
     public string TheLevelName;
 
-
+    [Tooltip("A reference to the Level name text.")]
     public Text TitleText;
+
+    // A reference to the attached transition script.
+    private TransitionScript Transition = null;
+
+
 
     public void Start()
     {
         TitleText.text = TheLevelName;
+        Transition = GetComponent<TransitionScript>();
+        Transition.SceneName = TheLevelName;
     }
 
 
     public void PlayLevel()
     {
-        SceneManager.LoadScene(TheLevelName);
+        Transition.LoadScene();
     }
 
     public void ExitUI()

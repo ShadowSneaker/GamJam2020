@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 529992585465528892}
   - component: {fileID: 515821000530616519}
   - component: {fileID: 4652529330206876298}
+  - component: {fileID: 1029983160528543247}
   m_Layer: 5
   m_Name: LevelUI
   m_TagString: Untagged
@@ -75,7 +76,7 @@ MonoBehaviour:
   m_Script: {fileID: 1980459831, guid: f70555f144d8491a825f0804e09c671c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}
@@ -116,6 +117,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   TheLevelName: 
   TitleText: {fileID: 6141937535959313539}
+--- !u!114 &1029983160528543247
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 15548435912397276}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad4a468168165454d8987f94a6980c1d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  FadeInClip: {fileID: 7400000, guid: 6b60b50e988bc2947abcdf2d9d013104, type: 2}
+  FadeOutClip: {fileID: 7400000, guid: cfef0b5ac9092984f9702a63868c7716, type: 2}
+  TransitionUI: {fileID: 6453048312499934040, guid: 42084fa756a3b9845a9f00ce1ce84ae2,
+    type: 3}
+  SceneName: 
 --- !u!1 &5870921051486861095
 GameObject:
   m_ObjectHideFlags: 0
@@ -223,10 +241,10 @@ RectTransform:
   m_Father: {fileID: 3348009533074590494}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 1}
-  m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0, y: -150.1}
-  m_SizeDelta: {x: 1111, y: 90.2}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: -49.3}
+  m_SizeDelta: {x: 0, y: 90.2}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &239319982968246588
 CanvasRenderer:
@@ -258,8 +276,8 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 12800000, guid: 8422fdc184f0f7844977f2ad8ec73ce3, type: 3}
-    m_FontSize: 50
-    m_FontStyle: 0
+    m_FontSize: 40
+    m_FontStyle: 1
     m_BestFit: 0
     m_MinSize: 0
     m_MaxSize: 50
@@ -297,6 +315,7 @@ GameObject:
   - component: {fileID: 3933968070755171268}
   - component: {fileID: 8101644523820150350}
   - component: {fileID: 6250391252505334194}
+  - component: {fileID: 7085225138468772429}
   m_Layer: 5
   m_Name: Play Level Button
   m_TagString: Untagged
@@ -319,10 +338,10 @@ RectTransform:
   m_Father: {fileID: 3348009533074590494}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 199.5, y: 86}
-  m_SizeDelta: {x: 197, y: 65.7}
+  m_AnchorMin: {x: 0.5, y: 0}
+  m_AnchorMax: {x: 0.5, y: 0}
+  m_AnchoredPosition: {x: -0.0000076294, y: 50}
+  m_SizeDelta: {x: 109.65, y: 37.37}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3933968070755171268
 CanvasRenderer:
@@ -345,7 +364,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.7169812, g: 0.19277322, b: 0.19277322, a: 1}
+  m_Color: {r: 0.6037736, g: 0.46209157, b: 0.35884658, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -417,6 +436,21 @@ MonoBehaviour:
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
+--- !u!114 &7085225138468772429
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7857361308851144905}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -900027084, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 0, g: 0, b: 0, a: 1}
+  m_EffectDistance: {x: 3, y: 3}
+  m_UseGraphicAlpha: 1
 --- !u!1 &7977034463188231826
 GameObject:
   m_ObjectHideFlags: 0
@@ -450,10 +484,10 @@ RectTransform:
   m_Father: {fileID: 7327998178304450513}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 197, y: 65.7}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &5574172501549746644
 CanvasRenderer:
@@ -485,10 +519,10 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 12800000, guid: 8422fdc184f0f7844977f2ad8ec73ce3, type: 3}
-    m_FontSize: 14
+    m_FontSize: 18
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 10
+    m_MinSize: 1
     m_MaxSize: 40
     m_Alignment: 4
     m_AlignByGeometry: 0

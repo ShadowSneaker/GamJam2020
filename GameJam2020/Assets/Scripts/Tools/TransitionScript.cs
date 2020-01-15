@@ -38,6 +38,7 @@ public class TransitionScript : MonoBehaviour
 
     IEnumerator SceneDelay(string Name)
     {
+        //Debug.Log(Name);
         PauseScript.Unpause();
 
         TransitionUI = Instantiate<Canvas>(TransitionUI);
@@ -54,7 +55,7 @@ public class TransitionScript : MonoBehaviour
         
         yield return new WaitForSeconds(Anim.clip.length);
         SceneManager.LoadScene(Name);
-        yield return new WaitForSeconds(0.01f);
+        yield return new WaitForSeconds(0.05f);
 
         Anim.clip = FadeOutClip;
         Anim.Play("FadeOut");

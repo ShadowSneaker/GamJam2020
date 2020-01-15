@@ -8,21 +8,57 @@ public class MapPlayer : MonoBehaviour
 
     [Tooltip("The gameobject that you want to add as the target shown where the player clicks")]
     [SerializeField]
-    private GameObject Target;
+    private GameObject Target = null;
 
     [Tooltip("How fast do you want the player to move")]
     [SerializeField]
-    private float PlayerSpeed;
+    private float PlayerSpeed = 5.0f;
 
+    // A list of all levels on this map.
+    private LevelObject[] Levels = null;
 
-
+    // A reference to the nav mesh agent.
     private NavMeshAgent Agent = null;
+
+
+
 
     // Start is called before the first frame update
     void Start()
     {
-      
         Agent = gameObject.GetComponent<NavMeshAgent>();
+        Levels = FindObjectsOfType<LevelObject>();
+        if (Levels.Length > 0)
+        {
+            Saving Save = TSave.LoadGame();
+            if (Save == null)
+            {
+                Save = new Saving();
+            }
+
+            // Set the base locked state for all levels.
+            for (int i = 0; i < Levels.Length; ++i)
+            {
+                for (int j = 0; j < Save.Levels.Count; ++j)
+                {
+                    if (Levels[i].LevelIndex == j + 1)
+                    {
+                        Levels[i].SetLockedState(Levels[i].LevelIndex <= Save.Levels.Count, Save.Levels[j].Completed);
+                        break;
+                    }
+                }
+            }
+
+            // Unlock the next level.
+            for (int i = 0; i < Levels.Length; ++i)
+            {
+                if (Levels[i].LevelIndex == Save.Levels.Count + 1)
+                {
+                    Levels[i].SetLockedState(true, false);
+                    break;
+                }
+            }
+        }
     }
 
     // Update is called once per frame

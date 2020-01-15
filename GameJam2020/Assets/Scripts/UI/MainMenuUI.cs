@@ -13,29 +13,14 @@ public class MainMenuUI : MonoBehaviour
 
 
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
-
-    //function to load a scene depending on the parameter put in
-    public void LoadScene(int SceneNumber)
-    {
-        SceneManager.LoadScene(SceneNumber);
-    }
-
     //a function to exit the game when pressed
     public void ExitGame()
     {
+#if UNITY_EDITOR
+            UnityEditor.EditorApplication.isPlaying = false;
+#else
         Application.Quit();
+#endif
     }
 
     //a function to open up the settings menu

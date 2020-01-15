@@ -1,7 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 using System.IO;
 using System.Runtime.Serialization.Formatters.Binary;
 
@@ -58,13 +57,13 @@ public class GoalScript : MonoBehaviour
 
     private void SaveGame()
     {
-        Saving Save = LoadGame();
+        Saving Save = TSave.LoadGame();
         if (Save == null)
         {
             Save = new Saving();
         }
 
-        if (LevelCount <= Save.Levels.Count)
+        if (LevelCount > Save.Levels.Count)
         {
             // Update our game state
             Saving.LevelInfo Info = new Saving.LevelInfo();
@@ -85,17 +84,6 @@ public class GoalScript : MonoBehaviour
     }
 
 
-    private Saving LoadGame()
-    {
-        if (File.Exists(Application.persistentDataPath + "/GameSave.save"))
-        {
-            BinaryFormatter BF = new BinaryFormatter();
-            FileStream FS = File.Open(Application.persistentDataPath + "/GameSave.save", FileMode.Open);
-            Saving Save = (Saving)BF.Deserialize(FS);
-            FS.Close();
-            return Save;
-        }
-        return null;
-    }
+    
 
 }

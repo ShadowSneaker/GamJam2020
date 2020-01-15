@@ -15,7 +15,6 @@ public class InfiniteRotator : MonoBehaviour
     {
         if (RotateOnStart)
         {
-            Debug.Log("Rotate on Start");
             StartRotating();
         }
     }
