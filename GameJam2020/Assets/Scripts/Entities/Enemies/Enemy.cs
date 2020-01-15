@@ -15,7 +15,7 @@ public class Enemy : MonoBehaviour
     public int MoveToNode;
 
     // an enum to determine what kind of movement the AI will exert
-    public enum Movement {Idle, Node };
+    public enum Movement {Idle, Node, Recoil };
 
     // a refernce to the enum for the AI's type of movement
     public Movement CurrentMovement;
@@ -28,12 +28,15 @@ public class Enemy : MonoBehaviour
     [SerializeField]
     private float Damage = 0.0f;
 
+    //
+    private Rigidbody2D RB;
+
     // Start is called before the first frame update
     void Start()
     {
         // the first node within the list
         MoveToNode = 0;
-        Debug.Log(Nodes.Count);
+        
     }
 
     // Update is called once per frame
@@ -49,7 +52,14 @@ public class Enemy : MonoBehaviour
     {
         if(CurrentMovement == Movement.Node)
         {
+            
             gameObject.transform.position = Vector2.MoveTowards(gameObject.transform.position, Nodes[node].transform.position, MovementDistance * Time.deltaTime);
+        }
+        if(CurrentMovement == Movement.Recoil)
+        {
+            
+            gameObject.GetComponent<Rigidbody2D>().AddForce(-transform.forward * 100);
+            CurrentMovement = Movement.Node;
         }
 
 
@@ -64,7 +74,7 @@ public class Enemy : MonoBehaviour
         {
             
             MoveToNode = collision.GetComponent<Node>().NodeNumber;
-            Debug.Log(MoveToNode);
+            
 
             if(MoveToNode >= Nodes.Count)
             {
@@ -85,7 +95,11 @@ public class Enemy : MonoBehaviour
             if (Health)
             {
                 Health.ApplyDamage(Damage);
+                CurrentMovement = Movement.Recoil;
+               
             }
+
+           
         }
     }
 
