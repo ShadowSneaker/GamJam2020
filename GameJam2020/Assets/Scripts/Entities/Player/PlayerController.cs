@@ -255,14 +255,22 @@ public class PlayerController : MonoBehaviour
             CurrentHead.Count = Heads[GetHeadIndex(NewHead)].Count;
 
             Vector3 Location = (InitialLocation) ? InitialLocation.position : Vector3.zero;
+            Vector3 Scale = Vector3.one;
+            float Health = 1.0f;
             if (CurrentHead.Head)
             {
+                Health = CurrentHead.Head.GetHealth().GetCurrent();
+                Scale = CurrentHead.Head.transform.localScale;
                 Location = CurrentHead.Head.transform.position;
                 Destroy(CurrentHead.Head.gameObject);
             }
 
 
             CurrentHead.Head = Instantiate(NewHead, Location, Quaternion.identity);
+            CurrentHead.Head.transform.localScale = Scale;
+            CurrentHead.Head.GetHealth().SetCurrent(Health);
+            CurrentHead.Head.UpdateSize();
+
             HeadRigid = CurrentHead.Head.GetComponent<Rigidbody2D>();
             Follow.FollowObject = CurrentHead.Head.transform;
 

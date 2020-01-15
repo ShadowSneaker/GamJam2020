@@ -100,4 +100,22 @@ public class HealthScript : MonoBehaviour
             }
         }
     }
+
+
+    public float GetCurrent()
+    {
+        return Health;
+    }
+
+
+    public void SetCurrent(float Amount)
+    {
+        Health = Amount;
+    }
+
+
+    public float GetMax()
+    {
+        return MaxHealth;
+    }
 }

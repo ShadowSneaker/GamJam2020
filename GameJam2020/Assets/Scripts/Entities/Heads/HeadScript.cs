@@ -47,6 +47,22 @@ public class HeadScript : MonoBehaviour
     [Tooltip("The sprite that is displayed on the UI when the user switches to this head.")]
     public Sprite Image = null;
 
+    [Tooltip("The speed threshold the head must be moving to start increasing in size.")]
+    [SerializeField]
+    private float SpeedThreshold = 0.1f;
+
+    [Tooltip("The amount the speed scale is divided by.")]
+    [SerializeField]
+    private float DivisibleFactor = 20.0f;
+
+    [Tooltip("The maximum scale this object can get to.")]
+    [SerializeField]
+    private float MaxScale = 5.0f;
+
+
+    private HealthScript Health = null;
+
+
     // A reference to the attached audio component.
     private AudioSource Audio = null;
 
@@ -64,8 +80,9 @@ public class HeadScript : MonoBehaviour
     }
 
 
-    protected virtual void Start()
+    protected virtual void Awake()
     {
+        Health = GetComponent<HealthScript>();
         Audio = GetComponent<AudioSource>();
         YeetSounds = new SoundScript(Audio);
         HitSounds = new SoundScript(Audio);
@@ -102,6 +119,18 @@ public class HeadScript : MonoBehaviour
     }
 
 
+    private void OnCollisionStay2D(Collision2D Other)
+    {
+        float Speed = Rigid.velocity.magnitude;
+        if (Speed > SpeedThreshold)
+        {
+            Health.ApplyHeal(Speed / DivisibleFactor * Time.deltaTime);
+            UpdateSize();
+            //transform.localScale += new Vector3(Speed / DivisibleFactor, Speed / DivisibleFactor, Speed / DivisibleFactor) * Time.deltaTime;
+        }
+    }
+
+
     private void OnCollisionEnter2D(Collision2D Other)
     {
         if (Rigid)
@@ -124,5 +153,18 @@ public class HeadScript : MonoBehaviour
     public SoundScript GetYeetSounds()
     {
         return YeetSounds;
+    }
+
+
+    public void UpdateSize()
+    {
+        float Percent = Health.GetCurrent() / Health.GetMax();
+        transform.localScale = Vector3.Lerp(Vector3.one, new Vector3(MaxScale, MaxScale, MaxScale), Percent);
+    }
+
+
+    public HealthScript GetHealth()
+    {
+        return Health;
     }
 }

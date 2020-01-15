@@ -104,6 +104,9 @@ MonoBehaviour:
     Min: 1
     Max: 10
   Image: {fileID: 21300000, guid: a33b4d89c3e3a844f94f57793d5f1a2a, type: 3}
+  SpeedThreshold: 0.1
+  DivisibleFactor: 1
+  MaxScale: 5
 --- !u!114 &1742428272920684441
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -118,7 +121,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Invincible: 0
   Dead: 0
-  Health: 100
+  Health: 1
   MaxHealth: 100
   OnHurt:
     m_PersistentCalls:

@@ -7,9 +7,9 @@ public class ExpoldyHead : HeadScript
     ExplosionScript Explosion = null;
 
 
-    protected override void Start()
+    protected override void Awake()
     {
-        base.Start();
+        base.Awake();
         Explosion = GetComponent<ExplosionScript>();
         Explosion.Exploded = true;
     }

@@ -15,6 +15,11 @@ public static class TMath
     {
         return (((A.x >= B.x - Range) && (A.x <= B.x + Range)) && ((A.y >= B.y - Range) && (A.y <= B.y + Range)));
     }
+
+    public static bool VectorLess(Vector3 A, float B)
+    {
+        return (A.x < B && A.y < B && A.z < B);
+    }
 }
 
 
