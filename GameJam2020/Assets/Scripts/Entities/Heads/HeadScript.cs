@@ -84,9 +84,9 @@ public class HeadScript : MonoBehaviour
     {
         Health = GetComponent<HealthScript>();
         Audio = GetComponent<AudioSource>();
-        YeetSounds = new SoundScript(Audio);
-        HitSounds = new SoundScript(Audio);
-        RestSounds = new SoundScript(Audio);
+        YeetSounds.SetAudio(Audio);
+        HitSounds.SetAudio(Audio);
+        RestSounds.SetAudio(Audio);
 
         Rigid = GetComponent<Rigidbody2D>();
         ThrowsLeft = YeetCount;

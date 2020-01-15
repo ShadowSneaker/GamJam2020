@@ -18,12 +18,6 @@ public class SoundScript
     private AudioSource Audio = null;
 
 
-    // Constructor, Adds a reference to the audio source.
-    public SoundScript(AudioSource InAudio)
-    {
-        Audio = InAudio;
-    }
-
 
     // Plays a sound based on the information of this class.
     public void Play()
@@ -84,9 +78,21 @@ public class SoundScript
     }
 
 
+    public void PlayNewRandom(Vector3 Location)
+    {
+        AudioSource.PlayClipAtPoint(GetRandomClip(), Location);
+    }
+
+
     // Returns a randomly selected clip stored in this object.
     public AudioClip GetRandomClip()
     {
         return Clips[Random.Range(0, Clips.Count)];
+    }
+
+
+    public void SetAudio(AudioSource InAudio)
+    {
+        Audio = InAudio;
     }
 }

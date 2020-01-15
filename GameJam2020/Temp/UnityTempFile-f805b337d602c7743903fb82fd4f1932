@@ -74,9 +74,10 @@
 /reference:Library/ScriptAssemblies/Unity.TextMeshPro.dll
 /reference:Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll
 /reference:"C:/Program Files/Unity2019.1.5/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll"
-/reference:C:/Users/3andrb57/Downloads/GamJam2020/GameJam2020/Library/PackageCache/com.unity.analytics@3.3.2/Unity.Analytics.Editor.dll
-/reference:C:/Users/3andrb57/Downloads/GamJam2020/GameJam2020/Library/PackageCache/com.unity.analytics@3.3.2/Unity.Analytics.StandardEvents.dll
-/reference:C:/Users/3andrb57/Downloads/GamJam2020/GameJam2020/Library/PackageCache/com.unity.analytics@3.3.2/Unity.Analytics.Tracker.dll
+/reference:"C:/Program Files/Unity2019.1.5/Editor/Data/PlaybackEngines/VuforiaSupport/Managed/Runtime/Vuforia.UnityExtensions.dll"
+/reference:C:/Users/3foyld03/Downloads/GamJam2020/GameJam2020/Library/PackageCache/com.unity.analytics@3.3.2/Unity.Analytics.Editor.dll
+/reference:C:/Users/3foyld03/Downloads/GamJam2020/GameJam2020/Library/PackageCache/com.unity.analytics@3.3.2/Unity.Analytics.StandardEvents.dll
+/reference:C:/Users/3foyld03/Downloads/GamJam2020/GameJam2020/Library/PackageCache/com.unity.analytics@3.3.2/Unity.Analytics.Tracker.dll
 /reference:"C:/Program Files/Unity2019.1.5/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Xcode.dll"
 /reference:"C:/Program Files/Unity2019.1.5/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Common.dll"
 /reference:"C:/Program Files/Unity2019.1.5/Editor/Data/NetStandard/ref/2.0.0/netstandard.dll"
@@ -312,6 +313,7 @@ Assets\Scripts\Entities\Heads\HeadScript.cs
 Assets\Scripts\Entities\Heads\StickyHead.cs
 Assets\Scripts\Entities\HealthScript.cs
 Assets\Scripts\Entities\Player\PlayerController.cs
+Assets\Scripts\Gameplay\CoinScript.cs
 Assets\Scripts\Gameplay\GoalScript.cs
 Assets\Scripts\Gameplay\SpawnerScript.cs
 Assets\Scripts\Map.cs

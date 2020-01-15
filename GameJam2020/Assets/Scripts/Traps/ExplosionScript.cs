@@ -50,7 +50,7 @@ public class ExplosionScript: MonoBehaviour
         Particle = GetComponent<ParticleSystem>();
         //RB = GetComponent<Rigidbody2D>();
         Audio = GetComponent<AudioSource>();
-        ExplodeSound = new SoundScript(Audio);
+        ExplodeSound.SetAudio(Audio);
     }
 
     // Update is called once per frame
