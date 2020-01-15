@@ -118,12 +118,13 @@ MonoBehaviour:
   ShowCursor: 1
   MaxZoom: 1
   MinZoom: 30
-  YeetStrength: 150
+  YeetStrength: 125
   MaxDistance: 7
   THICC_ness: 1.25
   StartColour: {r: 1, g: 1, b: 1, a: 1}
   EndColour: {r: 0.7924528, g: 0, b: 0.03040463, a: 1}
   UI: {fileID: 2832894356078247415, guid: 6a5f89cca6c04c9439b59d9c457ce224, type: 3}
+  Score: 0
   Heads:
   - Head: {fileID: 1742428272920684446, guid: 365bea58de813164aa5a18becd603945, type: 3}
     Count: 0
