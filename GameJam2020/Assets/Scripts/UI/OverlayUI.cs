@@ -20,6 +20,10 @@ public class OverlayUI : MonoBehaviour
     [SerializeField]
     private Text TextCounter = null;
 
+    [Tooltip("A reference to the timer counter.")]
+    [SerializeField]
+    private Text TimerText = null;
+
 
     public void SettingButton()
     {
@@ -37,5 +41,11 @@ public class OverlayUI : MonoBehaviour
     public void SetCounter(int Counter)
     {
         TextCounter.text = Counter.ToString();
+    }
+
+
+    public void SetTimer(float Timer)
+    {
+        TimerText.text = Timer.ToString("F4");
     }
 }

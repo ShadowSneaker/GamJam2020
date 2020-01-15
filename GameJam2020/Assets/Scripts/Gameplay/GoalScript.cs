@@ -17,7 +17,7 @@ public class GoalScript : MonoBehaviour
 
     public void Start()
     {
-        Player = GameObject.FindObjectOfType<PlayerController>();
+        Player = FindObjectOfType<PlayerController>();
     }
 
 
@@ -28,6 +28,7 @@ public class GoalScript : MonoBehaviour
             Player.LockPlayer();
 
             UI = Instantiate(UI);
+            UI.UpdateInfo(Player.GetTimer(), Player.GetScore());
 
             // For some reason just doing:
             // UI.SetNextScene(NextLevel);

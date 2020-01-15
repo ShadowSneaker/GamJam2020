@@ -28,6 +28,7 @@ public class PlayerController : MonoBehaviour
     }
 
 
+
     [Tooltip("Displays the cursor on the screen")]
     [SerializeField]
     private bool ShowCursor = true;
@@ -63,6 +64,20 @@ public class PlayerController : MonoBehaviour
     [Tooltip("a refernce to the ui displayed")]
     [SerializeField]
     private OverlayUI UI = null;
+
+
+    [Header("Score")]
+
+
+    [Tooltip("The current score the player has.")]
+    [SerializeField]
+    private int Score = 0;
+
+    // Enables the timer (enabled on the first yeet).
+    private bool EnableTimer = false;
+
+    // The amount of time the user has been playing.
+    public float Timer = 0.0f;
 
 
     [Header("Heads")]
@@ -128,7 +143,6 @@ public class PlayerController : MonoBehaviour
 
         UIInstance = Instantiate(UI);
         Follow = GetComponent<FollowScript>();
-
         SetHead(Heads[HeadIndex].Head);
     }
 
@@ -163,6 +177,12 @@ public class PlayerController : MonoBehaviour
                 transform.position = NewPos;
             }
         }
+
+        if (EnableTimer)
+        {
+            Timer += Time.deltaTime;
+        }
+        UIInstance.SetTimer(Timer);
     }
 
 
@@ -219,6 +239,11 @@ public class PlayerController : MonoBehaviour
 
         CanYeet = false;
         CanSwitch = false;
+
+        if (!EnableTimer)
+        {
+            EnableTimer = true;
+        }
     }
 
 
@@ -309,6 +334,7 @@ public class PlayerController : MonoBehaviour
         HeadRigid.Sleep();
         EnableControls = false;
         DrawPowerBar = false;
+        EnableTimer = false;
     }
 
 
@@ -317,5 +343,24 @@ public class PlayerController : MonoBehaviour
         HeadRigid.WakeUp();
         EnableControls = true;
         DrawPowerBar = true;
+        EnableTimer = true;
+    }
+
+
+    public void AddPoints(int Amount)
+    {
+        Score += Amount;
+    }
+
+
+    public int GetScore()
+    {
+        return Score;
+    }
+
+
+    public float GetTimer()
+    {
+        return Timer;
     }
 }

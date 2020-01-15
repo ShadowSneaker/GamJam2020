@@ -59,7 +59,7 @@ public class TransitionScript : MonoBehaviour
         Anim.clip = FadeOutClip;
         Anim.Play("FadeOut");
 
-        Destroy(TransitionUI, Anim.clip.length);
+        Destroy(TransitionUI.gameObject, Anim.clip.length);
         Destroy(gameObject);
     }
 

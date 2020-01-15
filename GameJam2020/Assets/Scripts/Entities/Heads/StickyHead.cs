@@ -25,6 +25,7 @@ public class StickyHead : HeadScript
 
     private void OnCollisionStay2D(Collision2D Other)
     {
+        if (Delay != null) StopCoroutine(Delay);
         Delay = StartCoroutine(StayDelay());
     }
 

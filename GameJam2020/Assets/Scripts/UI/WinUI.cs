@@ -27,7 +27,7 @@ public class WinUI : MonoBehaviour
 
     public void UpdateInfo(float Duration, float Score)
     {
-        DurationText.text = " " + Duration.ToString();
+        DurationText.text = " " + Duration.ToString("F4");
         ScoreText.text = " " + Score.ToString();
     }
 
