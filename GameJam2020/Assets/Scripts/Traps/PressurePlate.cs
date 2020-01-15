@@ -12,8 +12,19 @@ public class PressurePlate : MonoBehaviour
     [SerializeField]
     private float RotationAmount = 0.0f;
 
+    [Tooltip("all of the objects that you want opened when the plate is triggered")]
+    [SerializeField]
+    private List<GameObject> OpenObects = new List<GameObject>();
 
+    [Tooltip("do you want this function to only run once if so turn to true")]
+    [SerializeField]
+    private bool ActiveOnce = false;
 
+    private enum Function {Rotate, Open};
+
+    [Tooltip("you can select what function you want Rotate rotates selected objects and open will open doors or objects")]
+    [SerializeField]
+    private Function SelectedFunction = Function.Rotate;
 
     // Start is called before the first frame update
     void Start()
@@ -39,10 +50,41 @@ public class PressurePlate : MonoBehaviour
 
     }
 
+    public void OpenGameObjects()
+    {
+        foreach(GameObject G in OpenObects)
+        {
+            G.SetActive(false);
+        }
+    }
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if(collision.CompareTag("Player"))
-            RotateGameObject();
+        {
+            // change this to run the function selected
+
+            switch(SelectedFunction)
+            {
+                case (Function.Open):
+                    {
+                        OpenGameObjects();
+                        break;
+                    }
+                case (Function.Rotate):
+                    {
+                        RotateGameObject();
+                        break;
+                    }
+            }
+
+        }
+
+        if(ActiveOnce)
+        {
+            gameObject.SetActive(false);
+        }
+            
     }
 
 }
