@@ -194,6 +194,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 876d988d57e70fa4e83f4717079feb46, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  UseTrigger: 1
   Power: 10
   Radius: 10
   ExplodeSound:
