@@ -53,6 +53,7 @@ public class Friction : MonoBehaviour
             {
                 if (!TMath.NearlyEqual(Rigid.velocity, Vector2.zero, 0.1f))
                 {
+                    if (Delay != null) StopCoroutine(Delay);
                     Delay = StartCoroutine(StayDelay(Rigid));
                 }
             }
