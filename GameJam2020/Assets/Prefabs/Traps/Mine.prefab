@@ -44,7 +44,7 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -185,6 +185,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 6681681778106990901}
     m_Modifications:
+    - target: {fileID: 100000, guid: 8329acd25ffd119489ecb4acc0b7fda4, type: 3}
+      propertyPath: m_Name
+      value: at_mine_LOD0
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 8329acd25ffd119489ecb4acc0b7fda4, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -240,10 +244,6 @@ PrefabInstance:
     - target: {fileID: 400000, guid: 8329acd25ffd119489ecb4acc0b7fda4, type: 3}
       propertyPath: m_LocalScale.z
       value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 100000, guid: 8329acd25ffd119489ecb4acc0b7fda4, type: 3}
-      propertyPath: m_Name
-      value: at_mine_LOD0
       objectReference: {fileID: 0}
     - target: {fileID: 2300000, guid: 8329acd25ffd119489ecb4acc0b7fda4, type: 3}
       propertyPath: m_Materials.Array.size
