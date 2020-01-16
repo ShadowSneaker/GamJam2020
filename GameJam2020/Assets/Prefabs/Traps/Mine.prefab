@@ -33,7 +33,7 @@ Transform:
   m_GameObject: {fileID: 6681681778106990882}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 11.051434, y: -2.89, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 5, y: 5, z: 5}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -45,7 +45,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6681681778106990882}
-  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+  m_Mesh: {fileID: 4300000, guid: 8329acd25ffd119489ecb4acc0b7fda4, type: 3}
 --- !u!23 &6681681778106990907
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -63,7 +63,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 6e287a6e1216437419e06afb9386b9fa, type: 3}
+  - {fileID: 2100000, guid: 4a941a1f0bf428d478248daebc9578fb, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -96,9 +96,9 @@ CircleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -0.0011971474, y: -0.025819302}
   serializedVersion: 2
-  m_Radius: 0.5
+  m_Radius: 0.14238796
 --- !u!50 &6681681778106990904
 Rigidbody2D:
   serializedVersion: 4
