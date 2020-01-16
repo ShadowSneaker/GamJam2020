@@ -20927,6 +20927,16 @@ PrefabInstance:
       propertyPath: BlowStrength
       value: 30
       objectReference: {fileID: 0}
+    - target: {fileID: 8446076775435106918, guid: d48c1cb2b26440c4c91261c51fba91c2,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 17.252789
+      objectReference: {fileID: 0}
+    - target: {fileID: 8446076775435106918, guid: d48c1cb2b26440c4c91261c51fba91c2,
+        type: 3}
+      propertyPath: m_Offset.y
+      value: 8.6264
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d48c1cb2b26440c4c91261c51fba91c2, type: 3}
 --- !u!4 &1187121506 stripped
