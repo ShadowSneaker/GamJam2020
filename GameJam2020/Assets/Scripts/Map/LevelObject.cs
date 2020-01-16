@@ -5,6 +5,10 @@ using UnityEngine;
 
 public class LevelObject : MonoBehaviour
 {
+    [Tooltip("Forces the level to be available.")]
+    [SerializeField]
+    private bool ForceOpen = false;
+
     [Tooltip("The Level you want this game to load")]
     [SerializeField]
     private string LevelName = "";
@@ -52,7 +56,7 @@ public class LevelObject : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (Unlocked)
+        if (Unlocked || ForceOpen)
         {
             if (other.CompareTag("Player"))
             {
@@ -80,7 +84,7 @@ public class LevelObject : MonoBehaviour
         Unlocked = Unlock;
         IsCompleted = NewCompleted;
 
-        if (Unlocked)
+        if (Unlocked || ForceOpen)
         {
             if (IsCompleted)
             {
