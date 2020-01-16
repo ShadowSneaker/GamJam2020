@@ -57,7 +57,9 @@ public class HealthScript : MonoBehaviour
     [SerializeField]
     private UnityEvent OnHeal = null;
 
-
+    [Tooltip("what sounds you want to use ")]
+    [SerializeField]
+    private SoundScript DeathSound = null;
 
     public SDamageInfo ApplyDamage(float Amount)
     {
@@ -82,6 +84,7 @@ public class HealthScript : MonoBehaviour
             if (Dead)
             {
                 Info.OverkillDamage = Health * -1;
+                DeathSound.Play();
 
                 if (OnDeath != null)
                 {

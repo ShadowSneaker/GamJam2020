@@ -139,3 +139,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 780a818bd5f3eb846ae032c82e60f48a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  IceFall:
+    RandomClip: 0
+    ClipIndex: 0
+    Clips:
+    - {fileID: 8300000, guid: 530bd2b7783145f428ff9db1b76f7483, type: 3}
+  IceHurt:
+    RandomClip: 0
+    ClipIndex: 0
+    Clips:
+    - {fileID: 8300000, guid: 07069214965bdd44e8c541c3d52b98a7, type: 3}

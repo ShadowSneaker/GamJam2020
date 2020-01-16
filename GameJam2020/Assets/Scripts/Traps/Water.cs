@@ -9,6 +9,9 @@ public class Water : MonoBehaviour
     [SerializeField]
     private Material IceMaterial = null;
 
+    [Tooltip("The sounds that you want to use for the water")]
+    [SerializeField]
+    private SoundScript WaterSounds;
 
     // Start is called before the first frame update
     void Start()
@@ -31,6 +34,10 @@ public class Water : MonoBehaviour
             gameObject.GetComponent<MeshRenderer>().material = IceMaterial;
             gameObject.GetComponent<BoxCollider2D>().isTrigger = false;
 
+        }
+        else if(collision.CompareTag("Player"))
+        {
+            WaterSounds.Play(); 
         }
     }
 

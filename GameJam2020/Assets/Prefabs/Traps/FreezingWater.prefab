@@ -140,3 +140,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   IceMaterial: {fileID: 2100000, guid: ebc265f88dbe2bf40953ba5a281ffbc5, type: 2}
+  WaterSounds:
+    RandomClip: 1
+    ClipIndex: 0
+    Clips:
+    - {fileID: 8300000, guid: 91b14d44c14c8e04a88e06f217ca1276, type: 3}

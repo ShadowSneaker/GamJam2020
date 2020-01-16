@@ -25,7 +25,7 @@ public class SpawnerScript : MonoBehaviour
     private ParticleSystem Particle = null;
     private Light Highlight = null;
 
-
+    public SoundScript Sounds;
 
     private void Start()
     {
@@ -42,6 +42,7 @@ public class SpawnerScript : MonoBehaviour
         if (HeadInst)
         {
             HeadInst.transform.Rotate(new Vector3(0.0f, SpinStrength * Time.fixedDeltaTime, 0.0f));
+            Sounds.Play();
         }
     }
 

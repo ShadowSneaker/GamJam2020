@@ -8,6 +8,13 @@ public class Iceicle : MonoBehaviour
     // this is the iceicles rigid body
     private Rigidbody2D RB;
 
+    [Tooltip("the sounds for the iceicle falling")]
+    [SerializeField]
+    private SoundScript IceFall;
+
+    [Tooltip("the sounds for the iceicle hitting player")]
+    [SerializeField]
+    private SoundScript IceHurt;
 
     // Start is called before the first frame update
     void Start()
@@ -28,8 +35,19 @@ public class Iceicle : MonoBehaviour
         if(collision.CompareTag("Player"))
         {
             collision.GetComponent<HealthScript>().ApplyDamage(35.0f);
+
         }
+
+        Destroy(this);
+        IceHurt.Play();
     }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        Destroy(this);
+        IceHurt.Play();
+    }
+
 
     private void TestBelow()
     {
@@ -41,6 +59,7 @@ public class Iceicle : MonoBehaviour
         {
            
             RB.WakeUp();
+            IceFall.Play();
         }
 
     }

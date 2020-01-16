@@ -125,6 +125,7 @@ MonoBehaviour:
   Dead: 0
   Health: 100
   MaxHealth: 100
+  HurtParticle: {fileID: 0}
   OnHurt:
     m_PersistentCalls:
       m_Calls: []
@@ -289,7 +290,8 @@ MonoBehaviour:
   YeetSounds:
     RandomClip: 0
     ClipIndex: 0
-    Clips: []
+    Clips:
+    - {fileID: 8300000, guid: 7f275cb2313625d48af30eeca21d762f, type: 3}
   HitSounds:
     RandomClip: 0
     ClipIndex: 0

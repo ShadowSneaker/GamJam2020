@@ -4827,6 +4827,11 @@ MonoBehaviour:
   SpawnDelay: 5
   Head: {fileID: 2299081177672611278, guid: fd073f87ce06fe54b83c6473a1815908, type: 3}
   SpinStrength: 5
+  Sounds:
+    RandomClip: 0
+    ClipIndex: 0
+    Clips:
+    - {fileID: 8300000, guid: e3944d44314c8a847ac3f7aa16124fd5, type: 3}
 --- !u!1 &7191235967202059172
 GameObject:
   m_ObjectHideFlags: 0
@@ -4914,7 +4919,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
+  m_BoundingSphereOverride: {x: 1.7e-44, y: 4.125e-42, z: 0, w: 0}
   m_UseBoundingSphereOverride: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0

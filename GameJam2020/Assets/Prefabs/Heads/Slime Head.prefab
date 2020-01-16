@@ -89,6 +89,7 @@ MonoBehaviour:
   Dead: 0
   Health: 100
   MaxHealth: 100
+  HurtParticle: {fileID: 0}
   OnHurt:
     m_PersistentCalls:
       m_Calls: []
@@ -125,7 +126,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 104c0a075949dd8428af9612c95f17d7, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -229,7 +230,8 @@ MonoBehaviour:
   YeetSounds:
     RandomClip: 0
     ClipIndex: 0
-    Clips: []
+    Clips:
+    - {fileID: 8300000, guid: 104c0a075949dd8428af9612c95f17d7, type: 3}
   HitSounds:
     RandomClip: 0
     ClipIndex: 0
@@ -242,6 +244,9 @@ MonoBehaviour:
     Min: 1
     Max: 10
   Image: {fileID: 21300000, guid: c98080e57a540ea4fa5e0bf0c29e2eeb, type: 3}
+  SpeedThreshold: 0.1
+  DivisibleFactor: 20
+  MaxScale: 5
   AngularDrag: 10
   LinearDrag: 1000
 --- !u!1001 &1366176545164965024
