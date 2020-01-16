@@ -116,6 +116,11 @@ MonoBehaviour:
   Muted: {fileID: 21300000, guid: 37dde35d2bb16c846856d0ca40f06455, type: 3}
   UnMuted: {fileID: 21300000, guid: c98080e57a540ea4fa5e0bf0c29e2eeb, type: 3}
   SoundButton: {fileID: 8150068920827151626}
+  UISounds:
+    RandomClip: 1
+    ClipIndex: 0
+    Clips:
+    - {fileID: 8300000, guid: 6b7b0655e15413648816b33f58b5f273, type: 3}
 --- !u!1 &8150068920827151625
 GameObject:
   m_ObjectHideFlags: 0

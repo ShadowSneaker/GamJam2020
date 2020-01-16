@@ -30,6 +30,9 @@ public class OverlayUI : MonoBehaviour
     [SerializeField]
     private Text MuteText = null;
 
+    [Tooltip("The Sound that you want the button to make")]
+    [SerializeField]
+    private SoundScript UISounds;
 
     // a refernce to the attached transition script
     private TransitionScript Transition;
@@ -41,6 +44,7 @@ public class OverlayUI : MonoBehaviour
 
     public void SettingButton()
     {
+        UISounds.Play();
         PauseScript.TogglePause();
         SettingsOverlay.gameObject.SetActive(!SettingsOverlay.gameObject.activeSelf);
     }
@@ -65,17 +69,20 @@ public class OverlayUI : MonoBehaviour
 
     public void LoadScene(string SceneName)
     {
+       
         Transition.SceneName = SceneName;
         Transition.LoadScene();
     }
 
     public void Replay()
     {
+        
         Transition.LoadScene(SceneManager.GetActiveScene().name);
     }
 
     public void MuteGame()
     {
+        UISounds.Play();
         AudioListener.pause = !AudioListener.pause;
         AudioListener.volume = (AudioListener.pause) ? 0.0f : 1.0f;
 

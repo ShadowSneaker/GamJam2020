@@ -22,9 +22,13 @@ public class WinUI : MonoBehaviour
     // A reference to the attached transition script.
     TransitionScript Transition = null;
 
+    [Tooltip("The Sound for when the level is completed")]
+    [SerializeField]
+    private SoundScript WinSound = null;
 
     private void Start()
     {
+        WinSound.Play();
         Transition = GetComponent<TransitionScript>();
     }
 

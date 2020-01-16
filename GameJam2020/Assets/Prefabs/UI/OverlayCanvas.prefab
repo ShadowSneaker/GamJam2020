@@ -945,6 +945,10 @@ MonoBehaviour:
   TextCounter: {fileID: 833214979507902354}
   TimerText: {fileID: 2500087164338157504}
   MuteText: {fileID: 3357136360870770797}
+  UISounds:
+    RandomClip: 1
+    ClipIndex: 0
+    Clips: []
 --- !u!114 &4304988000793152574
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -962,6 +966,11 @@ MonoBehaviour:
   TransitionUI: {fileID: 6453048312499934040, guid: 42084fa756a3b9845a9f00ce1ce84ae2,
     type: 3}
   SceneName: 
+  UISounds:
+    RandomClip: 1
+    ClipIndex: 0
+    Clips:
+    - {fileID: 8300000, guid: 6b7b0655e15413648816b33f58b5f273, type: 3}
 --- !u!1 &4639304331791550271
 GameObject:
   m_ObjectHideFlags: 0

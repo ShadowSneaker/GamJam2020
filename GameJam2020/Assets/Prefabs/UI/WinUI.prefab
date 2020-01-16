@@ -1102,6 +1102,11 @@ MonoBehaviour:
   - {fileID: 7895826314169089663}
   - {fileID: 6578025437165468885}
   - {fileID: 324281189806399449}
+  WinSound:
+    RandomClip: 1
+    ClipIndex: 0
+    Clips:
+    - {fileID: 8300000, guid: 895a209d9b6093b41ad7a0d8e05ff2d7, type: 3}
 --- !u!114 &8210592631919669928
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1119,6 +1124,10 @@ MonoBehaviour:
   TransitionUI: {fileID: 6453048312499934040, guid: 42084fa756a3b9845a9f00ce1ce84ae2,
     type: 3}
   SceneName: Map
+  UISounds:
+    RandomClip: 1
+    ClipIndex: 0
+    Clips: []
 --- !u!1 &4548001814018343579
 GameObject:
   m_ObjectHideFlags: 0

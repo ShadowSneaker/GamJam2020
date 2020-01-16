@@ -112,10 +112,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ad4a468168165454d8987f94a6980c1d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  FadeInClip: {fileID: 7400000, guid: dc2d4aa82a84a9543a4a1543a2300192, type: 2}
-  FadeOutClip: {fileID: 7400000, guid: ddb19e87e2d18d745bfbc4299be024e3, type: 2}
-  transitionUI: {fileID: 6453048312499934040}
+  FadeInClip: {fileID: 0}
+  FadeOutClip: {fileID: 0}
+  TransitionUI: {fileID: 0}
   SceneName: 
+  UISounds:
+    RandomClip: 0
+    ClipIndex: 0
+    Clips:
+    - {fileID: 8300000, guid: 6b7b0655e15413648816b33f58b5f273, type: 3}
 --- !u!1 &6453048313747007024
 GameObject:
   m_ObjectHideFlags: 0
