@@ -30,9 +30,6 @@ public class OverlayUI : MonoBehaviour
     [SerializeField]
     private Text MuteText = null;
 
-    // the refernce to the sound script within the level
-    private SoundScript Sounds = null;
-
 
     // a refernce to the attached transition script
     private TransitionScript Transition;

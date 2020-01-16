@@ -18,10 +18,6 @@ public class ExplosionScript: MonoBehaviour
     [SerializeField]
     private float Radius = 5.0f;
 
-    [Tooltip("The sound that is played when the head explodes.")]
-    [SerializeField]
-    private SoundScript ExplodeSound = null;
-
     [Tooltip("the amount of damage that the explosion does")]
     [SerializeField]
     private float Damage = 0.0f;
@@ -34,7 +30,25 @@ public class ExplosionScript: MonoBehaviour
     private bool ExplodeOnce = false;
 
     [SerializeField]
+    private bool IsProximity = false;
+
+    [SerializeField]
+    private float ExplosionDelay = 0.5f;
+
+    [SerializeField]
     private ParticleSystem ExplosionPrefab = null;
+
+
+
+    [Header("Sounds")]
+
+
+    [Tooltip("The sound that is played when the head explodes.")]
+    [SerializeField]
+    private SoundScript ExplodeSound = null;
+
+    [SerializeField]
+    private SoundScript ProximitySound = null;
 
 
     internal bool Exploded = false;
@@ -47,7 +61,6 @@ public class ExplosionScript: MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Particle = GetComponent<ParticleSystem>();
         //RB = GetComponent<Rigidbody2D>();
         Audio = GetComponent<AudioSource>();
         ExplodeSound.SetAudio(Audio);
@@ -66,24 +79,23 @@ public class ExplosionScript: MonoBehaviour
         {
             Vector2 ExplosionPosition = transform.position;
             Collider2D[] colliders = Physics2D.OverlapCircleAll(ExplosionPosition, Radius);
-            foreach (Collider2D hit in colliders)
+            foreach (Collider2D Hit in colliders)
             {
-                if (!hit.CompareTag("Water") && !hit.CompareTag("Iceicle"))
+                if (!Hit.CompareTag("Water") && !Hit.CompareTag("Iceicle"))
                 {
-                    Rigidbody2D rb = hit.attachedRigidbody;//hit.GetComponent<Rigidbody2D>();
-                    if (rb && rb.gameObject != gameObject)
+                    Rigidbody2D Rigid = Hit.attachedRigidbody;//hit.GetComponent<Rigidbody2D>();
+                    if (Rigid && Rigid.gameObject != gameObject)
                     {
-                        Vector2 Direction = (rb.transform.position - transform.position).normalized;
-                        float Percentage = Vector2.Distance(transform.position, rb.transform.position) / Radius;
-                        rb.velocity = Direction * Power * (1.0f - Percentage);
-                        if (rb.GetComponent<HealthScript>())
+                        Vector2 Direction = (Rigid.transform.position - transform.position).normalized;
+                        float Percentage = Vector2.Distance(transform.position, Rigid.transform.position) / Radius;
+                        Rigid.velocity = Direction * Power * (1.0f - Percentage);
+                        if (Rigid.GetComponent<HealthScript>())
                         {
-                            rb.GetComponent<HealthScript>().ApplyDamage(Damage);
+                            Rigid.GetComponent<HealthScript>().ApplyDamage(Damage);
                         }
                     }
                 }
             }
-
 
             
             if (ExplodeOnce) Exploded = true;
@@ -92,6 +104,12 @@ public class ExplosionScript: MonoBehaviour
             Particle = Instantiate(ExplosionPrefab, transform.position, transform.rotation);
             Destroy(Particle.gameObject, Particle.main.duration + Particle.main.startLifetime.constant);
             ExplodeSound.Play();
+
+
+            if (Destroys)
+            {
+                Destroy(gameObject);
+            }
         }
     }
 
@@ -99,10 +117,13 @@ public class ExplosionScript: MonoBehaviour
     {
         if (!UseTrigger)
         {
-            AddExplosionForce();
-            if (Destroys)
+            if (IsProximity)
             {
-                Destroy(gameObject);
+                StartCoroutine(ExplodeDelay());
+            }
+            else
+            {
+                AddExplosionForce();
             }
         }
     }
@@ -111,10 +132,13 @@ public class ExplosionScript: MonoBehaviour
     {
         if (UseTrigger)
         {
-            AddExplosionForce();
-            if (Destroys)
+            if (IsProximity)
             {
-                Destroy(gameObject);
+                StartCoroutine(ExplodeDelay());
+            }
+            else
+            {
+                AddExplosionForce();
             }
         }
     }
@@ -122,5 +146,13 @@ public class ExplosionScript: MonoBehaviour
     public void Reset()
     {
         Exploded = false;
+    }
+
+
+    private IEnumerator ExplodeDelay()
+    {
+        ProximitySound.Play();
+        yield return new WaitForSeconds(ExplosionDelay);
+        AddExplosionForce();
     }
 }

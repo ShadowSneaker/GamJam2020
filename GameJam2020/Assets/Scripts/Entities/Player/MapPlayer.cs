@@ -18,7 +18,7 @@ public class MapPlayer : MonoBehaviour
 
     [Tooltip("The INstance of the MapUI")]
     [SerializeField]
-    private MainMenuUI UIInstance;
+    private MainMenuUI UIInstance = null;
 
     //the main menu UI
     private MainMenuUI UI;

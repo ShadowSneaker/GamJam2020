@@ -75,9 +75,9 @@
 /reference:Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll
 /reference:"C:/Program Files/Unity2019.1.5/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll"
 /reference:"C:/Program Files/Unity2019.1.5/Editor/Data/PlaybackEngines/VuforiaSupport/Managed/Runtime/Vuforia.UnityExtensions.dll"
-/reference:C:/Users/1wilss91/Downloads/2020/GamJam2020/GameJam2020/Library/PackageCache/com.unity.analytics@3.3.2/Unity.Analytics.Editor.dll
-/reference:C:/Users/1wilss91/Downloads/2020/GamJam2020/GameJam2020/Library/PackageCache/com.unity.analytics@3.3.2/Unity.Analytics.StandardEvents.dll
-/reference:C:/Users/1wilss91/Downloads/2020/GamJam2020/GameJam2020/Library/PackageCache/com.unity.analytics@3.3.2/Unity.Analytics.Tracker.dll
+/reference:C:/Users/3foyld03/Downloads/GamJam2020/GameJam2020/Library/PackageCache/com.unity.analytics@3.3.2/Unity.Analytics.Editor.dll
+/reference:C:/Users/3foyld03/Downloads/GamJam2020/GameJam2020/Library/PackageCache/com.unity.analytics@3.3.2/Unity.Analytics.StandardEvents.dll
+/reference:C:/Users/3foyld03/Downloads/GamJam2020/GameJam2020/Library/PackageCache/com.unity.analytics@3.3.2/Unity.Analytics.Tracker.dll
 /reference:"C:/Program Files/Unity2019.1.5/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Xcode.dll"
 /reference:"C:/Program Files/Unity2019.1.5/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Common.dll"
 /reference:"C:/Program Files/Unity2019.1.5/Editor/Data/NetStandard/ref/2.0.0/netstandard.dll"
@@ -334,5 +334,6 @@ Assets\Scripts\UI\LevelUI.cs
 Assets\Scripts\UI\MainMenuUI.cs
 Assets\Scripts\UI\OverlayUI.cs
 Assets\Scripts\UI\WinUI.cs
+Assets\Scripts\Zones\Activator.cs
 Assets\Scripts\Zones\KillZone.cs
 Assets\Scripts\Zones\PushZone.cs
