@@ -8,6 +8,7 @@ TagManager:
   - Enemy
   - Wind
   - Water
+  - Iceicle
   layers:
   - Default
   - TransparentFX

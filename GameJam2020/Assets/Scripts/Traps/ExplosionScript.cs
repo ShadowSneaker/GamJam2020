@@ -68,7 +68,7 @@ public class ExplosionScript: MonoBehaviour
             Collider2D[] colliders = Physics2D.OverlapCircleAll(ExplosionPosition, Radius);
             foreach (Collider2D hit in colliders)
             {
-                if (!hit.CompareTag("Water"))
+                if (!hit.CompareTag("Water") && !hit.CompareTag("Iceicle"))
                 {
                     Rigidbody2D rb = hit.attachedRigidbody;//hit.GetComponent<Rigidbody2D>();
                     if (rb && rb.gameObject != gameObject)

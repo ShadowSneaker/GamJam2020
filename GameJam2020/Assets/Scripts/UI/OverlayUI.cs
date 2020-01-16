@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class OverlayUI : MonoBehaviour
 {
@@ -24,6 +25,22 @@ public class OverlayUI : MonoBehaviour
     [SerializeField]
     private Text TimerText = null;
 
+
+    [Tooltip("The text for the mute sounds button")]
+    [SerializeField]
+    private Text MuteText = null;
+
+    // the refernce to the sound script within the level
+    private SoundScript Sounds = null;
+
+
+    // a refernce to the attached transition script
+    private TransitionScript Transition;
+
+    public void Start()
+    {
+        Transition = GetComponent<TransitionScript>();
+    }
 
     public void SettingButton()
     {
@@ -48,4 +65,31 @@ public class OverlayUI : MonoBehaviour
     {
         TimerText.text = Timer.ToString("F4");
     }
+
+    public void LoadScene(string SceneName)
+    {
+        Transition.SceneName = SceneName;
+        Transition.LoadScene();
+    }
+
+    public void Replay()
+    {
+        Transition.LoadScene(SceneManager.GetActiveScene().name);
+    }
+
+    public void MuteGame()
+    {
+        AudioListener.pause = !AudioListener.pause;
+        AudioListener.volume = (AudioListener.pause) ? 0.0f : 1.0f;
+
+        if(AudioListener.pause)
+        {
+            MuteText.text = "UnMute Sounds";
+        }
+        else
+        {
+            MuteText.text = "Mute Sounds";
+        }
+    }
+
 }

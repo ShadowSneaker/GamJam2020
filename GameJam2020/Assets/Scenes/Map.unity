@@ -19328,6 +19328,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Target: {fileID: 998910019}
+  UIInstance: {fileID: 8150068920150754459, guid: 246aaeaab94f3c8448e331a954736d8f,
+    type: 3}
 --- !u!135 &5644384100549663743
 SphereCollider:
   m_ObjectHideFlags: 0

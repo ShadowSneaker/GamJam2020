@@ -11,6 +11,17 @@ public class MainMenuUI : MonoBehaviour
     [SerializeField]
     private Image SettingsMenu = null;
 
+    [Tooltip("The Sprite that you want for when the game is muted")]
+    [SerializeField]
+    private Sprite Muted = null;
+
+    [Tooltip("the sprite that you want for when the game is unmuted")]
+    [SerializeField]
+    private Sprite UnMuted = null;
+
+    [Tooltip("The Image for the Sounds Button")]
+    [SerializeField]
+    private Image SoundButton = null;
 
 
     //a function to exit the game when pressed
@@ -27,6 +38,23 @@ public class MainMenuUI : MonoBehaviour
     public void OpenSettings()
     {
         SettingsMenu.gameObject.SetActive(!SettingsMenu.gameObject.activeSelf);
+    }
+
+    public void SoundAudio()
+    {
+        AudioListener.pause = !AudioListener.pause;
+        AudioListener.volume = (AudioListener.pause) ? 0.0f : 1.0f;
+
+        // have it change image
+        if (AudioListener.pause)
+        {
+            SoundButton.sprite = Muted;
+        }
+        else
+        {
+            SoundButton.sprite = UnMuted;
+        }
+
     }
 
 }

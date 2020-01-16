@@ -16,14 +16,21 @@ public class MapPlayer : MonoBehaviour
     // A reference to the nav mesh agent.
     private NavMeshAgent Agent = null;
 
+    [Tooltip("The INstance of the MapUI")]
+    [SerializeField]
+    private MainMenuUI UIInstance;
 
-
+    //the main menu UI
+    private MainMenuUI UI;
 
     // Start is called before the first frame update
     void Start()
     {
         Agent = gameObject.GetComponent<NavMeshAgent>();
         Levels = FindObjectsOfType<LevelObject>();
+
+        UI = Instantiate(UIInstance);
+
         if (Levels.Length > 0)
         {
             Saving Save = TSave.LoadGame();
