@@ -22,16 +22,20 @@ public class TransitionScript : MonoBehaviour
     [Tooltip("the scene that you want to be loaded")]
     public string SceneName = "";
 
-
+    [Tooltip("the Sound used for when a button is pressed")]
+    [SerializeField]
+    private SoundScript UISounds;
 
     public void LoadScene()
     {
+         UISounds.Play();
          StartCoroutine(SceneDelay(SceneName));
     }
 
 
     public void LoadScene(string Name)
     {
+        UISounds.Play();
         StartCoroutine(SceneDelay(Name));
     }
     

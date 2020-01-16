@@ -10,11 +10,11 @@ public class Iceicle : MonoBehaviour
 
     [Tooltip("the sounds for the iceicle falling")]
     [SerializeField]
-    private SoundScript IceFall;
+    private SoundScript IceFall = null;
 
     [Tooltip("the sounds for the iceicle hitting player")]
     [SerializeField]
-    private SoundScript IceHurt;
+    private SoundScript IceHurt = null;
 
     // Start is called before the first frame update
     void Start()

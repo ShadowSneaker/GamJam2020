@@ -23,6 +23,9 @@ public class MainMenuUI : MonoBehaviour
     [SerializeField]
     private Image SoundButton = null;
 
+    [Tooltip("The Sound You want the butttons to make when pressed")]
+    [SerializeField]
+    private SoundScript UISounds = null;
 
     //a function to exit the game when pressed
     public void ExitGame()
@@ -37,11 +40,14 @@ public class MainMenuUI : MonoBehaviour
     //a function to open up the settings menu
     public void OpenSettings()
     {
+        UISounds.Play();
         SettingsMenu.gameObject.SetActive(!SettingsMenu.gameObject.activeSelf);
     }
 
     public void SoundAudio()
     {
+        UISounds.Play();
+
         AudioListener.pause = !AudioListener.pause;
         AudioListener.volume = (AudioListener.pause) ? 0.0f : 1.0f;
 

@@ -11,7 +11,7 @@ public class Water : MonoBehaviour
 
     [Tooltip("The sounds that you want to use for the water")]
     [SerializeField]
-    private SoundScript WaterSounds;
+    private SoundScript WaterSounds = null;
 
     // Start is called before the first frame update
     void Start()
@@ -37,7 +37,8 @@ public class Water : MonoBehaviour
         }
         else if(collision.CompareTag("Player"))
         {
-            WaterSounds.Play(); 
+            WaterSounds.Play();
+            collision.GetComponent<HealthScript>().ApplyDamage(100.0f);
         }
     }
 

@@ -17,6 +17,10 @@ public class LevelUI : MonoBehaviour
     private TransitionScript Transition = null;
 
 
+    [Tooltip("The sound for clicking the buttons on the UI")]
+    [SerializeField]
+    private SoundScript UISound = null;
+
 
     public void Start()
     {
@@ -28,6 +32,7 @@ public class LevelUI : MonoBehaviour
 
     public void PlayLevel()
     {
+        UISound.Play();
         GameObject.FindGameObjectWithTag("Player").SetActive(false);
         Transition.LoadScene();
     }
