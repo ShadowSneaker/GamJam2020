@@ -123,6 +123,8 @@ MonoBehaviour:
   Dead: 0
   Health: 1
   MaxHealth: 100
+  HurtParticle: {fileID: 6900946871319882332, guid: d2b0881eb358b0f4b9479a06c99bd18d,
+    type: 3}
   OnHurt:
     m_PersistentCalls:
       m_Calls: []

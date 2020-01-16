@@ -32,6 +32,15 @@ public class HealthScript : MonoBehaviour
     private float MaxHealth = 100.0f;
 
 
+    [Header("Particles")]
+
+    [Tooltip("The particle prefab that is played when this object takes damage.")]
+    [SerializeField]
+    private ParticleSystem HurtParticle = null;
+
+    private ParticleSystem HurtParticleInst = null;
+
+
     [Header("Events")]
 
 
@@ -62,6 +71,13 @@ public class HealthScript : MonoBehaviour
             Info.Killed = Dead;
             Info.RemainingHealth = (Health > 0.0f) ? Health : 0.0f;
 
+            if (HurtParticle)
+            {
+                HurtParticleInst = Instantiate(HurtParticle, transform.position, Quaternion.identity);
+                float Percent = (Amount / MaxHealth) + HurtParticleInst.main.startSize.constant;
+                HurtParticleInst.transform.localScale = new Vector3(Percent, Percent, Percent);
+                Destroy(HurtParticleInst, HurtParticleInst.main.duration + HurtParticleInst.main.startLifetime.constant);
+            }
 
             if (Dead)
             {

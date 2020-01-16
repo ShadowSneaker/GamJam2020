@@ -151,30 +151,38 @@ public class PlayerController : MonoBehaviour
     {
         if (EnableControls)
         {
-            if (Input.GetButtonDown("Yeet"))
+            if (!PauseScript.GamePaused)
             {
-                if (CanYeet)
+                if (Input.GetButtonDown("Yeet"))
                 {
-                    Yeet(Direction);
+                    if (CanYeet)
+                    {
+                        Yeet(Direction);
+                    }
+                }
+
+                if (Input.GetButtonDown("SwitchWeapon"))
+                {
+                    if (CanSwitch)
+                    {
+                        //UIInstance.SwitchHead();
+                        SetHead(Heads[CycleHead()].Head);
+
+                    }
+                }
+
+                if (Input.mouseScrollDelta.y != 0.0f)
+                {
+                    Vector3 NewPos = transform.position;
+                    NewPos.z += Input.mouseScrollDelta.y;
+                    NewPos.z = Mathf.Clamp(NewPos.z, -MinZoom, -MaxZoom);
+                    transform.position = NewPos;
                 }
             }
 
-            if (Input.GetButtonDown("SwitchWeapon"))
+            if (Input.GetButtonDown("Pause"))
             {
-                if (CanSwitch)
-                {
-                    //UIInstance.SwitchHead();
-                    SetHead(Heads[CycleHead()].Head);
-                    
-                }
-            }
-
-            if (Input.mouseScrollDelta.y != 0.0f)
-            {
-                Vector3 NewPos = transform.position;
-                NewPos.z += Input.mouseScrollDelta.y;
-                NewPos.z = Mathf.Clamp(NewPos.z, -MinZoom, -MaxZoom);
-                transform.position = NewPos;
+                UIInstance.SettingButton();
             }
         }
 
@@ -255,18 +263,20 @@ public class PlayerController : MonoBehaviour
             CurrentHead.Count = Heads[GetHeadIndex(NewHead)].Count;
 
             Vector3 Location = (InitialLocation) ? InitialLocation.position : Vector3.zero;
+            Quaternion Rotation = Quaternion.identity;
             Vector3 Scale = Vector3.one;
             float Health = 1.0f;
             if (CurrentHead.Head)
             {
                 Health = CurrentHead.Head.GetHealth().GetCurrent();
-                Scale = CurrentHead.Head.transform.localScale;
                 Location = CurrentHead.Head.transform.position;
+                Rotation = CurrentHead.Head.transform.rotation;
+                Scale = CurrentHead.Head.transform.localScale;
                 Destroy(CurrentHead.Head.gameObject);
             }
 
 
-            CurrentHead.Head = Instantiate(NewHead, Location, Quaternion.identity);
+            CurrentHead.Head = Instantiate(NewHead, Location, Rotation);
             CurrentHead.Head.transform.localScale = Scale;
             CurrentHead.Head.GetHealth().SetCurrent(Health);
             CurrentHead.Head.UpdateSize();
