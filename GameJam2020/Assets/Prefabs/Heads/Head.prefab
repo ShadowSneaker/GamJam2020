@@ -97,7 +97,9 @@ MonoBehaviour:
     RandomClip: 1
     ClipIndex: 0
     Clips:
-    - {fileID: 8300000, guid: 8743b51c5dbc6414d8dadf3de69ecd67, type: 3}
+    - {fileID: 8300000, guid: 68c782d2c69bf694a911a90e40e649a3, type: 3}
+    - {fileID: 8300000, guid: 20cd5fb4a8136e54cbad5074e56d7877, type: 3}
+    - {fileID: 8300000, guid: 5c0f523ab766df94abb56ce2bc6286fb, type: 3}
   RestSounds:
     RandomClip: 1
     ClipIndex: 0
@@ -105,7 +107,7 @@ MonoBehaviour:
   RestDelay:
     Min: 1
     Max: 10
-  Image: {fileID: 21300000, guid: a33b4d89c3e3a844f94f57793d5f1a2a, type: 3}
+  Image: {fileID: 21300000, guid: 5943307adfa0adc409cac757a9b0e1f8, type: 3}
   SpeedThreshold: 0.1
   DivisibleFactor: 1
   MaxScale: 5
@@ -261,11 +263,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1742428272920684445}
     m_Modifications:
-    - target: {fileID: -927199367670048503, guid: c7b78061983cb15479cd94eb4e6aa6a6,
-        type: 3}
-      propertyPath: m_Name
-      value: NormHead
-      objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: c7b78061983cb15479cd94eb4e6aa6a6,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -320,6 +317,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: c7b78061983cb15479cd94eb4e6aa6a6,
+        type: 3}
+      propertyPath: m_Name
+      value: NormHead
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c7b78061983cb15479cd94eb4e6aa6a6, type: 3}

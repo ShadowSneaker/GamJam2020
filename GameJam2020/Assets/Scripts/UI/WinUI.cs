@@ -15,6 +15,10 @@ public class WinUI : MonoBehaviour
     [SerializeField]
     private Text DurationText = null;
 
+    [Tooltip("A reference to the best duration text.")]
+    [SerializeField]
+    private Text BestDurationText = null;
+
     [Tooltip("A reference to the Start images.")]
     [SerializeField]
     private Image[] StarImages = new Image[3];
@@ -26,15 +30,23 @@ public class WinUI : MonoBehaviour
     [SerializeField]
     private SoundScript WinSound = null;
 
+    [Tooltip("The sound that plays when a button is clicked.")]
+    [SerializeField]
+    private SoundScript UISound = null;
+
+
+
     private void Start()
     {
+        WinSound.SetAudio(GetComponent<AudioSource>());
         WinSound.Play();
         Transition = GetComponent<TransitionScript>();
     }
 
 
-    public void UpdateInfo(float Duration, float Score)
+    public void UpdateInfo(float Duration, float BestDuration, float Score)
     {
+        BestDurationText.text = " " + BestDuration.ToString("F4");
         DurationText.text = " " + Duration.ToString("F4");
         ScoreText.text = " " + Score.ToString();
     }
@@ -51,18 +63,21 @@ public class WinUI : MonoBehaviour
 
     public void LoadMainMenu()
     {
+        UISound.PlayNew(transform.position);
         Transition.LoadScene("MainMenu");
     }
 
 
     public void NextLevel()
     {
+        UISound.PlayNew(transform.position);
         Transition.LoadScene();
     }
 
 
     public void Replay()
     {
+        UISound.PlayNew(transform.position);
         Transition.LoadScene(SceneManager.GetActiveScene().name);
     }
 

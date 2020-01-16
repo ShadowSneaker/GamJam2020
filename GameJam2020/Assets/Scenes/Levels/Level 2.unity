@@ -164,8 +164,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9db94cedae3a81144884e4eb1d6c6933, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  AngularDrag: 0.5
-  LinearDrag: 0.5
+  AngularDrag: 1
+  LinearDrag: 1
 --- !u!1001 &2359475
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -462,8 +462,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9db94cedae3a81144884e4eb1d6c6933, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  AngularDrag: 0.5
-  LinearDrag: 0.5
+  AngularDrag: 1
+  LinearDrag: 1
 --- !u!1001 &44105473
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -780,7 +780,7 @@ PrefabInstance:
     - target: {fileID: 530552399476105524, guid: 20b37296850800643a562ae663341b5b,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 13.57
+      value: 13.43
       objectReference: {fileID: 0}
     - target: {fileID: 530552399476105524, guid: 20b37296850800643a562ae663341b5b,
         type: 3}
@@ -2346,8 +2346,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9db94cedae3a81144884e4eb1d6c6933, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  AngularDrag: 0.5
-  LinearDrag: 0.5
+  AngularDrag: 1
+  LinearDrag: 1
 --- !u!1001 &278598491
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4622,8 +4622,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9db94cedae3a81144884e4eb1d6c6933, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  AngularDrag: 0.5
-  LinearDrag: 0.5
+  AngularDrag: 1
+  LinearDrag: 1
 --- !u!1001 &548051671
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4816,8 +4816,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9db94cedae3a81144884e4eb1d6c6933, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  AngularDrag: 0.5
-  LinearDrag: 0.5
+  AngularDrag: 1
+  LinearDrag: 1
 --- !u!1 &563921535
 GameObject:
   m_ObjectHideFlags: 0
@@ -6051,7 +6051,7 @@ PrefabInstance:
     - target: {fileID: 530552399476105524, guid: 20b37296850800643a562ae663341b5b,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 13.57
+      value: 13.43
       objectReference: {fileID: 0}
     - target: {fileID: 530552399476105524, guid: 20b37296850800643a562ae663341b5b,
         type: 3}
@@ -6805,8 +6805,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9db94cedae3a81144884e4eb1d6c6933, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  AngularDrag: 0.5
-  LinearDrag: 0.5
+  AngularDrag: 1
+  LinearDrag: 1
 --- !u!1 &797304103
 GameObject:
   m_ObjectHideFlags: 0
@@ -7595,8 +7595,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9db94cedae3a81144884e4eb1d6c6933, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  AngularDrag: 0.5
-  LinearDrag: 0.5
+  AngularDrag: 1
+  LinearDrag: 1
 --- !u!1 &903737107
 GameObject:
   m_ObjectHideFlags: 0
@@ -8075,7 +8075,7 @@ PrefabInstance:
     - target: {fileID: 6681681778106990901, guid: 4d7f2bc3def1b78449bc13d1b5c0ae67,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 13.66
+      value: 11.4
       objectReference: {fileID: 0}
     - target: {fileID: 6681681778106990901, guid: 4d7f2bc3def1b78449bc13d1b5c0ae67,
         type: 3}
@@ -10778,8 +10778,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9db94cedae3a81144884e4eb1d6c6933, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  AngularDrag: 0.5
-  LinearDrag: 0.5
+  AngularDrag: 1
+  LinearDrag: 1
 --- !u!4 &1162586462 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 412543122, guid: 16f049e2d9722d24986e310f91ff68c6,
@@ -11056,8 +11056,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9db94cedae3a81144884e4eb1d6c6933, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  AngularDrag: 0.5
-  LinearDrag: 0.5
+  AngularDrag: 1
+  LinearDrag: 1
 --- !u!4 &1186647536 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 412543122, guid: 16f049e2d9722d24986e310f91ff68c6,
@@ -12624,7 +12624,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1464843250}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.85, z: -3}
+  m_LocalPosition: {x: -3, y: 1, z: -3}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -13182,7 +13182,7 @@ PrefabInstance:
     - target: {fileID: 530552399476105524, guid: 20b37296850800643a562ae663341b5b,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 13.99
+      value: 13.911
       objectReference: {fileID: 0}
     - target: {fileID: 530552399476105524, guid: 20b37296850800643a562ae663341b5b,
         type: 3}
@@ -14127,8 +14127,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9db94cedae3a81144884e4eb1d6c6933, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  AngularDrag: 0.5
-  LinearDrag: 0.5
+  AngularDrag: 1
+  LinearDrag: 1
 --- !u!1 &1574953390
 GameObject:
   m_ObjectHideFlags: 0
@@ -14871,8 +14871,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9db94cedae3a81144884e4eb1d6c6933, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  AngularDrag: 0.5
-  LinearDrag: 0.5
+  AngularDrag: 1
+  LinearDrag: 1
 --- !u!1 &1636714889
 GameObject:
   m_ObjectHideFlags: 0
@@ -15603,8 +15603,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9db94cedae3a81144884e4eb1d6c6933, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  AngularDrag: 0.5
-  LinearDrag: 0.5
+  AngularDrag: 1
+  LinearDrag: 1
 --- !u!1 &1745923413 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1452641802217029215, guid: 410fa1947d1cc1246a20cef9517cf7d0,
@@ -15681,8 +15681,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9db94cedae3a81144884e4eb1d6c6933, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  AngularDrag: 0.5
-  LinearDrag: 0.5
+  AngularDrag: 1
+  LinearDrag: 1
 --- !u!1 &1762362712
 GameObject:
   m_ObjectHideFlags: 0
@@ -16454,8 +16454,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9db94cedae3a81144884e4eb1d6c6933, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  AngularDrag: 0.5
-  LinearDrag: 0.5
+  AngularDrag: 1
+  LinearDrag: 1
 --- !u!1 &1796632355
 GameObject:
   m_ObjectHideFlags: 0

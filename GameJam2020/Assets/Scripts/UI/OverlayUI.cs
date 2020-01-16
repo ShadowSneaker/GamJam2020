@@ -6,13 +6,6 @@ using UnityEngine.SceneManagement;
 
 public class OverlayUI : MonoBehaviour
 {
-    // an image that represents the settings menu
-    [Tooltip("the image that represents the settings menu")]
-    [SerializeField]
-    private Image SettingsOverlay = null;
-
-
-    // an image that represents the current head selected
     [Tooltip("image that represents the head selection")]
     [SerializeField]
     private Image Head = null;
@@ -25,14 +18,17 @@ public class OverlayUI : MonoBehaviour
     [SerializeField]
     private Text TimerText = null;
 
-
-    [Tooltip("The text for the mute sounds button")]
-    [SerializeField]
-    private Text MuteText = null;
-
     [Tooltip("The Sound that you want the button to make")]
     [SerializeField]
     private SoundScript UISounds;
+
+    [Tooltip("A reference to the settings UI prefab.")]
+    [SerializeField]
+    private Canvas SettingsUI = null;
+
+
+    private Canvas SettingsInst = null;
+
 
     // a refernce to the attached transition script
     private TransitionScript Transition;
@@ -46,7 +42,14 @@ public class OverlayUI : MonoBehaviour
     {
         UISounds.Play();
         PauseScript.TogglePause();
-        SettingsOverlay.gameObject.SetActive(!SettingsOverlay.gameObject.activeSelf);
+        if (PauseScript.GamePaused)
+        {
+            SettingsInst = Instantiate(SettingsUI);
+        }
+        else
+        {
+            Destroy(SettingsInst.gameObject);
+        }
     }
 
 
@@ -85,15 +88,6 @@ public class OverlayUI : MonoBehaviour
         UISounds.Play();
         AudioListener.pause = !AudioListener.pause;
         AudioListener.volume = (AudioListener.pause) ? 0.0f : 1.0f;
-
-        if(AudioListener.pause)
-        {
-            MuteText.text = "UnMute Sounds";
-        }
-        else
-        {
-            MuteText.text = "Mute Sounds";
-        }
     }
 
 }

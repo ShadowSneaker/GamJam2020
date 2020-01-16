@@ -10,7 +10,7 @@ public class Saving
 {
 
     [System.Serializable]
-    public struct LevelInfo
+    public class LevelInfo
     {
         public bool Completed;
         public int Index;

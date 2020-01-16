@@ -196,6 +196,8 @@ public class PlayerController : MonoBehaviour
 
     public void FixedUpdate()
     {
+        
+
         if (!CanYeet && HeadRigid.IsSleeping())
         {
             CanYeet = true;
@@ -210,6 +212,7 @@ public class PlayerController : MonoBehaviour
             UIInstance.SetCounter((CurrentHead.Head.ConsumeHead) ? Heads[HeadIndex].Count : 1);
         }
 
+        CanYeet = HeadRigid.IsSleeping();
         Line.enabled = CanYeet;
 
         if (Line && DrawPowerBar)

@@ -38,8 +38,16 @@ public class GoalScript : MonoBehaviour
         {
             Player.LockPlayer();
 
+            float BestTime = Player.GetTimer();
+            Saving Save = TSave.LoadGame();
+            if (Save != null && Save.Levels.Count >= LevelCount)
+            {
+                float SavedTime = Save.Levels[LevelCount - 1].Time;
+                BestTime = (BestTime < SavedTime) ? BestTime : SavedTime;
+            }
+
             UI = Instantiate(UI);
-            UI.UpdateInfo(Player.GetTimer(), Player.GetScore());
+            UI.UpdateInfo(Player.GetTimer(), BestTime, Player.GetScore());
             UI.SetStars(GetStarCount(Player.GetScore()));
             SaveGame();
         }
@@ -65,7 +73,7 @@ public class GoalScript : MonoBehaviour
 
         if (LevelCount > Save.Levels.Count)
         {
-            // Update our game state
+            // Add new level state.
             Saving.LevelInfo Info = new Saving.LevelInfo();
             Info.Score = Player.GetScore();
             Info.StarCount = GetStarCount(Info.Score);
@@ -74,6 +82,15 @@ public class GoalScript : MonoBehaviour
             Info.Index = LevelCount;
 
             Save.Levels.Add(Info);
+        }
+        else
+        {
+            // Update level state.
+            Saving.LevelInfo Info = Save.Levels[LevelCount - 1];
+            Info.Score = (Player.GetScore() > Info.Score) ? Player.GetScore() : Info.Score;
+            int StarCount = GetStarCount(Info.Score);
+            Info.StarCount = (StarCount > Info.StarCount) ? StarCount : Info.StarCount;
+            Info.Time = (Player.GetTimer() < Info.Time) ? Player.GetTimer() : Info.Time;
         }
 
         // Save to file.

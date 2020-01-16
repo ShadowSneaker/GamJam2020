@@ -152,6 +152,10 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
+  DeathSound:
+    RandomClip: 1
+    ClipIndex: 0
+    Clips: []
 --- !u!82 &9037606742723205886
 AudioSource:
   m_ObjectHideFlags: 0
@@ -263,15 +267,23 @@ MonoBehaviour:
   UseTrigger: 0
   Power: 10
   Radius: 10
-  ExplodeSound:
-    RandomClip: 1
-    ClipIndex: 0
-    Clips: []
   Damage: 0
   Destroys: 0
   ExplodeOnce: 1
+  IsProximity: 0
+  ExplosionDelay: 0.5
   ExplosionPrefab: {fileID: 1890048962481059473, guid: 94ea4bbaa13c8b445b53f8a9c0f4077d,
     type: 3}
+  ExplodeSound:
+    RandomClip: 1
+    ClipIndex: 0
+    Clips:
+    - {fileID: 8300000, guid: 7f275cb2313625d48af30eeca21d762f, type: 3}
+  ProximitySound:
+    RandomClip: 1
+    ClipIndex: 0
+    Clips:
+    - {fileID: 8300000, guid: 6fa67bd2ebe39104f894827ebac0250b, type: 3}
 --- !u!114 &2299081177672611278
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -288,14 +300,17 @@ MonoBehaviour:
   YeetCount: 3
   KeepDrag: 0
   YeetSounds:
-    RandomClip: 0
+    RandomClip: 1
     ClipIndex: 0
     Clips:
-    - {fileID: 8300000, guid: 7f275cb2313625d48af30eeca21d762f, type: 3}
+    - {fileID: 8300000, guid: 234eaf5f67c0d2c4bbbdfcd5e6f80ce9, type: 3}
   HitSounds:
-    RandomClip: 0
+    RandomClip: 1
     ClipIndex: 0
-    Clips: []
+    Clips:
+    - {fileID: 8300000, guid: 68c782d2c69bf694a911a90e40e649a3, type: 3}
+    - {fileID: 8300000, guid: 20cd5fb4a8136e54cbad5074e56d7877, type: 3}
+    - {fileID: 8300000, guid: 5c0f523ab766df94abb56ce2bc6286fb, type: 3}
   RestSounds:
     RandomClip: 0
     ClipIndex: 0
@@ -303,7 +318,7 @@ MonoBehaviour:
   RestDelay:
     Min: 1
     Max: 10
-  Image: {fileID: 21300000, guid: 37dde35d2bb16c846856d0ca40f06455, type: 3}
+  Image: {fileID: 21300000, guid: 71ce89fb000dd3f43b4c02d7f22d3f95, type: 3}
   SpeedThreshold: 0.1
   DivisibleFactor: 20
   MaxScale: 5

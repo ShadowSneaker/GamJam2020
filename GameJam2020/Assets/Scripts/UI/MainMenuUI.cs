@@ -6,11 +6,6 @@ using UnityEngine.SceneManagement;
 
 public class MainMenuUI : MonoBehaviour
 {
-    // an image which is the settings menu
-    [Tooltip("The Image for the settings menu")]
-    [SerializeField]
-    private Image SettingsMenu = null;
-
     [Tooltip("The Sprite that you want for when the game is muted")]
     [SerializeField]
     private Sprite Muted = null;
@@ -27,6 +22,15 @@ public class MainMenuUI : MonoBehaviour
     [SerializeField]
     private SoundScript UISounds = null;
 
+
+
+    public void Awake()
+    {
+        SoundButton.sprite = (AudioListener.pause) ? Muted : UnMuted;
+        UISounds.SetAudio(GetComponent<AudioSource>());
+    }
+
+
     //a function to exit the game when pressed
     public void ExitGame()
     {
@@ -41,7 +45,6 @@ public class MainMenuUI : MonoBehaviour
     public void OpenSettings()
     {
         UISounds.Play();
-        SettingsMenu.gameObject.SetActive(!SettingsMenu.gameObject.activeSelf);
     }
 
     public void SoundAudio()

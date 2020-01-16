@@ -15,7 +15,7 @@ public class LevelObject : MonoBehaviour
 
     [Tooltip("The instance of the ui you want to load")]
     [SerializeField]
-    private LevelUI LevelUIInstance = null;
+    private LevelUI LevelUI = null;
 
     [Tooltip("The level sequence value.")]
     public int LevelIndex = 0;
@@ -43,7 +43,7 @@ public class LevelObject : MonoBehaviour
 
     
     // the thing to store the ui in
-    private LevelUI UI;
+    private LevelUI UIInstance;
 
     private MeshRenderer Mat = null;
 
@@ -60,8 +60,14 @@ public class LevelObject : MonoBehaviour
         {
             if (other.CompareTag("Player"))
             {
-                UI = Instantiate(LevelUIInstance);
-                UI.GetComponent<LevelUI>().TheLevelName = LevelName;
+                UIInstance = Instantiate(LevelUI);
+                //UIInstance.GetComponent<LevelUI>().TheLevelName = LevelName;
+                UIInstance.SetLevelName(LevelName);
+
+                MapPlayer Player = other.GetComponent<MapPlayer>();
+                Saving.LevelInfo Info = (Player.GetSave().Levels.Count >= LevelIndex) ? Player.GetSave().Levels[LevelIndex - 1] : null;
+                
+                UIInstance.UpdateUI(Info);
             }
         }
     }
@@ -69,11 +75,11 @@ public class LevelObject : MonoBehaviour
 
     private void OnTriggerExit(Collider other)
     {
-        if (UI)
+        if (UIInstance)
         {
             if (other.CompareTag("Player"))
             {
-                Destroy(UI.gameObject);
+                Destroy(UIInstance.gameObject);
             }
         }
     }

@@ -16,11 +16,18 @@ public class Iceicle : MonoBehaviour
     [SerializeField]
     private SoundScript IceHurt = null;
 
+    // Determines if this object should be falling.
+    private bool Falling = false;
+
+
     // Start is called before the first frame update
     void Start()
     {
+        AudioSource Audio = GetComponent<AudioSource>();
+        IceFall.SetAudio(Audio);
+        IceHurt.SetAudio(Audio);
         RB = GetComponent<Rigidbody2D>();
-        
+        RB.bodyType = RigidbodyType2D.Static;
 
     }
 
@@ -32,20 +39,32 @@ public class Iceicle : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.CompareTag("Player"))
+        if (Falling)
         {
-            collision.GetComponent<HealthScript>().ApplyDamage(35.0f);
+            if (collision.CompareTag("Player"))
+            {
+                collision.GetComponent<HealthScript>().ApplyDamage(35.0f);
 
+            }
+
+            IceHurt.PlayNew(transform.position);
+            Destroy(gameObject);
         }
-
-        Destroy(this);
-        IceHurt.Play();
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        Destroy(this);
-        IceHurt.Play();
+        if (Falling)
+        {
+            if (collision.gameObject.CompareTag("Player"))
+            {
+                collision.gameObject.GetComponent<HealthScript>().ApplyDamage(35.0f);
+
+            }
+
+            IceHurt.PlayNew(transform.position);
+            Destroy(gameObject);
+        }
     }
 
 
@@ -57,9 +76,9 @@ public class Iceicle : MonoBehaviour
 
         if(hit && hit.collider.CompareTag("Player"))
         {
-           
-            RB.WakeUp();
-            IceFall.Play();
+            Falling = true;
+            RB.bodyType = RigidbodyType2D.Dynamic;
+            IceFall.PlayNew(transform.position);
         }
 
     }

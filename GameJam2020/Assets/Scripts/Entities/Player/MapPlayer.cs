@@ -16,24 +16,25 @@ public class MapPlayer : MonoBehaviour
     // A reference to the nav mesh agent.
     private NavMeshAgent Agent = null;
 
-    [Tooltip("The INstance of the MapUI")]
+    [Tooltip("The prefab of the settings UI.")]
     [SerializeField]
-    private MainMenuUI UIInstance = null;
+    private Canvas SettingsUI = null;
 
-    //the main menu UI
-    private MainMenuUI UI;
+    private Canvas SettingsInst = null;
+
+    private Saving Save = null;
+
 
     // Start is called before the first frame update
     void Start()
     {
         Agent = gameObject.GetComponent<NavMeshAgent>();
         Levels = FindObjectsOfType<LevelObject>();
-
-        UI = Instantiate(UIInstance);
+        
 
         if (Levels.Length > 0)
         {
-            Saving Save = TSave.LoadGame();
+            Save = TSave.LoadGame();
             if (Save == null)
             {
                 Save = new Saving();
@@ -47,7 +48,6 @@ public class MapPlayer : MonoBehaviour
                     if (Levels[i].LevelIndex == j + 1)
                     {
                         Levels[i].SetLockedState(Levels[i].LevelIndex <= Save.Levels.Count, Save.Levels[j].Completed);
-                        break;
                     }
                 }
             }
@@ -58,7 +58,6 @@ public class MapPlayer : MonoBehaviour
                 if (Levels[i].LevelIndex == Save.Levels.Count + 1)
                 {
                     Levels[i].SetLockedState(true, false);
-                    break;
                 }
             }
         }
@@ -73,29 +72,48 @@ public class MapPlayer : MonoBehaviour
 
     private void MapMovement()
     {
-
-        if(Input.GetMouseButtonDown(0))
+        if (!PauseScript.GamePaused)
         {
-            Ray Hit = Camera.main.ScreenPointToRay(Input.mousePosition);
-            Plane HitPlane = new Plane(-Vector3.up, Vector3.zero);
-            float Distance;
-            
-            HitPlane.Raycast(Hit, out Distance);
-            Vector3 MousePos = Hit.GetPoint(Distance);
-
-            
-            Target.transform.position = new Vector3(MousePos.x, 1.0f, MousePos.z);
-
-            if (transform.position != MousePos)
+            if (Input.GetButtonDown("Yeet"))
             {
-                Agent.SetDestination(MousePos);
+                Ray Hit = Camera.main.ScreenPointToRay(Input.mousePosition);
+                Plane HitPlane = new Plane(-Vector3.up, Vector3.zero);
+                float Distance;
+
+                HitPlane.Raycast(Hit, out Distance);
+                Vector3 MousePos = Hit.GetPoint(Distance);
+
+
+                Target.transform.position = new Vector3(MousePos.x, 1.0f, MousePos.z);
+
+                if (transform.position != MousePos)
+                {
+                    Agent.SetDestination(MousePos);
+                }
+            }
+        }
+
+
+        if (Input.GetButtonDown("Pause"))
+        {
+            PauseScript.TogglePause();
+            if (PauseScript.GamePaused)
+            {
+                SettingsInst = Instantiate(SettingsUI);
+            }
+            else
+            {
+                Destroy(SettingsInst.gameObject);
             }
         }
         
     }
 
 
-
+    public Saving GetSave()
+    {
+        return Save;
+    }
 
 
 }

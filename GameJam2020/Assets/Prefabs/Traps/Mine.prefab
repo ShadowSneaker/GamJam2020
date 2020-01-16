@@ -72,6 +72,7 @@ MonoBehaviour:
   ExplosionDelay: 0.5
   ExplosionPrefab: {fileID: 1890048962481059473, guid: 94ea4bbaa13c8b445b53f8a9c0f4077d,
     type: 3}
+  SpawnSound: 1
   ExplodeSound:
     RandomClip: 0
     ClipIndex: 0
@@ -102,7 +103,7 @@ AudioSource:
   SpatializePostEffects: 0
   Priority: 128
   DopplerLevel: 1
-  MinDistance: 1
+  MinDistance: 20
   MaxDistance: 500
   Pan2D: 0
   rolloffMode: 0

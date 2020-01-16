@@ -22,11 +22,44 @@ public class LevelUI : MonoBehaviour
     private SoundScript UISound = null;
 
 
-    public void Start()
+    [Header("Level Info")]
+
+    [Tooltip("A reference to the best time completed.")]
+    [SerializeField]
+    private Text BestTime = null;
+
+    [Tooltip("A reference to the best score.")]
+    [SerializeField]
+    private Text BestScore = null;
+
+    [Tooltip("A reference to the three stars for the level.")]
+    [SerializeField]
+    private Image[] StarImages = new Image[3];
+
+
+    public void Awake()
     {
-        TitleText.text = TheLevelName;
         Transition = GetComponent<TransitionScript>();
-        Transition.SceneName = TheLevelName;
+        UISound.SetAudio(GetComponent<AudioSource>());
+
+        for (int i = 0; i < StarImages.Length; ++i)
+        {
+            StarImages[i].enabled = false;
+        }
+    }
+
+
+    public void UpdateUI(Saving.LevelInfo Info)
+    {
+        if (Info != null)
+        {
+            for (int i = 0; i < StarImages.Length; ++i)
+            {
+                StarImages[i].enabled = (Info.StarCount > i);
+            }
+            BestScore.text = Info.Score.ToString();
+            BestTime.text = Info.Time.ToString("F4");
+        }
     }
 
 
@@ -41,6 +74,13 @@ public class LevelUI : MonoBehaviour
     {
         
        
+    }
+
+
+    public void SetLevelName(string LevelName)
+    {
+        TitleText.text = LevelName;
+        Transition.SceneName = LevelName;
     }
 
 }

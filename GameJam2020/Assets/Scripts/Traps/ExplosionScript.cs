@@ -42,6 +42,9 @@ public class ExplosionScript: MonoBehaviour
 
     [Header("Sounds")]
 
+    [Tooltip("Should the sound be spawned or use the attached Audio Source.")]
+    [SerializeField]
+    private bool SpawnSound = false;
 
     [Tooltip("The sound that is played when the head explodes.")]
     [SerializeField]
@@ -103,7 +106,15 @@ public class ExplosionScript: MonoBehaviour
 
             Particle = Instantiate(ExplosionPrefab, transform.position, transform.rotation);
             Destroy(Particle.gameObject, Particle.main.duration + Particle.main.startLifetime.constant);
-            ExplodeSound.Play();
+
+            if (SpawnSound)
+            {
+                ExplodeSound.PlayNew(transform.position);
+            }
+            else
+            {
+                ExplodeSound.Play();
+            }
 
 
             if (Destroys)
@@ -113,32 +124,38 @@ public class ExplosionScript: MonoBehaviour
         }
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    private void OnCollisionEnter2D(Collision2D Other)
     {
         if (!UseTrigger)
         {
-            if (IsProximity)
+            if (InLOS(Other.collider))
             {
-                StartCoroutine(ExplodeDelay());
-            }
-            else
-            {
-                AddExplosionForce();
+                if (IsProximity)
+                {
+                    StartCoroutine(ExplodeDelay());
+                }
+                else
+                {
+                    AddExplosionForce();
+                }
             }
         }
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    private void OnTriggerEnter2D(Collider2D Other)
     {
         if (UseTrigger)
         {
-            if (IsProximity)
+            if (InLOS(Other))
             {
-                StartCoroutine(ExplodeDelay());
-            }
-            else
-            {
-                AddExplosionForce();
+                if (IsProximity)
+                {
+                    StartCoroutine(ExplodeDelay());
+                }
+                else
+                {
+                    AddExplosionForce();
+                }
             }
         }
     }
@@ -154,5 +171,12 @@ public class ExplosionScript: MonoBehaviour
         ProximitySound.Play();
         yield return new WaitForSeconds(ExplosionDelay);
         AddExplosionForce();
+    }
+
+
+    private bool InLOS(Collider2D Other)
+    {
+        RaycastHit2D Hit = Physics2D.Linecast(transform.position, Other.transform.position);
+        return (Hit && Hit.collider == Other);
     }
 }

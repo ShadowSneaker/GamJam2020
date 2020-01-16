@@ -21,17 +21,23 @@ public class Activator : MonoBehaviour
     [SerializeField]
     private UnityEvent OnCollision = null;
 
+    // Represents if this object has been activated.
+    private bool Activated = false;
+
 
 
     private void OnCollisionEnter2D(Collision2D Other)
     {
-        if (HasTag(Other.gameObject))
+        if (!Activated)
         {
-            if (ActiveMaterial) Mesh.material = ActiveMaterial;
-
-            if (OnCollision != null)
+            if (HasTag(Other.gameObject))
             {
-                OnCollision.Invoke();
+                if (ActiveMaterial) Mesh.material = ActiveMaterial;
+
+                if (OnCollision != null)
+                {
+                    OnCollision.Invoke();
+                }
             }
         }
     }
@@ -39,13 +45,16 @@ public class Activator : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D Other)
     {
-        if (HasTag(Other.gameObject))
+        if (!Activated)
         {
-            if (ActiveMaterial) Mesh.material = ActiveMaterial;
-
-            if (OnCollision != null)
+            if (HasTag(Other.gameObject))
             {
-                OnCollision.Invoke();
+                if (ActiveMaterial) Mesh.material = ActiveMaterial;
+
+                if (OnCollision != null)
+                {
+                    OnCollision.Invoke();
+                }
             }
         }
     }

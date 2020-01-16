@@ -13266,7 +13266,7 @@ PrefabInstance:
     - target: {fileID: 7007933883426296410, guid: 8ddb27d266b88c945870d11808996741,
         type: 3}
       propertyPath: LevelName
-      value: Secret Level
+      value: Extra
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8ddb27d266b88c945870d11808996741, type: 3}
@@ -19672,7 +19672,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Target: {fileID: 998910019}
-  UIInstance: {fileID: 8150068920150754459, guid: 246aaeaab94f3c8448e331a954736d8f,
+  SettingsUI: {fileID: 6800353072651810366, guid: 10fef8cd04f8c0b409fd90801506bec0,
     type: 3}
 --- !u!135 &5644384100549663743
 SphereCollider:

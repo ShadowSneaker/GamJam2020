@@ -140,7 +140,8 @@ public class HeadScript : MonoBehaviour
         {
             if (Rigid.IsAwake())
             {
-                HitSounds.Play();
+                if (!Audio.isPlaying)
+                    HitSounds.Play();
             }
         }
     }

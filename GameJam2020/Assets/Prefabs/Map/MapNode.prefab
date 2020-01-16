@@ -123,8 +123,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ForceOpen: 1
   LevelName: Level 1
-  LevelUIInstance: {fileID: 4652529330206876298, guid: d2b4753b33e93594cbd2ba129a9ee93a,
-    type: 3}
+  LevelUI: {fileID: 4652529330206876298, guid: d2b4753b33e93594cbd2ba129a9ee93a, type: 3}
   LevelIndex: 0
   Incomplete: {fileID: 2100000, guid: 33fa6d4b097d4904da5839128ab11287, type: 2}
   Completed: {fileID: 2100000, guid: 3e308129df32fd04fa0abc116e28fcfe, type: 2}

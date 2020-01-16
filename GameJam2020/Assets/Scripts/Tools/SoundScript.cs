@@ -78,9 +78,32 @@ public class SoundScript
     }
 
 
+    public void PlayNew(Vector3 Location)
+    {
+        if (Clips.Count > 0)
+        {
+            if (Audio)
+            {
+                AudioClip PlayClip = Clips[ClipIndex];
+                if (RandomClip)
+                {
+                    PlayClip = GetRandomClip();
+                }
+                AudioSource.PlayClipAtPoint(PlayClip, Location);
+            }
+        }
+    }
+
+
     public void PlayNewRandom(Vector3 Location)
     {
         AudioSource.PlayClipAtPoint(GetRandomClip(), Location);
+    }
+
+
+    public void PlayNewIndex(Vector3 Location)
+    {
+        AudioSource.PlayClipAtPoint(Clips[ClipIndex], Location);
     }
 
 

@@ -4807,7 +4807,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: abf4b5248e6a80d41bba35930faddf43, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.05
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -4816,7 +4816,7 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 500
+  MaxDistance: 30
   Pan2D: 0
   rolloffMode: 0
   BypassEffects: 0
@@ -4903,6 +4903,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Turbine
       objectReference: {fileID: 0}
+    - target: {fileID: -6057140222963153312, guid: 822451ade140d9242b0f33debdd7d297,
+        type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: e59d5b7120c185749aa071964aa2b4c2, type: 2}
     - target: {fileID: -4216859302048453862, guid: 822451ade140d9242b0f33debdd7d297,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -4958,11 +4963,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: -6057140222963153312, guid: 822451ade140d9242b0f33debdd7d297,
-        type: 3}
-      propertyPath: m_Controller
-      value: 
-      objectReference: {fileID: 9100000, guid: e59d5b7120c185749aa071964aa2b4c2, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 822451ade140d9242b0f33debdd7d297, type: 3}
 --- !u!4 &2921949221208642157 stripped
