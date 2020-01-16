@@ -9,7 +9,7 @@ public class ToggleScript : MonoBehaviour
 
     private void Start()
     {
-        ObjectToToggle.SetActive(TurnedOn);
+        if (ObjectToToggle) ObjectToToggle.SetActive(TurnedOn);
     }
 
     public void Toggle()
@@ -23,18 +23,18 @@ public class ToggleScript : MonoBehaviour
             TurnedOn = true;
         }
 
-        ObjectToToggle.SetActive(TurnedOn);
+        if (ObjectToToggle) ObjectToToggle.SetActive(TurnedOn);
     }
 
     public void ForceOn()
     {
-        ObjectToToggle.SetActive(true);
+        if (ObjectToToggle) ObjectToToggle.SetActive(true);
         TurnedOn = true;
     }
 
     public void ForceOff()
     {
-        ObjectToToggle.SetActive(false);
+        if (ObjectToToggle) ObjectToToggle.SetActive(false);
         TurnedOn = false;
     }
 }
