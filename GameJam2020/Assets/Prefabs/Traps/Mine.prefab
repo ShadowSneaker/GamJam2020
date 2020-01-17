@@ -72,13 +72,16 @@ MonoBehaviour:
   ExplosionDelay: 1
   ExplosionPrefab: {fileID: 1890048962481059473, guid: 94ea4bbaa13c8b445b53f8a9c0f4077d,
     type: 3}
-  SpawnSound: 1
+  SpawnSound: 0
   ExplodeSound:
+    AudioPrefab: {fileID: 1577533975591530008, guid: 3ded1adae47bdde47be9545953e778b1,
+      type: 3}
     RandomClip: 0
     ClipIndex: 0
     Clips:
     - {fileID: 8300000, guid: 7f275cb2313625d48af30eeca21d762f, type: 3}
   ProximitySound:
+    AudioPrefab: {fileID: 0}
     RandomClip: 0
     ClipIndex: 0
     Clips:
@@ -92,9 +95,10 @@ AudioSource:
   m_GameObject: {fileID: 6681681778106990882}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 9187966831560729262, guid: 9248394d3e6d86a4f8e860c08511d9a3,
+    type: 2}
   m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -104,7 +108,7 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1
   MinDistance: 20
-  MaxDistance: 500
+  MaxDistance: 50
   Pan2D: 0
   rolloffMode: 0
   BypassEffects: 0
@@ -186,6 +190,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 6681681778106990901}
     m_Modifications:
+    - target: {fileID: 100000, guid: 8329acd25ffd119489ecb4acc0b7fda4, type: 3}
+      propertyPath: m_Name
+      value: at_mine_LOD0
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 8329acd25ffd119489ecb4acc0b7fda4, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -242,20 +250,12 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 5
       objectReference: {fileID: 0}
-    - target: {fileID: 100000, guid: 8329acd25ffd119489ecb4acc0b7fda4, type: 3}
-      propertyPath: m_Name
-      value: at_mine_LOD0
-      objectReference: {fileID: 0}
     - target: {fileID: 2300000, guid: 8329acd25ffd119489ecb4acc0b7fda4, type: 3}
       propertyPath: m_Materials.Array.size
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2300000, guid: 8329acd25ffd119489ecb4acc0b7fda4, type: 3}
       propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 4a941a1f0bf428d478248daebc9578fb, type: 2}
-    - target: {fileID: 2300000, guid: 8329acd25ffd119489ecb4acc0b7fda4, type: 3}
-      propertyPath: m_Materials.Array.data[1]
       value: 
       objectReference: {fileID: 2100000, guid: 4a941a1f0bf428d478248daebc9578fb, type: 2}
     m_RemovedComponents: []

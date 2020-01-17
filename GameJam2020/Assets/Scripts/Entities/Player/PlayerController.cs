@@ -166,8 +166,10 @@ public class PlayerController : MonoBehaviour
                     if (CanSwitch)
                     {
                         //UIInstance.SwitchHead();
-                        SetHead(Heads[CycleHead()].Head);
-
+                        if (CanYeet)
+                        {
+                            SetHead(Heads[CycleHead()].Head);
+                        }
                     }
                 }
 

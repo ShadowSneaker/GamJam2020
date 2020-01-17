@@ -24,7 +24,9 @@ public class TransitionScript : MonoBehaviour
 
     [Tooltip("the Sound used for when a button is pressed")]
     [SerializeField]
-    private SoundScript UISounds;
+    private SoundScript UISounds = null;
+
+
 
     public void LoadScene()
     {

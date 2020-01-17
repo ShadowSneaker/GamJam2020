@@ -118,10 +118,10 @@ MonoBehaviour:
   TransitionUI: {fileID: 0}
   SceneName: 
   UISounds:
+    AudioPrefab: {fileID: 0}
     RandomClip: 0
     ClipIndex: 0
-    Clips:
-    - {fileID: 8300000, guid: 7caa2b15a6953944ab69a16cc87c206c, type: 3}
+    Clips: []
 --- !u!82 &7069634755409587559
 AudioSource:
   m_ObjectHideFlags: 0
@@ -131,8 +131,9 @@ AudioSource:
   m_GameObject: {fileID: 6453048312499934043}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: -388701148833439076, guid: 9cfe280799067ce408cbb9c33609d4ba,
+    type: 2}
+  m_audioClip: {fileID: 8300000, guid: 7caa2b15a6953944ab69a16cc87c206c, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1

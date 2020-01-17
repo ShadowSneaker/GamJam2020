@@ -19,6 +19,7 @@ public class CoinScript : MonoBehaviour
     private void Start()
     {
         Player = FindObjectOfType<PlayerController>();
+        PickupSound.SetTransform(transform);
     }
 
 
@@ -27,7 +28,7 @@ public class CoinScript : MonoBehaviour
     {
         if (Other.CompareTag("Player"))
         {
-            PickupSound.PlayNewRandom(transform.position);
+            PickupSound.Play();
             Player.AddPoints(Points);
             Destroy(gameObject);
         }

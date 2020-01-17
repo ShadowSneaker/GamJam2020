@@ -94,12 +94,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 780a818bd5f3eb846ae032c82e60f48a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Damage: 20
   IceFall:
+    AudioPrefab: {fileID: 0}
     RandomClip: 1
     ClipIndex: 0
     Clips:
     - {fileID: 8300000, guid: 530bd2b7783145f428ff9db1b76f7483, type: 3}
   IceHurt:
+    AudioPrefab: {fileID: 0}
     RandomClip: 1
     ClipIndex: 0
     Clips:
@@ -113,7 +116,8 @@ AudioSource:
   m_GameObject: {fileID: 530552399476105534}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 9187966831560729262, guid: 9248394d3e6d86a4f8e860c08511d9a3,
+    type: 2}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
   m_Volume: 1

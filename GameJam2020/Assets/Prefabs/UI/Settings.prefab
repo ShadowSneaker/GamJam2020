@@ -365,6 +365,7 @@ MonoBehaviour:
   MutedSprite: {fileID: 21300000, guid: e2b4f1d08cc38974b9fa49f2a270baf6, type: 3}
   SoundSprite: {fileID: 21300000, guid: 9cd08d81e6be9f246ae9bc291fdfce1c, type: 3}
   ClickSounds:
+    AudioPrefab: {fileID: 0}
     RandomClip: 1
     ClipIndex: 0
     Clips:
@@ -387,6 +388,7 @@ MonoBehaviour:
     type: 3}
   SceneName: 
   UISounds:
+    AudioPrefab: {fileID: 0}
     RandomClip: 1
     ClipIndex: 0
     Clips:
@@ -400,7 +402,8 @@ AudioSource:
   m_GameObject: {fileID: 2667141430516645557}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 4989778137595802298, guid: 9cfe280799067ce408cbb9c33609d4ba,
+    type: 2}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
   m_Volume: 1

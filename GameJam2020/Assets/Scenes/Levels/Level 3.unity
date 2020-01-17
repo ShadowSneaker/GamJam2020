@@ -128,11 +128,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 267381138}
     m_Modifications:
-    - target: {fileID: 6903941737923501819, guid: 5b2ce418e585ea244995c1c166f90419,
-        type: 3}
-      propertyPath: m_Name
-      value: WinterGroundRockSnow_v2 (14)
-      objectReference: {fileID: 0}
     - target: {fileID: 7782500242414987673, guid: 5b2ce418e585ea244995c1c166f90419,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -202,6 +197,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6903941737923501819, guid: 5b2ce418e585ea244995c1c166f90419,
+        type: 3}
+      propertyPath: m_Name
+      value: WinterGroundRockSnow_v2 (14)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5b2ce418e585ea244995c1c166f90419, type: 3}
@@ -516,10 +516,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1053764671}
     m_Modifications:
-    - target: {fileID: 1321102975, guid: 6bfdbfdfc7f8f5a4cb98436db660e656, type: 3}
-      propertyPath: m_Name
-      value: WinterBarrel (2)
-      objectReference: {fileID: 0}
     - target: {fileID: 1321102978, guid: 6bfdbfdfc7f8f5a4cb98436db660e656, type: 3}
       propertyPath: m_LocalPosition.x
       value: -48.569
@@ -575,6 +571,10 @@ PrefabInstance:
     - target: {fileID: 1321102978, guid: 6bfdbfdfc7f8f5a4cb98436db660e656, type: 3}
       propertyPath: m_LocalScale.z
       value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1321102975, guid: 6bfdbfdfc7f8f5a4cb98436db660e656, type: 3}
+      propertyPath: m_Name
+      value: WinterBarrel (2)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6bfdbfdfc7f8f5a4cb98436db660e656, type: 3}
@@ -1651,10 +1651,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 366758409}
     m_Modifications:
-    - target: {fileID: 1321102975, guid: 6bfdbfdfc7f8f5a4cb98436db660e656, type: 3}
-      propertyPath: m_Name
-      value: WinterBarrel (5)
-      objectReference: {fileID: 0}
     - target: {fileID: 1321102978, guid: 6bfdbfdfc7f8f5a4cb98436db660e656, type: 3}
       propertyPath: m_LocalPosition.x
       value: -48.493
@@ -1710,6 +1706,10 @@ PrefabInstance:
     - target: {fileID: 1321102978, guid: 6bfdbfdfc7f8f5a4cb98436db660e656, type: 3}
       propertyPath: m_LocalScale.z
       value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1321102975, guid: 6bfdbfdfc7f8f5a4cb98436db660e656, type: 3}
+      propertyPath: m_Name
+      value: WinterBarrel (5)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6bfdbfdfc7f8f5a4cb98436db660e656, type: 3}
@@ -1933,11 +1933,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1374057754}
     m_Modifications:
-    - target: {fileID: 744152071347772504, guid: e4493422f2ee2274c886b783b4364538,
-        type: 3}
-      propertyPath: m_Name
-      value: SnowPile_v2 (38)
-      objectReference: {fileID: 0}
     - target: {fileID: 4883029666531477122, guid: e4493422f2ee2274c886b783b4364538,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2007,6 +2002,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 0.29999995
+      objectReference: {fileID: 0}
+    - target: {fileID: 744152071347772504, guid: e4493422f2ee2274c886b783b4364538,
+        type: 3}
+      propertyPath: m_Name
+      value: SnowPile_v2 (38)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e4493422f2ee2274c886b783b4364538, type: 3}
@@ -2228,10 +2228,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1896139404}
     m_Modifications:
-    - target: {fileID: 1525034263, guid: c091e47481e0f78438d5ef586d62df89, type: 3}
-      propertyPath: m_Name
-      value: WinterTreeApplesShortG (8)
-      objectReference: {fileID: 0}
     - target: {fileID: 1525034266, guid: c091e47481e0f78438d5ef586d62df89, type: 3}
       propertyPath: m_LocalPosition.x
       value: 18.26
@@ -2275,6 +2271,10 @@ PrefabInstance:
     - target: {fileID: 1525034266, guid: c091e47481e0f78438d5ef586d62df89, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1525034263, guid: c091e47481e0f78438d5ef586d62df89, type: 3}
+      propertyPath: m_Name
+      value: WinterTreeApplesShortG (8)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c091e47481e0f78438d5ef586d62df89, type: 3}
@@ -2366,11 +2366,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 267381138}
     m_Modifications:
-    - target: {fileID: 1452641802217029215, guid: 410fa1947d1cc1246a20cef9517cf7d0,
-        type: 3}
-      propertyPath: m_Name
-      value: WinterGroundRock (15)
-      objectReference: {fileID: 0}
     - target: {fileID: 6503769927826279851, guid: 410fa1947d1cc1246a20cef9517cf7d0,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2440,6 +2435,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1452641802217029215, guid: 410fa1947d1cc1246a20cef9517cf7d0,
+        type: 3}
+      propertyPath: m_Name
+      value: WinterGroundRock (15)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 410fa1947d1cc1246a20cef9517cf7d0, type: 3}
@@ -2614,11 +2614,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 267381138}
     m_Modifications:
-    - target: {fileID: 1452641802217029215, guid: 410fa1947d1cc1246a20cef9517cf7d0,
-        type: 3}
-      propertyPath: m_Name
-      value: WinterGroundRock (38)
-      objectReference: {fileID: 0}
     - target: {fileID: 6503769927826279851, guid: 410fa1947d1cc1246a20cef9517cf7d0,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2688,6 +2683,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1452641802217029215, guid: 410fa1947d1cc1246a20cef9517cf7d0,
+        type: 3}
+      propertyPath: m_Name
+      value: WinterGroundRock (38)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 410fa1947d1cc1246a20cef9517cf7d0, type: 3}
@@ -2994,11 +2994,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 267381138}
     m_Modifications:
-    - target: {fileID: 1452641802217029215, guid: 410fa1947d1cc1246a20cef9517cf7d0,
-        type: 3}
-      propertyPath: m_Name
-      value: WinterGroundRock (30)
-      objectReference: {fileID: 0}
     - target: {fileID: 6503769927826279851, guid: 410fa1947d1cc1246a20cef9517cf7d0,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3068,6 +3063,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1452641802217029215, guid: 410fa1947d1cc1246a20cef9517cf7d0,
+        type: 3}
+      propertyPath: m_Name
+      value: WinterGroundRock (30)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 410fa1947d1cc1246a20cef9517cf7d0, type: 3}
@@ -3157,11 +3157,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 267381138}
     m_Modifications:
-    - target: {fileID: 1452641802217029215, guid: 410fa1947d1cc1246a20cef9517cf7d0,
-        type: 3}
-      propertyPath: m_Name
-      value: WinterGroundRock (18)
-      objectReference: {fileID: 0}
     - target: {fileID: 6503769927826279851, guid: 410fa1947d1cc1246a20cef9517cf7d0,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3232,6 +3227,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 1452641802217029215, guid: 410fa1947d1cc1246a20cef9517cf7d0,
+        type: 3}
+      propertyPath: m_Name
+      value: WinterGroundRock (18)
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 410fa1947d1cc1246a20cef9517cf7d0, type: 3}
 --- !u!1001 &182760834
@@ -3241,11 +3241,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 267381138}
     m_Modifications:
-    - target: {fileID: 1452641802217029215, guid: 410fa1947d1cc1246a20cef9517cf7d0,
-        type: 3}
-      propertyPath: m_Name
-      value: WinterGroundRock (1)
-      objectReference: {fileID: 0}
     - target: {fileID: 6503769927826279851, guid: 410fa1947d1cc1246a20cef9517cf7d0,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3315,6 +3310,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1452641802217029215, guid: 410fa1947d1cc1246a20cef9517cf7d0,
+        type: 3}
+      propertyPath: m_Name
+      value: WinterGroundRock (1)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 410fa1947d1cc1246a20cef9517cf7d0, type: 3}
@@ -3405,10 +3405,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1424317551}
     m_Modifications:
-    - target: {fileID: 1321102975, guid: 6bfdbfdfc7f8f5a4cb98436db660e656, type: 3}
-      propertyPath: m_Name
-      value: WinterBarrel (2)
-      objectReference: {fileID: 0}
     - target: {fileID: 1321102978, guid: 6bfdbfdfc7f8f5a4cb98436db660e656, type: 3}
       propertyPath: m_LocalPosition.x
       value: -48.569
@@ -3464,6 +3460,10 @@ PrefabInstance:
     - target: {fileID: 1321102978, guid: 6bfdbfdfc7f8f5a4cb98436db660e656, type: 3}
       propertyPath: m_LocalScale.z
       value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1321102975, guid: 6bfdbfdfc7f8f5a4cb98436db660e656, type: 3}
+      propertyPath: m_Name
+      value: WinterBarrel (2)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6bfdbfdfc7f8f5a4cb98436db660e656, type: 3}
@@ -3533,11 +3533,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 191823428}
     m_Modifications:
-    - target: {fileID: 6262534524116679420, guid: fc7f0feee8f4f2d49a7c80d28e5a38fa,
-        type: 3}
-      propertyPath: m_Name
-      value: HouseL
-      objectReference: {fileID: 0}
     - target: {fileID: 6262534524116679423, guid: fc7f0feee8f4f2d49a7c80d28e5a38fa,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3607,6 +3602,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6262534524116679420, guid: fc7f0feee8f4f2d49a7c80d28e5a38fa,
+        type: 3}
+      propertyPath: m_Name
+      value: HouseL
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fc7f0feee8f4f2d49a7c80d28e5a38fa, type: 3}
@@ -3760,56 +3760,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 9206215139088218001, guid: d48c1cb2b26440c4c91261c51fba91c2,
-        type: 3}
-      propertyPath: BlowStrength
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 8446076775435106918, guid: d48c1cb2b26440c4c91261c51fba91c2,
-        type: 3}
-      propertyPath: m_Offset.y
-      value: 4.535821
-      objectReference: {fileID: 0}
-    - target: {fileID: 8446076775435106918, guid: d48c1cb2b26440c4c91261c51fba91c2,
-        type: 3}
-      propertyPath: m_Size.y
-      value: 9.071642
-      objectReference: {fileID: 0}
-    - target: {fileID: 8446076775435106919, guid: d48c1cb2b26440c4c91261c51fba91c2,
-        type: 3}
-      propertyPath: BlowStrength
-      value: 15
-      objectReference: {fileID: 0}
-    - target: {fileID: 9206215139088218000, guid: d48c1cb2b26440c4c91261c51fba91c2,
-        type: 3}
-      propertyPath: m_Offset.y
-      value: 2.823577
-      objectReference: {fileID: 0}
-    - target: {fileID: 9206215139088218000, guid: d48c1cb2b26440c4c91261c51fba91c2,
-        type: 3}
-      propertyPath: m_Size.y
-      value: 15.434359
-      objectReference: {fileID: 0}
-    - target: {fileID: 9206215139088218000, guid: d48c1cb2b26440c4c91261c51fba91c2,
-        type: 3}
-      propertyPath: m_Offset.x
-      value: -0.9190419
-      objectReference: {fileID: 0}
-    - target: {fileID: 9206215139088218000, guid: d48c1cb2b26440c4c91261c51fba91c2,
-        type: 3}
-      propertyPath: m_Size.x
-      value: 4.2815156
-      objectReference: {fileID: 0}
-    - target: {fileID: 9206215139098482095, guid: d48c1cb2b26440c4c91261c51fba91c2,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9206215139088218005, guid: d48c1cb2b26440c4c91261c51fba91c2,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 5.73
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d48c1cb2b26440c4c91261c51fba91c2, type: 3}
 --- !u!1 &206867538 stripped
@@ -3934,10 +3884,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1896139404}
     m_Modifications:
-    - target: {fileID: 1525034263, guid: c091e47481e0f78438d5ef586d62df89, type: 3}
-      propertyPath: m_Name
-      value: WinterTreeApplesShortG (9)
-      objectReference: {fileID: 0}
     - target: {fileID: 1525034266, guid: c091e47481e0f78438d5ef586d62df89, type: 3}
       propertyPath: m_LocalPosition.x
       value: 11.49
@@ -3981,6 +3927,10 @@ PrefabInstance:
     - target: {fileID: 1525034266, guid: c091e47481e0f78438d5ef586d62df89, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1525034263, guid: c091e47481e0f78438d5ef586d62df89, type: 3}
+      propertyPath: m_Name
+      value: WinterTreeApplesShortG (9)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c091e47481e0f78438d5ef586d62df89, type: 3}
@@ -4074,11 +4024,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 267381138}
     m_Modifications:
-    - target: {fileID: 1452641802217029215, guid: 410fa1947d1cc1246a20cef9517cf7d0,
-        type: 3}
-      propertyPath: m_Name
-      value: WinterGroundRock (28)
-      objectReference: {fileID: 0}
     - target: {fileID: 6503769927826279851, guid: 410fa1947d1cc1246a20cef9517cf7d0,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -4149,6 +4094,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 1452641802217029215, guid: 410fa1947d1cc1246a20cef9517cf7d0,
+        type: 3}
+      propertyPath: m_Name
+      value: WinterGroundRock (28)
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 410fa1947d1cc1246a20cef9517cf7d0, type: 3}
 --- !u!1001 &244050761
@@ -4158,10 +4108,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1424317551}
     m_Modifications:
-    - target: {fileID: 1321102975, guid: 6bfdbfdfc7f8f5a4cb98436db660e656, type: 3}
-      propertyPath: m_Name
-      value: WinterBarrel (4)
-      objectReference: {fileID: 0}
     - target: {fileID: 1321102978, guid: 6bfdbfdfc7f8f5a4cb98436db660e656, type: 3}
       propertyPath: m_LocalPosition.x
       value: -49.255
@@ -4217,6 +4163,10 @@ PrefabInstance:
     - target: {fileID: 1321102978, guid: 6bfdbfdfc7f8f5a4cb98436db660e656, type: 3}
       propertyPath: m_LocalScale.z
       value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1321102975, guid: 6bfdbfdfc7f8f5a4cb98436db660e656, type: 3}
+      propertyPath: m_Name
+      value: WinterBarrel (4)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6bfdbfdfc7f8f5a4cb98436db660e656, type: 3}
@@ -4660,11 +4610,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 267381138}
     m_Modifications:
-    - target: {fileID: 1452641802217029215, guid: 410fa1947d1cc1246a20cef9517cf7d0,
-        type: 3}
-      propertyPath: m_Name
-      value: WinterGroundRock (45)
-      objectReference: {fileID: 0}
     - target: {fileID: 6503769927826279851, guid: 410fa1947d1cc1246a20cef9517cf7d0,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -4735,6 +4680,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 1452641802217029215, guid: 410fa1947d1cc1246a20cef9517cf7d0,
+        type: 3}
+      propertyPath: m_Name
+      value: WinterGroundRock (45)
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 410fa1947d1cc1246a20cef9517cf7d0, type: 3}
 --- !u!1001 &293418500
@@ -4744,11 +4694,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 267381138}
     m_Modifications:
-    - target: {fileID: 1452641802217029215, guid: 410fa1947d1cc1246a20cef9517cf7d0,
-        type: 3}
-      propertyPath: m_Name
-      value: WinterGroundRock (34)
-      objectReference: {fileID: 0}
     - target: {fileID: 6503769927826279851, guid: 410fa1947d1cc1246a20cef9517cf7d0,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -4819,6 +4764,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 1452641802217029215, guid: 410fa1947d1cc1246a20cef9517cf7d0,
+        type: 3}
+      propertyPath: m_Name
+      value: WinterGroundRock (34)
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 410fa1947d1cc1246a20cef9517cf7d0, type: 3}
 --- !u!1001 &296018371
@@ -4828,11 +4778,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 267381138}
     m_Modifications:
-    - target: {fileID: 1452641802217029215, guid: 410fa1947d1cc1246a20cef9517cf7d0,
-        type: 3}
-      propertyPath: m_Name
-      value: WinterGroundRock (37)
-      objectReference: {fileID: 0}
     - target: {fileID: 6503769927826279851, guid: 410fa1947d1cc1246a20cef9517cf7d0,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -4902,6 +4847,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1452641802217029215, guid: 410fa1947d1cc1246a20cef9517cf7d0,
+        type: 3}
+      propertyPath: m_Name
+      value: WinterGroundRock (37)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 410fa1947d1cc1246a20cef9517cf7d0, type: 3}
@@ -5068,11 +5018,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1374057754}
     m_Modifications:
-    - target: {fileID: 744152071347772504, guid: e4493422f2ee2274c886b783b4364538,
-        type: 3}
-      propertyPath: m_Name
-      value: SnowPile_v2 (45)
-      objectReference: {fileID: 0}
     - target: {fileID: 4883029666531477122, guid: e4493422f2ee2274c886b783b4364538,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5142,6 +5087,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 0.30000007
+      objectReference: {fileID: 0}
+    - target: {fileID: 744152071347772504, guid: e4493422f2ee2274c886b783b4364538,
+        type: 3}
+      propertyPath: m_Name
+      value: SnowPile_v2 (45)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e4493422f2ee2274c886b783b4364538, type: 3}
@@ -5331,10 +5281,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 366758409}
     m_Modifications:
-    - target: {fileID: 1321102975, guid: 6bfdbfdfc7f8f5a4cb98436db660e656, type: 3}
-      propertyPath: m_Name
-      value: WinterBarrel (4)
-      objectReference: {fileID: 0}
     - target: {fileID: 1321102978, guid: 6bfdbfdfc7f8f5a4cb98436db660e656, type: 3}
       propertyPath: m_LocalPosition.x
       value: -49.255
@@ -5390,6 +5336,10 @@ PrefabInstance:
     - target: {fileID: 1321102978, guid: 6bfdbfdfc7f8f5a4cb98436db660e656, type: 3}
       propertyPath: m_LocalScale.z
       value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1321102975, guid: 6bfdbfdfc7f8f5a4cb98436db660e656, type: 3}
+      propertyPath: m_Name
+      value: WinterBarrel (4)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6bfdbfdfc7f8f5a4cb98436db660e656, type: 3}
@@ -5626,11 +5576,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1374057754}
     m_Modifications:
-    - target: {fileID: 744152071347772504, guid: e4493422f2ee2274c886b783b4364538,
-        type: 3}
-      propertyPath: m_Name
-      value: SnowPile_v2 (33)
-      objectReference: {fileID: 0}
     - target: {fileID: 4883029666531477122, guid: e4493422f2ee2274c886b783b4364538,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5700,6 +5645,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 0.30000007
+      objectReference: {fileID: 0}
+    - target: {fileID: 744152071347772504, guid: e4493422f2ee2274c886b783b4364538,
+        type: 3}
+      propertyPath: m_Name
+      value: SnowPile_v2 (33)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e4493422f2ee2274c886b783b4364538, type: 3}
@@ -6485,10 +6435,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1896139404}
     m_Modifications:
-    - target: {fileID: 1525034263, guid: c091e47481e0f78438d5ef586d62df89, type: 3}
-      propertyPath: m_Name
-      value: WinterTreeApplesShortG (11)
-      objectReference: {fileID: 0}
     - target: {fileID: 1525034266, guid: c091e47481e0f78438d5ef586d62df89, type: 3}
       propertyPath: m_LocalPosition.x
       value: 10.78
@@ -6533,6 +6479,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1525034263, guid: c091e47481e0f78438d5ef586d62df89, type: 3}
+      propertyPath: m_Name
+      value: WinterTreeApplesShortG (11)
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c091e47481e0f78438d5ef586d62df89, type: 3}
 --- !u!4 &396215826 stripped
@@ -6548,11 +6498,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1374057754}
     m_Modifications:
-    - target: {fileID: 744152071347772504, guid: e4493422f2ee2274c886b783b4364538,
-        type: 3}
-      propertyPath: m_Name
-      value: SnowPile_v2 (52)
-      objectReference: {fileID: 0}
     - target: {fileID: 4883029666531477122, guid: e4493422f2ee2274c886b783b4364538,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -6623,6 +6568,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.3000002
       objectReference: {fileID: 0}
+    - target: {fileID: 744152071347772504, guid: e4493422f2ee2274c886b783b4364538,
+        type: 3}
+      propertyPath: m_Name
+      value: SnowPile_v2 (52)
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e4493422f2ee2274c886b783b4364538, type: 3}
 --- !u!4 &396471357 stripped
@@ -6638,10 +6588,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 366758409}
     m_Modifications:
-    - target: {fileID: 1321102975, guid: 6bfdbfdfc7f8f5a4cb98436db660e656, type: 3}
-      propertyPath: m_Name
-      value: WinterBarrel (2)
-      objectReference: {fileID: 0}
     - target: {fileID: 1321102978, guid: 6bfdbfdfc7f8f5a4cb98436db660e656, type: 3}
       propertyPath: m_LocalPosition.x
       value: -48.569
@@ -6697,6 +6643,10 @@ PrefabInstance:
     - target: {fileID: 1321102978, guid: 6bfdbfdfc7f8f5a4cb98436db660e656, type: 3}
       propertyPath: m_LocalScale.z
       value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1321102975, guid: 6bfdbfdfc7f8f5a4cb98436db660e656, type: 3}
+      propertyPath: m_Name
+      value: WinterBarrel (2)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6bfdbfdfc7f8f5a4cb98436db660e656, type: 3}
@@ -6766,10 +6716,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1896139404}
     m_Modifications:
-    - target: {fileID: 1197799949, guid: 3a0c5d52ae2cf9a49ac022ad60c512eb, type: 3}
-      propertyPath: m_Name
-      value: WinterTreeApplesShort (14)
-      objectReference: {fileID: 0}
     - target: {fileID: 1197799952, guid: 3a0c5d52ae2cf9a49ac022ad60c512eb, type: 3}
       propertyPath: m_LocalPosition.x
       value: 14.37
@@ -6814,6 +6760,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1197799949, guid: 3a0c5d52ae2cf9a49ac022ad60c512eb, type: 3}
+      propertyPath: m_Name
+      value: WinterTreeApplesShort (14)
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3a0c5d52ae2cf9a49ac022ad60c512eb, type: 3}
 --- !u!4 &415197058 stripped
@@ -6829,10 +6779,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1896139404}
     m_Modifications:
-    - target: {fileID: 1197799949, guid: 3a0c5d52ae2cf9a49ac022ad60c512eb, type: 3}
-      propertyPath: m_Name
-      value: WinterTreeApplesShort (11)
-      objectReference: {fileID: 0}
     - target: {fileID: 1197799952, guid: 3a0c5d52ae2cf9a49ac022ad60c512eb, type: 3}
       propertyPath: m_LocalPosition.x
       value: 7.94
@@ -6876,6 +6822,10 @@ PrefabInstance:
     - target: {fileID: 1197799952, guid: 3a0c5d52ae2cf9a49ac022ad60c512eb, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1197799949, guid: 3a0c5d52ae2cf9a49ac022ad60c512eb, type: 3}
+      propertyPath: m_Name
+      value: WinterTreeApplesShort (11)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3a0c5d52ae2cf9a49ac022ad60c512eb, type: 3}
@@ -7020,10 +6970,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1053764671}
     m_Modifications:
-    - target: {fileID: 1321102975, guid: 6bfdbfdfc7f8f5a4cb98436db660e656, type: 3}
-      propertyPath: m_Name
-      value: WinterBarrel (5)
-      objectReference: {fileID: 0}
     - target: {fileID: 1321102978, guid: 6bfdbfdfc7f8f5a4cb98436db660e656, type: 3}
       propertyPath: m_LocalPosition.x
       value: -48.493
@@ -7079,6 +7025,10 @@ PrefabInstance:
     - target: {fileID: 1321102978, guid: 6bfdbfdfc7f8f5a4cb98436db660e656, type: 3}
       propertyPath: m_LocalScale.z
       value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1321102975, guid: 6bfdbfdfc7f8f5a4cb98436db660e656, type: 3}
+      propertyPath: m_Name
+      value: WinterBarrel (5)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6bfdbfdfc7f8f5a4cb98436db660e656, type: 3}
@@ -7373,10 +7323,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1896139404}
     m_Modifications:
-    - target: {fileID: 1197799949, guid: 3a0c5d52ae2cf9a49ac022ad60c512eb, type: 3}
-      propertyPath: m_Name
-      value: WinterTreeApplesShort (15)
-      objectReference: {fileID: 0}
     - target: {fileID: 1197799952, guid: 3a0c5d52ae2cf9a49ac022ad60c512eb, type: 3}
       propertyPath: m_LocalPosition.x
       value: 7.59
@@ -7420,6 +7366,10 @@ PrefabInstance:
     - target: {fileID: 1197799952, guid: 3a0c5d52ae2cf9a49ac022ad60c512eb, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1197799949, guid: 3a0c5d52ae2cf9a49ac022ad60c512eb, type: 3}
+      propertyPath: m_Name
+      value: WinterTreeApplesShort (15)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3a0c5d52ae2cf9a49ac022ad60c512eb, type: 3}
@@ -7505,11 +7455,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1374057754}
     m_Modifications:
-    - target: {fileID: 744152071347772504, guid: e4493422f2ee2274c886b783b4364538,
-        type: 3}
-      propertyPath: m_Name
-      value: SnowPile_v2 (41)
-      objectReference: {fileID: 0}
     - target: {fileID: 4883029666531477122, guid: e4493422f2ee2274c886b783b4364538,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -7579,6 +7524,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 0.30000007
+      objectReference: {fileID: 0}
+    - target: {fileID: 744152071347772504, guid: e4493422f2ee2274c886b783b4364538,
+        type: 3}
+      propertyPath: m_Name
+      value: SnowPile_v2 (41)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e4493422f2ee2274c886b783b4364538, type: 3}
@@ -7792,11 +7742,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1374057754}
     m_Modifications:
-    - target: {fileID: 744152071347772504, guid: e4493422f2ee2274c886b783b4364538,
-        type: 3}
-      propertyPath: m_Name
-      value: SnowPile_v2 (46)
-      objectReference: {fileID: 0}
     - target: {fileID: 4883029666531477122, guid: e4493422f2ee2274c886b783b4364538,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -7866,6 +7811,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 744152071347772504, guid: e4493422f2ee2274c886b783b4364538,
+        type: 3}
+      propertyPath: m_Name
+      value: SnowPile_v2 (46)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e4493422f2ee2274c886b783b4364538, type: 3}
@@ -8117,11 +8067,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 267381138}
     m_Modifications:
-    - target: {fileID: 1452641802217029215, guid: 410fa1947d1cc1246a20cef9517cf7d0,
-        type: 3}
-      propertyPath: m_Name
-      value: WinterGroundRock (23)
-      objectReference: {fileID: 0}
     - target: {fileID: 6503769927826279851, guid: 410fa1947d1cc1246a20cef9517cf7d0,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -8192,6 +8137,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 1452641802217029215, guid: 410fa1947d1cc1246a20cef9517cf7d0,
+        type: 3}
+      propertyPath: m_Name
+      value: WinterGroundRock (23)
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 410fa1947d1cc1246a20cef9517cf7d0, type: 3}
 --- !u!1001 &516246289
@@ -8201,11 +8151,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1374057754}
     m_Modifications:
-    - target: {fileID: 744152071347772504, guid: e4493422f2ee2274c886b783b4364538,
-        type: 3}
-      propertyPath: m_Name
-      value: SnowPile_v2 (56)
-      objectReference: {fileID: 0}
     - target: {fileID: 4883029666531477122, guid: e4493422f2ee2274c886b783b4364538,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -8275,6 +8220,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 744152071347772504, guid: e4493422f2ee2274c886b783b4364538,
+        type: 3}
+      propertyPath: m_Name
+      value: SnowPile_v2 (56)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e4493422f2ee2274c886b783b4364538, type: 3}
@@ -8608,11 +8558,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 267381138}
     m_Modifications:
-    - target: {fileID: 1452641802217029215, guid: 410fa1947d1cc1246a20cef9517cf7d0,
-        type: 3}
-      propertyPath: m_Name
-      value: WinterGroundRock (19)
-      objectReference: {fileID: 0}
     - target: {fileID: 6503769927826279851, guid: 410fa1947d1cc1246a20cef9517cf7d0,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -8682,6 +8627,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1452641802217029215, guid: 410fa1947d1cc1246a20cef9517cf7d0,
+        type: 3}
+      propertyPath: m_Name
+      value: WinterGroundRock (19)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 410fa1947d1cc1246a20cef9517cf7d0, type: 3}
@@ -9027,10 +8977,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1424317551}
     m_Modifications:
-    - target: {fileID: 1321102975, guid: 6bfdbfdfc7f8f5a4cb98436db660e656, type: 3}
-      propertyPath: m_Name
-      value: WinterBarrel (5)
-      objectReference: {fileID: 0}
     - target: {fileID: 1321102978, guid: 6bfdbfdfc7f8f5a4cb98436db660e656, type: 3}
       propertyPath: m_LocalPosition.x
       value: -48.493
@@ -9086,6 +9032,10 @@ PrefabInstance:
     - target: {fileID: 1321102978, guid: 6bfdbfdfc7f8f5a4cb98436db660e656, type: 3}
       propertyPath: m_LocalScale.z
       value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1321102975, guid: 6bfdbfdfc7f8f5a4cb98436db660e656, type: 3}
+      propertyPath: m_Name
+      value: WinterBarrel (5)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6bfdbfdfc7f8f5a4cb98436db660e656, type: 3}
@@ -9155,11 +9105,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 267381138}
     m_Modifications:
-    - target: {fileID: 1452641802217029215, guid: 410fa1947d1cc1246a20cef9517cf7d0,
-        type: 3}
-      propertyPath: m_Name
-      value: WinterGroundRock (27)
-      objectReference: {fileID: 0}
     - target: {fileID: 6503769927826279851, guid: 410fa1947d1cc1246a20cef9517cf7d0,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -9230,6 +9175,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 1452641802217029215, guid: 410fa1947d1cc1246a20cef9517cf7d0,
+        type: 3}
+      propertyPath: m_Name
+      value: WinterGroundRock (27)
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 410fa1947d1cc1246a20cef9517cf7d0, type: 3}
 --- !u!1001 &560971093
@@ -9239,11 +9189,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1374057754}
     m_Modifications:
-    - target: {fileID: 744152071347772504, guid: e4493422f2ee2274c886b783b4364538,
-        type: 3}
-      propertyPath: m_Name
-      value: SnowPile_v2 (31)
-      objectReference: {fileID: 0}
     - target: {fileID: 4883029666531477122, guid: e4493422f2ee2274c886b783b4364538,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -9313,6 +9258,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 744152071347772504, guid: e4493422f2ee2274c886b783b4364538,
+        type: 3}
+      propertyPath: m_Name
+      value: SnowPile_v2 (31)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e4493422f2ee2274c886b783b4364538, type: 3}
@@ -9453,11 +9403,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 267381138}
     m_Modifications:
-    - target: {fileID: 6903941737923501819, guid: 5b2ce418e585ea244995c1c166f90419,
-        type: 3}
-      propertyPath: m_Name
-      value: WinterGroundRockSnow_v2 (2)
-      objectReference: {fileID: 0}
     - target: {fileID: 7782500242414987673, guid: 5b2ce418e585ea244995c1c166f90419,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -9528,6 +9473,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 6903941737923501819, guid: 5b2ce418e585ea244995c1c166f90419,
+        type: 3}
+      propertyPath: m_Name
+      value: WinterGroundRockSnow_v2 (2)
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5b2ce418e585ea244995c1c166f90419, type: 3}
 --- !u!4 &569881338 stripped
@@ -9543,11 +9493,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 267381138}
     m_Modifications:
-    - target: {fileID: 6903941737923501819, guid: 5b2ce418e585ea244995c1c166f90419,
-        type: 3}
-      propertyPath: m_Name
-      value: WinterGroundRockSnow_v2 (3)
-      objectReference: {fileID: 0}
     - target: {fileID: 7782500242414987673, guid: 5b2ce418e585ea244995c1c166f90419,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -9617,6 +9562,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6903941737923501819, guid: 5b2ce418e585ea244995c1c166f90419,
+        type: 3}
+      propertyPath: m_Name
+      value: WinterGroundRockSnow_v2 (3)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5b2ce418e585ea244995c1c166f90419, type: 3}
@@ -9760,10 +9710,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1424317551}
     m_Modifications:
-    - target: {fileID: 1321102975, guid: 6bfdbfdfc7f8f5a4cb98436db660e656, type: 3}
-      propertyPath: m_Name
-      value: WinterBarrel (3)
-      objectReference: {fileID: 0}
     - target: {fileID: 1321102978, guid: 6bfdbfdfc7f8f5a4cb98436db660e656, type: 3}
       propertyPath: m_LocalPosition.x
       value: -48.039
@@ -9819,6 +9765,10 @@ PrefabInstance:
     - target: {fileID: 1321102978, guid: 6bfdbfdfc7f8f5a4cb98436db660e656, type: 3}
       propertyPath: m_LocalScale.z
       value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1321102975, guid: 6bfdbfdfc7f8f5a4cb98436db660e656, type: 3}
+      propertyPath: m_Name
+      value: WinterBarrel (3)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6bfdbfdfc7f8f5a4cb98436db660e656, type: 3}
@@ -9888,11 +9838,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1374057754}
     m_Modifications:
-    - target: {fileID: 744152071347772504, guid: e4493422f2ee2274c886b783b4364538,
-        type: 3}
-      propertyPath: m_Name
-      value: SnowPile_v2 (49)
-      objectReference: {fileID: 0}
     - target: {fileID: 4883029666531477122, guid: e4493422f2ee2274c886b783b4364538,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -9962,6 +9907,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 0.30000007
+      objectReference: {fileID: 0}
+    - target: {fileID: 744152071347772504, guid: e4493422f2ee2274c886b783b4364538,
+        type: 3}
+      propertyPath: m_Name
+      value: SnowPile_v2 (49)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e4493422f2ee2274c886b783b4364538, type: 3}
@@ -10106,10 +10056,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1896139404}
     m_Modifications:
-    - target: {fileID: 1525034263, guid: c091e47481e0f78438d5ef586d62df89, type: 3}
-      propertyPath: m_Name
-      value: WinterTreeApplesShortG (12)
-      objectReference: {fileID: 0}
     - target: {fileID: 1525034266, guid: c091e47481e0f78438d5ef586d62df89, type: 3}
       propertyPath: m_LocalPosition.x
       value: -42.22
@@ -10153,6 +10099,10 @@ PrefabInstance:
     - target: {fileID: 1525034266, guid: c091e47481e0f78438d5ef586d62df89, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1525034263, guid: c091e47481e0f78438d5ef586d62df89, type: 3}
+      propertyPath: m_Name
+      value: WinterTreeApplesShortG (12)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c091e47481e0f78438d5ef586d62df89, type: 3}
@@ -10643,11 +10593,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1374057754}
     m_Modifications:
-    - target: {fileID: 744152071347772504, guid: e4493422f2ee2274c886b783b4364538,
-        type: 3}
-      propertyPath: m_Name
-      value: SnowPile_v2 (42)
-      objectReference: {fileID: 0}
     - target: {fileID: 4883029666531477122, guid: e4493422f2ee2274c886b783b4364538,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -10717,6 +10662,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 0.49999988
+      objectReference: {fileID: 0}
+    - target: {fileID: 744152071347772504, guid: e4493422f2ee2274c886b783b4364538,
+        type: 3}
+      propertyPath: m_Name
+      value: SnowPile_v2 (42)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e4493422f2ee2274c886b783b4364538, type: 3}
@@ -10810,10 +10760,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1896139404}
     m_Modifications:
-    - target: {fileID: 1197799949, guid: 3a0c5d52ae2cf9a49ac022ad60c512eb, type: 3}
-      propertyPath: m_Name
-      value: WinterTreeApplesShort (16)
-      objectReference: {fileID: 0}
     - target: {fileID: 1197799952, guid: 3a0c5d52ae2cf9a49ac022ad60c512eb, type: 3}
       propertyPath: m_LocalPosition.x
       value: 12.45
@@ -10858,6 +10804,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1197799949, guid: 3a0c5d52ae2cf9a49ac022ad60c512eb, type: 3}
+      propertyPath: m_Name
+      value: WinterTreeApplesShort (16)
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3a0c5d52ae2cf9a49ac022ad60c512eb, type: 3}
 --- !u!4 &659328118 stripped
@@ -10873,10 +10823,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1896139404}
     m_Modifications:
-    - target: {fileID: 1525034263, guid: c091e47481e0f78438d5ef586d62df89, type: 3}
-      propertyPath: m_Name
-      value: WinterTreeApplesShortG (13)
-      objectReference: {fileID: 0}
     - target: {fileID: 1525034266, guid: c091e47481e0f78438d5ef586d62df89, type: 3}
       propertyPath: m_LocalPosition.x
       value: -36.03
@@ -10920,6 +10866,10 @@ PrefabInstance:
     - target: {fileID: 1525034266, guid: c091e47481e0f78438d5ef586d62df89, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1525034263, guid: c091e47481e0f78438d5ef586d62df89, type: 3}
+      propertyPath: m_Name
+      value: WinterTreeApplesShortG (13)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c091e47481e0f78438d5ef586d62df89, type: 3}
@@ -11358,11 +11308,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 267381138}
     m_Modifications:
-    - target: {fileID: 6903941737923501819, guid: 5b2ce418e585ea244995c1c166f90419,
-        type: 3}
-      propertyPath: m_Name
-      value: WinterGroundRockSnow_v2
-      objectReference: {fileID: 0}
     - target: {fileID: 7782500242414987673, guid: 5b2ce418e585ea244995c1c166f90419,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -11432,6 +11377,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6903941737923501819, guid: 5b2ce418e585ea244995c1c166f90419,
+        type: 3}
+      propertyPath: m_Name
+      value: WinterGroundRockSnow_v2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5b2ce418e585ea244995c1c166f90419, type: 3}
@@ -12152,11 +12102,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1374057754}
     m_Modifications:
-    - target: {fileID: 744152071347772504, guid: e4493422f2ee2274c886b783b4364538,
-        type: 3}
-      propertyPath: m_Name
-      value: SnowPile_v2 (39)
-      objectReference: {fileID: 0}
     - target: {fileID: 4883029666531477122, guid: e4493422f2ee2274c886b783b4364538,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -12226,6 +12171,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 0.29999995
+      objectReference: {fileID: 0}
+    - target: {fileID: 744152071347772504, guid: e4493422f2ee2274c886b783b4364538,
+        type: 3}
+      propertyPath: m_Name
+      value: SnowPile_v2 (39)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e4493422f2ee2274c886b783b4364538, type: 3}
@@ -12809,11 +12759,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 191823428}
     m_Modifications:
-    - target: {fileID: 6262534524116679420, guid: fc7f0feee8f4f2d49a7c80d28e5a38fa,
-        type: 3}
-      propertyPath: m_Name
-      value: HouseL (1)
-      objectReference: {fileID: 0}
     - target: {fileID: 6262534524116679423, guid: fc7f0feee8f4f2d49a7c80d28e5a38fa,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -12884,6 +12829,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.49999988
       objectReference: {fileID: 0}
+    - target: {fileID: 6262534524116679420, guid: fc7f0feee8f4f2d49a7c80d28e5a38fa,
+        type: 3}
+      propertyPath: m_Name
+      value: HouseL (1)
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fc7f0feee8f4f2d49a7c80d28e5a38fa, type: 3}
 --- !u!4 &789315123 stripped
@@ -12899,11 +12849,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 191823428}
     m_Modifications:
-    - target: {fileID: 7907774561560402860, guid: de8211fb0b8b9974fb2d77029b2fd3c3,
-        type: 3}
-      propertyPath: m_Name
-      value: HouseVillage
-      objectReference: {fileID: 0}
     - target: {fileID: 7907774561560402861, guid: de8211fb0b8b9974fb2d77029b2fd3c3,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -12973,6 +12918,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 0.50000024
+      objectReference: {fileID: 0}
+    - target: {fileID: 7907774561560402860, guid: de8211fb0b8b9974fb2d77029b2fd3c3,
+        type: 3}
+      propertyPath: m_Name
+      value: HouseVillage
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: de8211fb0b8b9974fb2d77029b2fd3c3, type: 3}
@@ -13064,10 +13014,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 366758409}
     m_Modifications:
-    - target: {fileID: 1321102975, guid: 6bfdbfdfc7f8f5a4cb98436db660e656, type: 3}
-      propertyPath: m_Name
-      value: WinterBarrel
-      objectReference: {fileID: 0}
     - target: {fileID: 1321102978, guid: 6bfdbfdfc7f8f5a4cb98436db660e656, type: 3}
       propertyPath: m_LocalPosition.x
       value: -49.482
@@ -13123,6 +13069,10 @@ PrefabInstance:
     - target: {fileID: 1321102978, guid: 6bfdbfdfc7f8f5a4cb98436db660e656, type: 3}
       propertyPath: m_LocalScale.z
       value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1321102975, guid: 6bfdbfdfc7f8f5a4cb98436db660e656, type: 3}
+      propertyPath: m_Name
+      value: WinterBarrel
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6bfdbfdfc7f8f5a4cb98436db660e656, type: 3}
@@ -13344,11 +13294,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 267381138}
     m_Modifications:
-    - target: {fileID: 6903941737923501819, guid: 5b2ce418e585ea244995c1c166f90419,
-        type: 3}
-      propertyPath: m_Name
-      value: WinterGroundRockSnow_v2 (13)
-      objectReference: {fileID: 0}
     - target: {fileID: 7782500242414987673, guid: 5b2ce418e585ea244995c1c166f90419,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -13419,6 +13364,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 6903941737923501819, guid: 5b2ce418e585ea244995c1c166f90419,
+        type: 3}
+      propertyPath: m_Name
+      value: WinterGroundRockSnow_v2 (13)
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5b2ce418e585ea244995c1c166f90419, type: 3}
 --- !u!1001 &807603903
@@ -13428,11 +13378,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 267381138}
     m_Modifications:
-    - target: {fileID: 6903941737923501819, guid: 5b2ce418e585ea244995c1c166f90419,
-        type: 3}
-      propertyPath: m_Name
-      value: WinterGroundRockSnow_v2 (7)
-      objectReference: {fileID: 0}
     - target: {fileID: 7782500242414987673, guid: 5b2ce418e585ea244995c1c166f90419,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -13503,6 +13448,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 6903941737923501819, guid: 5b2ce418e585ea244995c1c166f90419,
+        type: 3}
+      propertyPath: m_Name
+      value: WinterGroundRockSnow_v2 (7)
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5b2ce418e585ea244995c1c166f90419, type: 3}
 --- !u!1 &809444988 stripped
@@ -13550,11 +13500,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 267381138}
     m_Modifications:
-    - target: {fileID: 1452641802217029215, guid: 410fa1947d1cc1246a20cef9517cf7d0,
-        type: 3}
-      propertyPath: m_Name
-      value: WinterGroundRock (43)
-      objectReference: {fileID: 0}
     - target: {fileID: 6503769927826279851, guid: 410fa1947d1cc1246a20cef9517cf7d0,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -13625,6 +13570,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 1452641802217029215, guid: 410fa1947d1cc1246a20cef9517cf7d0,
+        type: 3}
+      propertyPath: m_Name
+      value: WinterGroundRock (43)
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 410fa1947d1cc1246a20cef9517cf7d0, type: 3}
 --- !u!1001 &819647328
@@ -13634,11 +13584,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1374057754}
     m_Modifications:
-    - target: {fileID: 744152071347772504, guid: e4493422f2ee2274c886b783b4364538,
-        type: 3}
-      propertyPath: m_Name
-      value: SnowPile_v2 (55)
-      objectReference: {fileID: 0}
     - target: {fileID: 4883029666531477122, guid: e4493422f2ee2274c886b783b4364538,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -13708,6 +13653,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 744152071347772504, guid: e4493422f2ee2274c886b783b4364538,
+        type: 3}
+      propertyPath: m_Name
+      value: SnowPile_v2 (55)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e4493422f2ee2274c886b783b4364538, type: 3}
@@ -13821,11 +13771,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 267381138}
     m_Modifications:
-    - target: {fileID: 1452641802217029215, guid: 410fa1947d1cc1246a20cef9517cf7d0,
-        type: 3}
-      propertyPath: m_Name
-      value: WinterGroundRock (6)
-      objectReference: {fileID: 0}
     - target: {fileID: 6503769927826279851, guid: 410fa1947d1cc1246a20cef9517cf7d0,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -13895,6 +13840,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1452641802217029215, guid: 410fa1947d1cc1246a20cef9517cf7d0,
+        type: 3}
+      propertyPath: m_Name
+      value: WinterGroundRock (6)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 410fa1947d1cc1246a20cef9517cf7d0, type: 3}
@@ -14455,11 +14405,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1374057754}
     m_Modifications:
-    - target: {fileID: 744152071347772504, guid: e4493422f2ee2274c886b783b4364538,
-        type: 3}
-      propertyPath: m_Name
-      value: SnowPile_v2 (50)
-      objectReference: {fileID: 0}
     - target: {fileID: 4883029666531477122, guid: e4493422f2ee2274c886b783b4364538,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -14530,6 +14475,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.3
       objectReference: {fileID: 0}
+    - target: {fileID: 744152071347772504, guid: e4493422f2ee2274c886b783b4364538,
+        type: 3}
+      propertyPath: m_Name
+      value: SnowPile_v2 (50)
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e4493422f2ee2274c886b783b4364538, type: 3}
 --- !u!4 &893200542 stripped
@@ -14545,11 +14495,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 267381138}
     m_Modifications:
-    - target: {fileID: 1452641802217029215, guid: 410fa1947d1cc1246a20cef9517cf7d0,
-        type: 3}
-      propertyPath: m_Name
-      value: WinterGroundRock (5)
-      objectReference: {fileID: 0}
     - target: {fileID: 6503769927826279851, guid: 410fa1947d1cc1246a20cef9517cf7d0,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -14619,6 +14564,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1452641802217029215, guid: 410fa1947d1cc1246a20cef9517cf7d0,
+        type: 3}
+      propertyPath: m_Name
+      value: WinterGroundRock (5)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 410fa1947d1cc1246a20cef9517cf7d0, type: 3}
@@ -14710,11 +14660,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 267381138}
     m_Modifications:
-    - target: {fileID: 1452641802217029215, guid: 410fa1947d1cc1246a20cef9517cf7d0,
-        type: 3}
-      propertyPath: m_Name
-      value: WinterGroundRock (36)
-      objectReference: {fileID: 0}
     - target: {fileID: 6503769927826279851, guid: 410fa1947d1cc1246a20cef9517cf7d0,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -14784,6 +14729,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1452641802217029215, guid: 410fa1947d1cc1246a20cef9517cf7d0,
+        type: 3}
+      propertyPath: m_Name
+      value: WinterGroundRock (36)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 410fa1947d1cc1246a20cef9517cf7d0, type: 3}
@@ -15191,11 +15141,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1374057754}
     m_Modifications:
-    - target: {fileID: 744152071347772504, guid: e4493422f2ee2274c886b783b4364538,
-        type: 3}
-      propertyPath: m_Name
-      value: SnowPile_v2 (54)
-      objectReference: {fileID: 0}
     - target: {fileID: 4883029666531477122, guid: e4493422f2ee2274c886b783b4364538,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -15265,6 +15210,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 0.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 744152071347772504, guid: e4493422f2ee2274c886b783b4364538,
+        type: 3}
+      propertyPath: m_Name
+      value: SnowPile_v2 (54)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e4493422f2ee2274c886b783b4364538, type: 3}
@@ -15499,11 +15449,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 267381138}
     m_Modifications:
-    - target: {fileID: 1452641802217029215, guid: 410fa1947d1cc1246a20cef9517cf7d0,
-        type: 3}
-      propertyPath: m_Name
-      value: WinterGroundRock (24)
-      objectReference: {fileID: 0}
     - target: {fileID: 6503769927826279851, guid: 410fa1947d1cc1246a20cef9517cf7d0,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -15574,6 +15519,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 1452641802217029215, guid: 410fa1947d1cc1246a20cef9517cf7d0,
+        type: 3}
+      propertyPath: m_Name
+      value: WinterGroundRock (24)
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 410fa1947d1cc1246a20cef9517cf7d0, type: 3}
 --- !u!1001 &971811471
@@ -15583,11 +15533,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 267381138}
     m_Modifications:
-    - target: {fileID: 1452641802217029215, guid: 410fa1947d1cc1246a20cef9517cf7d0,
-        type: 3}
-      propertyPath: m_Name
-      value: WinterGroundRock (21)
-      objectReference: {fileID: 0}
     - target: {fileID: 6503769927826279851, guid: 410fa1947d1cc1246a20cef9517cf7d0,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -15657,6 +15602,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1452641802217029215, guid: 410fa1947d1cc1246a20cef9517cf7d0,
+        type: 3}
+      propertyPath: m_Name
+      value: WinterGroundRock (21)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 410fa1947d1cc1246a20cef9517cf7d0, type: 3}
@@ -15751,11 +15701,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 267381138}
     m_Modifications:
-    - target: {fileID: 6903941737923501819, guid: 5b2ce418e585ea244995c1c166f90419,
-        type: 3}
-      propertyPath: m_Name
-      value: WinterGroundRockSnow_v2 (8)
-      objectReference: {fileID: 0}
     - target: {fileID: 7782500242414987673, guid: 5b2ce418e585ea244995c1c166f90419,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -15826,6 +15771,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 6903941737923501819, guid: 5b2ce418e585ea244995c1c166f90419,
+        type: 3}
+      propertyPath: m_Name
+      value: WinterGroundRockSnow_v2 (8)
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5b2ce418e585ea244995c1c166f90419, type: 3}
 --- !u!1 &978627851 stripped
@@ -15873,11 +15823,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 267381138}
     m_Modifications:
-    - target: {fileID: 1452641802217029215, guid: 410fa1947d1cc1246a20cef9517cf7d0,
-        type: 3}
-      propertyPath: m_Name
-      value: WinterGroundRock (12)
-      objectReference: {fileID: 0}
     - target: {fileID: 6503769927826279851, guid: 410fa1947d1cc1246a20cef9517cf7d0,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -15947,6 +15892,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1452641802217029215, guid: 410fa1947d1cc1246a20cef9517cf7d0,
+        type: 3}
+      propertyPath: m_Name
+      value: WinterGroundRock (12)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 410fa1947d1cc1246a20cef9517cf7d0, type: 3}
@@ -16325,11 +16275,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 267381138}
     m_Modifications:
-    - target: {fileID: 1452641802217029215, guid: 410fa1947d1cc1246a20cef9517cf7d0,
-        type: 3}
-      propertyPath: m_Name
-      value: WinterGroundRock (4)
-      objectReference: {fileID: 0}
     - target: {fileID: 6503769927826279851, guid: 410fa1947d1cc1246a20cef9517cf7d0,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -16399,6 +16344,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1452641802217029215, guid: 410fa1947d1cc1246a20cef9517cf7d0,
+        type: 3}
+      propertyPath: m_Name
+      value: WinterGroundRock (4)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 410fa1947d1cc1246a20cef9517cf7d0, type: 3}
@@ -16498,11 +16448,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 267381138}
     m_Modifications:
-    - target: {fileID: 6903941737923501819, guid: 5b2ce418e585ea244995c1c166f90419,
-        type: 3}
-      propertyPath: m_Name
-      value: WinterGroundRockSnow_v2 (15)
-      objectReference: {fileID: 0}
     - target: {fileID: 7782500242414987673, guid: 5b2ce418e585ea244995c1c166f90419,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -16572,6 +16517,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6903941737923501819, guid: 5b2ce418e585ea244995c1c166f90419,
+        type: 3}
+      propertyPath: m_Name
+      value: WinterGroundRockSnow_v2 (15)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5b2ce418e585ea244995c1c166f90419, type: 3}
@@ -16659,11 +16609,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 267381138}
     m_Modifications:
-    - target: {fileID: 1452641802217029215, guid: 410fa1947d1cc1246a20cef9517cf7d0,
-        type: 3}
-      propertyPath: m_Name
-      value: WinterGroundRock (40)
-      objectReference: {fileID: 0}
     - target: {fileID: 6503769927826279851, guid: 410fa1947d1cc1246a20cef9517cf7d0,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -16733,6 +16678,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1452641802217029215, guid: 410fa1947d1cc1246a20cef9517cf7d0,
+        type: 3}
+      propertyPath: m_Name
+      value: WinterGroundRock (40)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 410fa1947d1cc1246a20cef9517cf7d0, type: 3}
@@ -16822,10 +16772,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 366758409}
     m_Modifications:
-    - target: {fileID: 1321102975, guid: 6bfdbfdfc7f8f5a4cb98436db660e656, type: 3}
-      propertyPath: m_Name
-      value: WinterBarrel (1)
-      objectReference: {fileID: 0}
     - target: {fileID: 1321102978, guid: 6bfdbfdfc7f8f5a4cb98436db660e656, type: 3}
       propertyPath: m_LocalPosition.x
       value: -48.67
@@ -16881,6 +16827,10 @@ PrefabInstance:
     - target: {fileID: 1321102978, guid: 6bfdbfdfc7f8f5a4cb98436db660e656, type: 3}
       propertyPath: m_LocalScale.z
       value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1321102975, guid: 6bfdbfdfc7f8f5a4cb98436db660e656, type: 3}
+      propertyPath: m_Name
+      value: WinterBarrel (1)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6bfdbfdfc7f8f5a4cb98436db660e656, type: 3}
@@ -17154,11 +17104,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 267381138}
     m_Modifications:
-    - target: {fileID: 1452641802217029215, guid: 410fa1947d1cc1246a20cef9517cf7d0,
-        type: 3}
-      propertyPath: m_Name
-      value: WinterGroundRock (44)
-      objectReference: {fileID: 0}
     - target: {fileID: 6503769927826279851, guid: 410fa1947d1cc1246a20cef9517cf7d0,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -17229,6 +17174,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 1452641802217029215, guid: 410fa1947d1cc1246a20cef9517cf7d0,
+        type: 3}
+      propertyPath: m_Name
+      value: WinterGroundRock (44)
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 410fa1947d1cc1246a20cef9517cf7d0, type: 3}
 --- !u!1 &1067367169 stripped
@@ -17297,10 +17247,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1053764671}
     m_Modifications:
-    - target: {fileID: 1321102975, guid: 6bfdbfdfc7f8f5a4cb98436db660e656, type: 3}
-      propertyPath: m_Name
-      value: WinterBarrel (1)
-      objectReference: {fileID: 0}
     - target: {fileID: 1321102978, guid: 6bfdbfdfc7f8f5a4cb98436db660e656, type: 3}
       propertyPath: m_LocalPosition.x
       value: -48.67
@@ -17356,6 +17302,10 @@ PrefabInstance:
     - target: {fileID: 1321102978, guid: 6bfdbfdfc7f8f5a4cb98436db660e656, type: 3}
       propertyPath: m_LocalScale.z
       value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1321102975, guid: 6bfdbfdfc7f8f5a4cb98436db660e656, type: 3}
+      propertyPath: m_Name
+      value: WinterBarrel (1)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6bfdbfdfc7f8f5a4cb98436db660e656, type: 3}
@@ -17649,11 +17599,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1374057754}
     m_Modifications:
-    - target: {fileID: 744152071347772504, guid: e4493422f2ee2274c886b783b4364538,
-        type: 3}
-      propertyPath: m_Name
-      value: SnowPile_v2 (57)
-      objectReference: {fileID: 0}
     - target: {fileID: 4883029666531477122, guid: e4493422f2ee2274c886b783b4364538,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -17724,6 +17669,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.3
       objectReference: {fileID: 0}
+    - target: {fileID: 744152071347772504, guid: e4493422f2ee2274c886b783b4364538,
+        type: 3}
+      propertyPath: m_Name
+      value: SnowPile_v2 (57)
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e4493422f2ee2274c886b783b4364538, type: 3}
 --- !u!4 &1085598394 stripped
@@ -17739,10 +17689,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1896139404}
     m_Modifications:
-    - target: {fileID: 1525034263, guid: c091e47481e0f78438d5ef586d62df89, type: 3}
-      propertyPath: m_Name
-      value: WinterTreeApplesShortG (10)
-      objectReference: {fileID: 0}
     - target: {fileID: 1525034266, guid: c091e47481e0f78438d5ef586d62df89, type: 3}
       propertyPath: m_LocalPosition.x
       value: 7.83
@@ -17787,6 +17733,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1525034263, guid: c091e47481e0f78438d5ef586d62df89, type: 3}
+      propertyPath: m_Name
+      value: WinterTreeApplesShortG (10)
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c091e47481e0f78438d5ef586d62df89, type: 3}
 --- !u!4 &1086672235 stripped
@@ -17802,11 +17752,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1374057754}
     m_Modifications:
-    - target: {fileID: 744152071347772504, guid: e4493422f2ee2274c886b783b4364538,
-        type: 3}
-      propertyPath: m_Name
-      value: SnowPile_v2 (28)
-      objectReference: {fileID: 0}
     - target: {fileID: 4883029666531477122, guid: e4493422f2ee2274c886b783b4364538,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -17877,6 +17822,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.3
       objectReference: {fileID: 0}
+    - target: {fileID: 744152071347772504, guid: e4493422f2ee2274c886b783b4364538,
+        type: 3}
+      propertyPath: m_Name
+      value: SnowPile_v2 (28)
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e4493422f2ee2274c886b783b4364538, type: 3}
 --- !u!4 &1092577946 stripped
@@ -17892,10 +17842,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1053764671}
     m_Modifications:
-    - target: {fileID: 1321102975, guid: 6bfdbfdfc7f8f5a4cb98436db660e656, type: 3}
-      propertyPath: m_Name
-      value: WinterBarrel (3)
-      objectReference: {fileID: 0}
     - target: {fileID: 1321102978, guid: 6bfdbfdfc7f8f5a4cb98436db660e656, type: 3}
       propertyPath: m_LocalPosition.x
       value: -48.039
@@ -17952,6 +17898,10 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 1321102975, guid: 6bfdbfdfc7f8f5a4cb98436db660e656, type: 3}
+      propertyPath: m_Name
+      value: WinterBarrel (3)
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6bfdbfdfc7f8f5a4cb98436db660e656, type: 3}
 --- !u!1001 &1096576760
@@ -17961,11 +17911,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 267381138}
     m_Modifications:
-    - target: {fileID: 6903941737923501819, guid: 5b2ce418e585ea244995c1c166f90419,
-        type: 3}
-      propertyPath: m_Name
-      value: WinterGroundRockSnow_v2 (4)
-      objectReference: {fileID: 0}
     - target: {fileID: 7782500242414987673, guid: 5b2ce418e585ea244995c1c166f90419,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -18036,6 +17981,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 6903941737923501819, guid: 5b2ce418e585ea244995c1c166f90419,
+        type: 3}
+      propertyPath: m_Name
+      value: WinterGroundRockSnow_v2 (4)
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5b2ce418e585ea244995c1c166f90419, type: 3}
 --- !u!4 &1096576761 stripped
@@ -18089,11 +18039,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 267381138}
     m_Modifications:
-    - target: {fileID: 1452641802217029215, guid: 410fa1947d1cc1246a20cef9517cf7d0,
-        type: 3}
-      propertyPath: m_Name
-      value: WinterGroundRock (39)
-      objectReference: {fileID: 0}
     - target: {fileID: 6503769927826279851, guid: 410fa1947d1cc1246a20cef9517cf7d0,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -18163,6 +18108,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1452641802217029215, guid: 410fa1947d1cc1246a20cef9517cf7d0,
+        type: 3}
+      propertyPath: m_Name
+      value: WinterGroundRock (39)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 410fa1947d1cc1246a20cef9517cf7d0, type: 3}
@@ -18958,11 +18908,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 267381138}
     m_Modifications:
-    - target: {fileID: 1452641802217029215, guid: 410fa1947d1cc1246a20cef9517cf7d0,
-        type: 3}
-      propertyPath: m_Name
-      value: WinterGroundRock (13)
-      objectReference: {fileID: 0}
     - target: {fileID: 6503769927826279851, guid: 410fa1947d1cc1246a20cef9517cf7d0,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -19032,6 +18977,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1452641802217029215, guid: 410fa1947d1cc1246a20cef9517cf7d0,
+        type: 3}
+      propertyPath: m_Name
+      value: WinterGroundRock (13)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 410fa1947d1cc1246a20cef9517cf7d0, type: 3}
@@ -19277,11 +19227,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 267381138}
     m_Modifications:
-    - target: {fileID: 1452641802217029215, guid: 410fa1947d1cc1246a20cef9517cf7d0,
-        type: 3}
-      propertyPath: m_Name
-      value: WinterGroundRock (16)
-      objectReference: {fileID: 0}
     - target: {fileID: 6503769927826279851, guid: 410fa1947d1cc1246a20cef9517cf7d0,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -19352,6 +19297,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 1452641802217029215, guid: 410fa1947d1cc1246a20cef9517cf7d0,
+        type: 3}
+      propertyPath: m_Name
+      value: WinterGroundRock (16)
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 410fa1947d1cc1246a20cef9517cf7d0, type: 3}
 --- !u!1001 &1171271168
@@ -19361,11 +19311,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 267381138}
     m_Modifications:
-    - target: {fileID: 1452641802217029215, guid: 410fa1947d1cc1246a20cef9517cf7d0,
-        type: 3}
-      propertyPath: m_Name
-      value: WinterGroundRock (33)
-      objectReference: {fileID: 0}
     - target: {fileID: 6503769927826279851, guid: 410fa1947d1cc1246a20cef9517cf7d0,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -19435,6 +19380,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1452641802217029215, guid: 410fa1947d1cc1246a20cef9517cf7d0,
+        type: 3}
+      propertyPath: m_Name
+      value: WinterGroundRock (33)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 410fa1947d1cc1246a20cef9517cf7d0, type: 3}
@@ -19729,10 +19679,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1424317551}
     m_Modifications:
-    - target: {fileID: 1321102975, guid: 6bfdbfdfc7f8f5a4cb98436db660e656, type: 3}
-      propertyPath: m_Name
-      value: WinterBarrel (7)
-      objectReference: {fileID: 0}
     - target: {fileID: 1321102978, guid: 6bfdbfdfc7f8f5a4cb98436db660e656, type: 3}
       propertyPath: m_LocalPosition.x
       value: -48.804
@@ -19788,6 +19734,10 @@ PrefabInstance:
     - target: {fileID: 1321102978, guid: 6bfdbfdfc7f8f5a4cb98436db660e656, type: 3}
       propertyPath: m_LocalScale.z
       value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1321102975, guid: 6bfdbfdfc7f8f5a4cb98436db660e656, type: 3}
+      propertyPath: m_Name
+      value: WinterBarrel (7)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6bfdbfdfc7f8f5a4cb98436db660e656, type: 3}
@@ -20139,10 +20089,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1053764671}
     m_Modifications:
-    - target: {fileID: 1321102975, guid: 6bfdbfdfc7f8f5a4cb98436db660e656, type: 3}
-      propertyPath: m_Name
-      value: WinterBarrel (7)
-      objectReference: {fileID: 0}
     - target: {fileID: 1321102978, guid: 6bfdbfdfc7f8f5a4cb98436db660e656, type: 3}
       propertyPath: m_LocalPosition.x
       value: -48.804
@@ -20198,6 +20144,10 @@ PrefabInstance:
     - target: {fileID: 1321102978, guid: 6bfdbfdfc7f8f5a4cb98436db660e656, type: 3}
       propertyPath: m_LocalScale.z
       value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1321102975, guid: 6bfdbfdfc7f8f5a4cb98436db660e656, type: 3}
+      propertyPath: m_Name
+      value: WinterBarrel (7)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6bfdbfdfc7f8f5a4cb98436db660e656, type: 3}
@@ -20208,10 +20158,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 366758409}
     m_Modifications:
-    - target: {fileID: 1321102975, guid: 6bfdbfdfc7f8f5a4cb98436db660e656, type: 3}
-      propertyPath: m_Name
-      value: WinterBarrel (7)
-      objectReference: {fileID: 0}
     - target: {fileID: 1321102978, guid: 6bfdbfdfc7f8f5a4cb98436db660e656, type: 3}
       propertyPath: m_LocalPosition.x
       value: -48.804
@@ -20267,6 +20213,10 @@ PrefabInstance:
     - target: {fileID: 1321102978, guid: 6bfdbfdfc7f8f5a4cb98436db660e656, type: 3}
       propertyPath: m_LocalScale.z
       value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1321102975, guid: 6bfdbfdfc7f8f5a4cb98436db660e656, type: 3}
+      propertyPath: m_Name
+      value: WinterBarrel (7)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6bfdbfdfc7f8f5a4cb98436db660e656, type: 3}
@@ -20464,11 +20414,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 267381138}
     m_Modifications:
-    - target: {fileID: 1452641802217029215, guid: 410fa1947d1cc1246a20cef9517cf7d0,
-        type: 3}
-      propertyPath: m_Name
-      value: WinterGroundRock (35)
-      objectReference: {fileID: 0}
     - target: {fileID: 6503769927826279851, guid: 410fa1947d1cc1246a20cef9517cf7d0,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -20538,6 +20483,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1452641802217029215, guid: 410fa1947d1cc1246a20cef9517cf7d0,
+        type: 3}
+      propertyPath: m_Name
+      value: WinterGroundRock (35)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 410fa1947d1cc1246a20cef9517cf7d0, type: 3}
@@ -20741,11 +20691,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1374057754}
     m_Modifications:
-    - target: {fileID: 744152071347772504, guid: e4493422f2ee2274c886b783b4364538,
-        type: 3}
-      propertyPath: m_Name
-      value: SnowPile_v2 (43)
-      objectReference: {fileID: 0}
     - target: {fileID: 4883029666531477122, guid: e4493422f2ee2274c886b783b4364538,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -20815,6 +20760,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 0.29999995
+      objectReference: {fileID: 0}
+    - target: {fileID: 744152071347772504, guid: e4493422f2ee2274c886b783b4364538,
+        type: 3}
+      propertyPath: m_Name
+      value: SnowPile_v2 (43)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e4493422f2ee2274c886b783b4364538, type: 3}
@@ -20906,11 +20856,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1374057754}
     m_Modifications:
-    - target: {fileID: 744152071347772504, guid: e4493422f2ee2274c886b783b4364538,
-        type: 3}
-      propertyPath: m_Name
-      value: SnowPile_v2 (40)
-      objectReference: {fileID: 0}
     - target: {fileID: 4883029666531477122, guid: e4493422f2ee2274c886b783b4364538,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -20980,6 +20925,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 0.29999995
+      objectReference: {fileID: 0}
+    - target: {fileID: 744152071347772504, guid: e4493422f2ee2274c886b783b4364538,
+        type: 3}
+      propertyPath: m_Name
+      value: SnowPile_v2 (40)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e4493422f2ee2274c886b783b4364538, type: 3}
@@ -21155,11 +21105,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 267381138}
     m_Modifications:
-    - target: {fileID: 1452641802217029215, guid: 410fa1947d1cc1246a20cef9517cf7d0,
-        type: 3}
-      propertyPath: m_Name
-      value: WinterGroundRock (3)
-      objectReference: {fileID: 0}
     - target: {fileID: 6503769927826279851, guid: 410fa1947d1cc1246a20cef9517cf7d0,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -21230,6 +21175,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 1452641802217029215, guid: 410fa1947d1cc1246a20cef9517cf7d0,
+        type: 3}
+      propertyPath: m_Name
+      value: WinterGroundRock (3)
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 410fa1947d1cc1246a20cef9517cf7d0, type: 3}
 --- !u!4 &1281166587 stripped
@@ -21245,11 +21195,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 267381138}
     m_Modifications:
-    - target: {fileID: 1452641802217029215, guid: 410fa1947d1cc1246a20cef9517cf7d0,
-        type: 3}
-      propertyPath: m_Name
-      value: WinterGroundRock (25)
-      objectReference: {fileID: 0}
     - target: {fileID: 6503769927826279851, guid: 410fa1947d1cc1246a20cef9517cf7d0,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -21319,6 +21264,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1452641802217029215, guid: 410fa1947d1cc1246a20cef9517cf7d0,
+        type: 3}
+      propertyPath: m_Name
+      value: WinterGroundRock (25)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 410fa1947d1cc1246a20cef9517cf7d0, type: 3}
@@ -21697,10 +21647,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1053764671}
     m_Modifications:
-    - target: {fileID: 1321102975, guid: 6bfdbfdfc7f8f5a4cb98436db660e656, type: 3}
-      propertyPath: m_Name
-      value: WinterBarrel (6)
-      objectReference: {fileID: 0}
     - target: {fileID: 1321102978, guid: 6bfdbfdfc7f8f5a4cb98436db660e656, type: 3}
       propertyPath: m_LocalPosition.x
       value: -48.304
@@ -21757,6 +21703,10 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 1321102975, guid: 6bfdbfdfc7f8f5a4cb98436db660e656, type: 3}
+      propertyPath: m_Name
+      value: WinterBarrel (6)
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6bfdbfdfc7f8f5a4cb98436db660e656, type: 3}
 --- !u!1001 &1304836277
@@ -21766,11 +21716,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1374057754}
     m_Modifications:
-    - target: {fileID: 744152071347772504, guid: e4493422f2ee2274c886b783b4364538,
-        type: 3}
-      propertyPath: m_Name
-      value: SnowPile_v2 (51)
-      objectReference: {fileID: 0}
     - target: {fileID: 4883029666531477122, guid: e4493422f2ee2274c886b783b4364538,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -21840,6 +21785,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 744152071347772504, guid: e4493422f2ee2274c886b783b4364538,
+        type: 3}
+      propertyPath: m_Name
+      value: SnowPile_v2 (51)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e4493422f2ee2274c886b783b4364538, type: 3}
@@ -22012,11 +21962,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 267381138}
     m_Modifications:
-    - target: {fileID: 1452641802217029215, guid: 410fa1947d1cc1246a20cef9517cf7d0,
-        type: 3}
-      propertyPath: m_Name
-      value: WinterGroundRock (29)
-      objectReference: {fileID: 0}
     - target: {fileID: 6503769927826279851, guid: 410fa1947d1cc1246a20cef9517cf7d0,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -22086,6 +22031,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1452641802217029215, guid: 410fa1947d1cc1246a20cef9517cf7d0,
+        type: 3}
+      propertyPath: m_Name
+      value: WinterGroundRock (29)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 410fa1947d1cc1246a20cef9517cf7d0, type: 3}
@@ -22175,11 +22125,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 267381138}
     m_Modifications:
-    - target: {fileID: 1452641802217029215, guid: 410fa1947d1cc1246a20cef9517cf7d0,
-        type: 3}
-      propertyPath: m_Name
-      value: WinterGroundRock (20)
-      objectReference: {fileID: 0}
     - target: {fileID: 6503769927826279851, guid: 410fa1947d1cc1246a20cef9517cf7d0,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -22249,6 +22194,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1452641802217029215, guid: 410fa1947d1cc1246a20cef9517cf7d0,
+        type: 3}
+      propertyPath: m_Name
+      value: WinterGroundRock (20)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 410fa1947d1cc1246a20cef9517cf7d0, type: 3}
@@ -22413,10 +22363,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1896139404}
     m_Modifications:
-    - target: {fileID: 1197799949, guid: 3a0c5d52ae2cf9a49ac022ad60c512eb, type: 3}
-      propertyPath: m_Name
-      value: WinterTreeApplesShort (13)
-      objectReference: {fileID: 0}
     - target: {fileID: 1197799952, guid: 3a0c5d52ae2cf9a49ac022ad60c512eb, type: 3}
       propertyPath: m_LocalPosition.x
       value: 12.43
@@ -22461,6 +22407,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1197799949, guid: 3a0c5d52ae2cf9a49ac022ad60c512eb, type: 3}
+      propertyPath: m_Name
+      value: WinterTreeApplesShort (13)
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3a0c5d52ae2cf9a49ac022ad60c512eb, type: 3}
 --- !u!4 &1350801292 stripped
@@ -22476,11 +22426,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 267381138}
     m_Modifications:
-    - target: {fileID: 1452641802217029215, guid: 410fa1947d1cc1246a20cef9517cf7d0,
-        type: 3}
-      propertyPath: m_Name
-      value: WinterGroundRock (7)
-      objectReference: {fileID: 0}
     - target: {fileID: 6503769927826279851, guid: 410fa1947d1cc1246a20cef9517cf7d0,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -22551,6 +22496,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 1452641802217029215, guid: 410fa1947d1cc1246a20cef9517cf7d0,
+        type: 3}
+      propertyPath: m_Name
+      value: WinterGroundRock (7)
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 410fa1947d1cc1246a20cef9517cf7d0, type: 3}
 --- !u!1001 &1369052220
@@ -22560,11 +22510,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1374057754}
     m_Modifications:
-    - target: {fileID: 744152071347772504, guid: e4493422f2ee2274c886b783b4364538,
-        type: 3}
-      propertyPath: m_Name
-      value: SnowPile_v2 (44)
-      objectReference: {fileID: 0}
     - target: {fileID: 4883029666531477122, guid: e4493422f2ee2274c886b783b4364538,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -22634,6 +22579,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 744152071347772504, guid: e4493422f2ee2274c886b783b4364538,
+        type: 3}
+      propertyPath: m_Name
+      value: SnowPile_v2 (44)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e4493422f2ee2274c886b783b4364538, type: 3}
@@ -23262,11 +23212,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1374057754}
     m_Modifications:
-    - target: {fileID: 744152071347772504, guid: e4493422f2ee2274c886b783b4364538,
-        type: 3}
-      propertyPath: m_Name
-      value: SnowPile_v2 (30)
-      objectReference: {fileID: 0}
     - target: {fileID: 4883029666531477122, guid: e4493422f2ee2274c886b783b4364538,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -23336,6 +23281,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 744152071347772504, guid: e4493422f2ee2274c886b783b4364538,
+        type: 3}
+      propertyPath: m_Name
+      value: SnowPile_v2 (30)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e4493422f2ee2274c886b783b4364538, type: 3}
@@ -23773,11 +23723,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 267381138}
     m_Modifications:
-    - target: {fileID: 1452641802217029215, guid: 410fa1947d1cc1246a20cef9517cf7d0,
-        type: 3}
-      propertyPath: m_Name
-      value: WinterGroundRock
-      objectReference: {fileID: 0}
     - target: {fileID: 6503769927826279851, guid: 410fa1947d1cc1246a20cef9517cf7d0,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -23847,6 +23792,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1452641802217029215, guid: 410fa1947d1cc1246a20cef9517cf7d0,
+        type: 3}
+      propertyPath: m_Name
+      value: WinterGroundRock
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 410fa1947d1cc1246a20cef9517cf7d0, type: 3}
@@ -24089,11 +24039,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1374057754}
     m_Modifications:
-    - target: {fileID: 744152071347772504, guid: e4493422f2ee2274c886b783b4364538,
-        type: 3}
-      propertyPath: m_Name
-      value: SnowPile_v2 (32)
-      objectReference: {fileID: 0}
     - target: {fileID: 4883029666531477122, guid: e4493422f2ee2274c886b783b4364538,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -24164,6 +24109,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.3
       objectReference: {fileID: 0}
+    - target: {fileID: 744152071347772504, guid: e4493422f2ee2274c886b783b4364538,
+        type: 3}
+      propertyPath: m_Name
+      value: SnowPile_v2 (32)
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e4493422f2ee2274c886b783b4364538, type: 3}
 --- !u!4 &1464711858 stripped
@@ -24179,10 +24129,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1896139404}
     m_Modifications:
-    - target: {fileID: 1197799949, guid: 3a0c5d52ae2cf9a49ac022ad60c512eb, type: 3}
-      propertyPath: m_Name
-      value: WinterTreeApplesShort (17)
-      objectReference: {fileID: 0}
     - target: {fileID: 1197799952, guid: 3a0c5d52ae2cf9a49ac022ad60c512eb, type: 3}
       propertyPath: m_LocalPosition.x
       value: -38.49
@@ -24226,6 +24172,10 @@ PrefabInstance:
     - target: {fileID: 1197799952, guid: 3a0c5d52ae2cf9a49ac022ad60c512eb, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1197799949, guid: 3a0c5d52ae2cf9a49ac022ad60c512eb, type: 3}
+      propertyPath: m_Name
+      value: WinterTreeApplesShort (17)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3a0c5d52ae2cf9a49ac022ad60c512eb, type: 3}
@@ -24407,11 +24357,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 267381138}
     m_Modifications:
-    - target: {fileID: 1452641802217029215, guid: 410fa1947d1cc1246a20cef9517cf7d0,
-        type: 3}
-      propertyPath: m_Name
-      value: WinterGroundRock (32)
-      objectReference: {fileID: 0}
     - target: {fileID: 6503769927826279851, guid: 410fa1947d1cc1246a20cef9517cf7d0,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -24481,6 +24426,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1452641802217029215, guid: 410fa1947d1cc1246a20cef9517cf7d0,
+        type: 3}
+      propertyPath: m_Name
+      value: WinterGroundRock (32)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 410fa1947d1cc1246a20cef9517cf7d0, type: 3}
@@ -24568,11 +24518,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 267381138}
     m_Modifications:
-    - target: {fileID: 6903941737923501819, guid: 5b2ce418e585ea244995c1c166f90419,
-        type: 3}
-      propertyPath: m_Name
-      value: WinterGroundRockSnow_v2 (1)
-      objectReference: {fileID: 0}
     - target: {fileID: 7782500242414987673, guid: 5b2ce418e585ea244995c1c166f90419,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -24642,6 +24587,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6903941737923501819, guid: 5b2ce418e585ea244995c1c166f90419,
+        type: 3}
+      propertyPath: m_Name
+      value: WinterGroundRockSnow_v2 (1)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5b2ce418e585ea244995c1c166f90419, type: 3}
@@ -24978,11 +24928,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1374057754}
     m_Modifications:
-    - target: {fileID: 744152071347772504, guid: e4493422f2ee2274c886b783b4364538,
-        type: 3}
-      propertyPath: m_Name
-      value: SnowPile_v2 (34)
-      objectReference: {fileID: 0}
     - target: {fileID: 4883029666531477122, guid: e4493422f2ee2274c886b783b4364538,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -25053,6 +24998,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.3
       objectReference: {fileID: 0}
+    - target: {fileID: 744152071347772504, guid: e4493422f2ee2274c886b783b4364538,
+        type: 3}
+      propertyPath: m_Name
+      value: SnowPile_v2 (34)
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e4493422f2ee2274c886b783b4364538, type: 3}
 --- !u!4 &1539661444 stripped
@@ -25068,11 +25018,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 267381138}
     m_Modifications:
-    - target: {fileID: 1452641802217029215, guid: 410fa1947d1cc1246a20cef9517cf7d0,
-        type: 3}
-      propertyPath: m_Name
-      value: WinterGroundRock (8)
-      objectReference: {fileID: 0}
     - target: {fileID: 6503769927826279851, guid: 410fa1947d1cc1246a20cef9517cf7d0,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -25142,6 +25087,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1452641802217029215, guid: 410fa1947d1cc1246a20cef9517cf7d0,
+        type: 3}
+      propertyPath: m_Name
+      value: WinterGroundRock (8)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 410fa1947d1cc1246a20cef9517cf7d0, type: 3}
@@ -25673,10 +25623,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 366758409}
     m_Modifications:
-    - target: {fileID: 1321102975, guid: 6bfdbfdfc7f8f5a4cb98436db660e656, type: 3}
-      propertyPath: m_Name
-      value: WinterBarrel (3)
-      objectReference: {fileID: 0}
     - target: {fileID: 1321102978, guid: 6bfdbfdfc7f8f5a4cb98436db660e656, type: 3}
       propertyPath: m_LocalPosition.x
       value: -48.039
@@ -25732,6 +25678,10 @@ PrefabInstance:
     - target: {fileID: 1321102978, guid: 6bfdbfdfc7f8f5a4cb98436db660e656, type: 3}
       propertyPath: m_LocalScale.z
       value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1321102975, guid: 6bfdbfdfc7f8f5a4cb98436db660e656, type: 3}
+      propertyPath: m_Name
+      value: WinterBarrel (3)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6bfdbfdfc7f8f5a4cb98436db660e656, type: 3}
@@ -25839,11 +25789,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 267381138}
     m_Modifications:
-    - target: {fileID: 1452641802217029215, guid: 410fa1947d1cc1246a20cef9517cf7d0,
-        type: 3}
-      propertyPath: m_Name
-      value: WinterGroundRock (26)
-      objectReference: {fileID: 0}
     - target: {fileID: 6503769927826279851, guid: 410fa1947d1cc1246a20cef9517cf7d0,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -25913,6 +25858,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1452641802217029215, guid: 410fa1947d1cc1246a20cef9517cf7d0,
+        type: 3}
+      propertyPath: m_Name
+      value: WinterGroundRock (26)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 410fa1947d1cc1246a20cef9517cf7d0, type: 3}
@@ -26194,11 +26144,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1374057754}
     m_Modifications:
-    - target: {fileID: 744152071347772504, guid: e4493422f2ee2274c886b783b4364538,
-        type: 3}
-      propertyPath: m_Name
-      value: SnowPile_v2 (37)
-      objectReference: {fileID: 0}
     - target: {fileID: 4883029666531477122, guid: e4493422f2ee2274c886b783b4364538,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -26269,6 +26214,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.30000007
       objectReference: {fileID: 0}
+    - target: {fileID: 744152071347772504, guid: e4493422f2ee2274c886b783b4364538,
+        type: 3}
+      propertyPath: m_Name
+      value: SnowPile_v2 (37)
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e4493422f2ee2274c886b783b4364538, type: 3}
 --- !u!4 &1614913328 stripped
@@ -26284,11 +26234,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 267381138}
     m_Modifications:
-    - target: {fileID: 1452641802217029215, guid: 410fa1947d1cc1246a20cef9517cf7d0,
-        type: 3}
-      propertyPath: m_Name
-      value: WinterGroundRock (41)
-      objectReference: {fileID: 0}
     - target: {fileID: 6503769927826279851, guid: 410fa1947d1cc1246a20cef9517cf7d0,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -26358,6 +26303,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1452641802217029215, guid: 410fa1947d1cc1246a20cef9517cf7d0,
+        type: 3}
+      propertyPath: m_Name
+      value: WinterGroundRock (41)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 410fa1947d1cc1246a20cef9517cf7d0, type: 3}
@@ -26445,11 +26395,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 267381138}
     m_Modifications:
-    - target: {fileID: 6903941737923501819, guid: 5b2ce418e585ea244995c1c166f90419,
-        type: 3}
-      propertyPath: m_Name
-      value: WinterGroundRockSnow_v2 (9)
-      objectReference: {fileID: 0}
     - target: {fileID: 7782500242414987673, guid: 5b2ce418e585ea244995c1c166f90419,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -26520,6 +26465,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 6903941737923501819, guid: 5b2ce418e585ea244995c1c166f90419,
+        type: 3}
+      propertyPath: m_Name
+      value: WinterGroundRockSnow_v2 (9)
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5b2ce418e585ea244995c1c166f90419, type: 3}
 --- !u!1 &1651617404
@@ -26564,11 +26514,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 267381138}
     m_Modifications:
-    - target: {fileID: 1452641802217029215, guid: 410fa1947d1cc1246a20cef9517cf7d0,
-        type: 3}
-      propertyPath: m_Name
-      value: WinterGroundRock (17)
-      objectReference: {fileID: 0}
     - target: {fileID: 6503769927826279851, guid: 410fa1947d1cc1246a20cef9517cf7d0,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -26638,6 +26583,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1452641802217029215, guid: 410fa1947d1cc1246a20cef9517cf7d0,
+        type: 3}
+      propertyPath: m_Name
+      value: WinterGroundRock (17)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 410fa1947d1cc1246a20cef9517cf7d0, type: 3}
@@ -27063,11 +27013,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 267381138}
     m_Modifications:
-    - target: {fileID: 1452641802217029215, guid: 410fa1947d1cc1246a20cef9517cf7d0,
-        type: 3}
-      propertyPath: m_Name
-      value: WinterGroundRock (10)
-      objectReference: {fileID: 0}
     - target: {fileID: 6503769927826279851, guid: 410fa1947d1cc1246a20cef9517cf7d0,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -27137,6 +27082,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1452641802217029215, guid: 410fa1947d1cc1246a20cef9517cf7d0,
+        type: 3}
+      propertyPath: m_Name
+      value: WinterGroundRock (10)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 410fa1947d1cc1246a20cef9517cf7d0, type: 3}
@@ -28146,11 +28096,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 267381138}
     m_Modifications:
-    - target: {fileID: 6903941737923501819, guid: 5b2ce418e585ea244995c1c166f90419,
-        type: 3}
-      propertyPath: m_Name
-      value: WinterGroundRockSnow_v2 (11)
-      objectReference: {fileID: 0}
     - target: {fileID: 7782500242414987673, guid: 5b2ce418e585ea244995c1c166f90419,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -28221,6 +28166,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 6903941737923501819, guid: 5b2ce418e585ea244995c1c166f90419,
+        type: 3}
+      propertyPath: m_Name
+      value: WinterGroundRockSnow_v2 (11)
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5b2ce418e585ea244995c1c166f90419, type: 3}
 --- !u!1 &1760496700 stripped
@@ -28262,11 +28212,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 267381138}
     m_Modifications:
-    - target: {fileID: 1452641802217029215, guid: 410fa1947d1cc1246a20cef9517cf7d0,
-        type: 3}
-      propertyPath: m_Name
-      value: WinterGroundRock (9)
-      objectReference: {fileID: 0}
     - target: {fileID: 6503769927826279851, guid: 410fa1947d1cc1246a20cef9517cf7d0,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -28337,6 +28282,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 1452641802217029215, guid: 410fa1947d1cc1246a20cef9517cf7d0,
+        type: 3}
+      propertyPath: m_Name
+      value: WinterGroundRock (9)
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 410fa1947d1cc1246a20cef9517cf7d0, type: 3}
 --- !u!1001 &1770787036
@@ -28346,11 +28296,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1374057754}
     m_Modifications:
-    - target: {fileID: 744152071347772504, guid: e4493422f2ee2274c886b783b4364538,
-        type: 3}
-      propertyPath: m_Name
-      value: SnowPile_v2 (53)
-      objectReference: {fileID: 0}
     - target: {fileID: 4883029666531477122, guid: e4493422f2ee2274c886b783b4364538,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -28420,6 +28365,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 744152071347772504, guid: e4493422f2ee2274c886b783b4364538,
+        type: 3}
+      propertyPath: m_Name
+      value: SnowPile_v2 (53)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e4493422f2ee2274c886b783b4364538, type: 3}
@@ -28592,11 +28542,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 267381138}
     m_Modifications:
-    - target: {fileID: 1452641802217029215, guid: 410fa1947d1cc1246a20cef9517cf7d0,
-        type: 3}
-      propertyPath: m_Name
-      value: WinterGroundRock (11)
-      objectReference: {fileID: 0}
     - target: {fileID: 6503769927826279851, guid: 410fa1947d1cc1246a20cef9517cf7d0,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -28666,6 +28611,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1452641802217029215, guid: 410fa1947d1cc1246a20cef9517cf7d0,
+        type: 3}
+      propertyPath: m_Name
+      value: WinterGroundRock (11)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 410fa1947d1cc1246a20cef9517cf7d0, type: 3}
@@ -29001,11 +28951,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1374057754}
     m_Modifications:
-    - target: {fileID: 744152071347772504, guid: e4493422f2ee2274c886b783b4364538,
-        type: 3}
-      propertyPath: m_Name
-      value: SnowPile_v2 (36)
-      objectReference: {fileID: 0}
     - target: {fileID: 4883029666531477122, guid: e4493422f2ee2274c886b783b4364538,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -29076,6 +29021,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.29999995
       objectReference: {fileID: 0}
+    - target: {fileID: 744152071347772504, guid: e4493422f2ee2274c886b783b4364538,
+        type: 3}
+      propertyPath: m_Name
+      value: SnowPile_v2 (36)
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e4493422f2ee2274c886b783b4364538, type: 3}
 --- !u!4 &1806954048 stripped
@@ -29091,10 +29041,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1896139404}
     m_Modifications:
-    - target: {fileID: 1525034263, guid: c091e47481e0f78438d5ef586d62df89, type: 3}
-      propertyPath: m_Name
-      value: WinterTreeApplesShortG (7)
-      objectReference: {fileID: 0}
     - target: {fileID: 1525034266, guid: c091e47481e0f78438d5ef586d62df89, type: 3}
       propertyPath: m_LocalPosition.x
       value: 3.26
@@ -29138,6 +29084,10 @@ PrefabInstance:
     - target: {fileID: 1525034266, guid: c091e47481e0f78438d5ef586d62df89, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1525034263, guid: c091e47481e0f78438d5ef586d62df89, type: 3}
+      propertyPath: m_Name
+      value: WinterTreeApplesShortG (7)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c091e47481e0f78438d5ef586d62df89, type: 3}
@@ -29351,11 +29301,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1374057754}
     m_Modifications:
-    - target: {fileID: 744152071347772504, guid: e4493422f2ee2274c886b783b4364538,
-        type: 3}
-      propertyPath: m_Name
-      value: SnowPile_v2 (47)
-      objectReference: {fileID: 0}
     - target: {fileID: 4883029666531477122, guid: e4493422f2ee2274c886b783b4364538,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -29425,6 +29370,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 744152071347772504, guid: e4493422f2ee2274c886b783b4364538,
+        type: 3}
+      propertyPath: m_Name
+      value: SnowPile_v2 (47)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e4493422f2ee2274c886b783b4364538, type: 3}
@@ -29516,11 +29466,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1374057754}
     m_Modifications:
-    - target: {fileID: 744152071347772504, guid: e4493422f2ee2274c886b783b4364538,
-        type: 3}
-      propertyPath: m_Name
-      value: SnowPile_v2 (48)
-      objectReference: {fileID: 0}
     - target: {fileID: 4883029666531477122, guid: e4493422f2ee2274c886b783b4364538,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -29591,6 +29536,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.3
       objectReference: {fileID: 0}
+    - target: {fileID: 744152071347772504, guid: e4493422f2ee2274c886b783b4364538,
+        type: 3}
+      propertyPath: m_Name
+      value: SnowPile_v2 (48)
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e4493422f2ee2274c886b783b4364538, type: 3}
 --- !u!4 &1843764383 stripped
@@ -29606,11 +29556,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1374057754}
     m_Modifications:
-    - target: {fileID: 744152071347772504, guid: e4493422f2ee2274c886b783b4364538,
-        type: 3}
-      propertyPath: m_Name
-      value: SnowPile_v2 (29)
-      objectReference: {fileID: 0}
     - target: {fileID: 4883029666531477122, guid: e4493422f2ee2274c886b783b4364538,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -29680,6 +29625,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 0.30000007
+      objectReference: {fileID: 0}
+    - target: {fileID: 744152071347772504, guid: e4493422f2ee2274c886b783b4364538,
+        type: 3}
+      propertyPath: m_Name
+      value: SnowPile_v2 (29)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e4493422f2ee2274c886b783b4364538, type: 3}
@@ -29940,11 +29890,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 191823428}
     m_Modifications:
-    - target: {fileID: 6262534524116679420, guid: fc7f0feee8f4f2d49a7c80d28e5a38fa,
-        type: 3}
-      propertyPath: m_Name
-      value: HouseL (2)
-      objectReference: {fileID: 0}
     - target: {fileID: 6262534524116679423, guid: fc7f0feee8f4f2d49a7c80d28e5a38fa,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -30015,6 +29960,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 6262534524116679420, guid: fc7f0feee8f4f2d49a7c80d28e5a38fa,
+        type: 3}
+      propertyPath: m_Name
+      value: HouseL (2)
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fc7f0feee8f4f2d49a7c80d28e5a38fa, type: 3}
 --- !u!4 &1869482073 stripped
@@ -30030,10 +29980,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 366758409}
     m_Modifications:
-    - target: {fileID: 1321102975, guid: 6bfdbfdfc7f8f5a4cb98436db660e656, type: 3}
-      propertyPath: m_Name
-      value: WinterBarrel (6)
-      objectReference: {fileID: 0}
     - target: {fileID: 1321102978, guid: 6bfdbfdfc7f8f5a4cb98436db660e656, type: 3}
       propertyPath: m_LocalPosition.x
       value: -48.304
@@ -30089,6 +30035,10 @@ PrefabInstance:
     - target: {fileID: 1321102978, guid: 6bfdbfdfc7f8f5a4cb98436db660e656, type: 3}
       propertyPath: m_LocalScale.z
       value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1321102975, guid: 6bfdbfdfc7f8f5a4cb98436db660e656, type: 3}
+      propertyPath: m_Name
+      value: WinterBarrel (6)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6bfdbfdfc7f8f5a4cb98436db660e656, type: 3}
@@ -30307,11 +30257,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 267381138}
     m_Modifications:
-    - target: {fileID: 1452641802217029215, guid: 410fa1947d1cc1246a20cef9517cf7d0,
-        type: 3}
-      propertyPath: m_Name
-      value: WinterGroundRock (14)
-      objectReference: {fileID: 0}
     - target: {fileID: 6503769927826279851, guid: 410fa1947d1cc1246a20cef9517cf7d0,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -30381,6 +30326,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1452641802217029215, guid: 410fa1947d1cc1246a20cef9517cf7d0,
+        type: 3}
+      propertyPath: m_Name
+      value: WinterGroundRock (14)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 410fa1947d1cc1246a20cef9517cf7d0, type: 3}
@@ -30466,10 +30416,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1424317551}
     m_Modifications:
-    - target: {fileID: 1321102975, guid: 6bfdbfdfc7f8f5a4cb98436db660e656, type: 3}
-      propertyPath: m_Name
-      value: WinterBarrel
-      objectReference: {fileID: 0}
     - target: {fileID: 1321102978, guid: 6bfdbfdfc7f8f5a4cb98436db660e656, type: 3}
       propertyPath: m_LocalPosition.x
       value: -49.482
@@ -30525,6 +30471,10 @@ PrefabInstance:
     - target: {fileID: 1321102978, guid: 6bfdbfdfc7f8f5a4cb98436db660e656, type: 3}
       propertyPath: m_LocalScale.z
       value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1321102975, guid: 6bfdbfdfc7f8f5a4cb98436db660e656, type: 3}
+      propertyPath: m_Name
+      value: WinterBarrel
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6bfdbfdfc7f8f5a4cb98436db660e656, type: 3}
@@ -30921,51 +30871,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 90.00001
       objectReference: {fileID: 0}
-    - target: {fileID: 9206215139088218001, guid: d48c1cb2b26440c4c91261c51fba91c2,
-        type: 3}
-      propertyPath: BlowStrength
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 8446076775435106918, guid: d48c1cb2b26440c4c91261c51fba91c2,
-        type: 3}
-      propertyPath: m_Offset.y
-      value: 8.467548
-      objectReference: {fileID: 0}
-    - target: {fileID: 8446076775435106918, guid: d48c1cb2b26440c4c91261c51fba91c2,
-        type: 3}
-      propertyPath: m_Size.y
-      value: 16.935097
-      objectReference: {fileID: 0}
-    - target: {fileID: 8446076775435106919, guid: d48c1cb2b26440c4c91261c51fba91c2,
-        type: 3}
-      propertyPath: BlowStrength
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 9206215139088218000, guid: d48c1cb2b26440c4c91261c51fba91c2,
-        type: 3}
-      propertyPath: m_Offset.y
-      value: 6.4516077
-      objectReference: {fileID: 0}
-    - target: {fileID: 9206215139088218000, guid: d48c1cb2b26440c4c91261c51fba91c2,
-        type: 3}
-      propertyPath: m_Size.y
-      value: 15.743214
-      objectReference: {fileID: 0}
-    - target: {fileID: 9206215139088218000, guid: d48c1cb2b26440c4c91261c51fba91c2,
-        type: 3}
-      propertyPath: m_Offset.x
-      value: -0.004071474
-      objectReference: {fileID: 0}
-    - target: {fileID: 9206215139088218000, guid: d48c1cb2b26440c4c91261c51fba91c2,
-        type: 3}
-      propertyPath: m_Size.x
-      value: 3.2193718
-      objectReference: {fileID: 0}
-    - target: {fileID: 9206215139098482095, guid: d48c1cb2b26440c4c91261c51fba91c2,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d48c1cb2b26440c4c91261c51fba91c2, type: 3}
 --- !u!1001 &1918009721
@@ -31049,10 +30954,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1053764671}
     m_Modifications:
-    - target: {fileID: 1321102975, guid: 6bfdbfdfc7f8f5a4cb98436db660e656, type: 3}
-      propertyPath: m_Name
-      value: WinterBarrel (4)
-      objectReference: {fileID: 0}
     - target: {fileID: 1321102978, guid: 6bfdbfdfc7f8f5a4cb98436db660e656, type: 3}
       propertyPath: m_LocalPosition.x
       value: -49.255
@@ -31108,6 +31009,10 @@ PrefabInstance:
     - target: {fileID: 1321102978, guid: 6bfdbfdfc7f8f5a4cb98436db660e656, type: 3}
       propertyPath: m_LocalScale.z
       value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1321102975, guid: 6bfdbfdfc7f8f5a4cb98436db660e656, type: 3}
+      propertyPath: m_Name
+      value: WinterBarrel (4)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6bfdbfdfc7f8f5a4cb98436db660e656, type: 3}
@@ -31447,11 +31352,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 267381138}
     m_Modifications:
-    - target: {fileID: 1452641802217029215, guid: 410fa1947d1cc1246a20cef9517cf7d0,
-        type: 3}
-      propertyPath: m_Name
-      value: WinterGroundRock (22)
-      objectReference: {fileID: 0}
     - target: {fileID: 6503769927826279851, guid: 410fa1947d1cc1246a20cef9517cf7d0,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -31522,6 +31422,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 1452641802217029215, guid: 410fa1947d1cc1246a20cef9517cf7d0,
+        type: 3}
+      propertyPath: m_Name
+      value: WinterGroundRock (22)
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 410fa1947d1cc1246a20cef9517cf7d0, type: 3}
 --- !u!1 &1957746430
@@ -31586,11 +31491,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 267381138}
     m_Modifications:
-    - target: {fileID: 1452641802217029215, guid: 410fa1947d1cc1246a20cef9517cf7d0,
-        type: 3}
-      propertyPath: m_Name
-      value: WinterGroundRock (2)
-      objectReference: {fileID: 0}
     - target: {fileID: 6503769927826279851, guid: 410fa1947d1cc1246a20cef9517cf7d0,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -31660,6 +31560,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1452641802217029215, guid: 410fa1947d1cc1246a20cef9517cf7d0,
+        type: 3}
+      propertyPath: m_Name
+      value: WinterGroundRock (2)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 410fa1947d1cc1246a20cef9517cf7d0, type: 3}
@@ -32061,11 +31966,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 267381138}
     m_Modifications:
-    - target: {fileID: 1452641802217029215, guid: 410fa1947d1cc1246a20cef9517cf7d0,
-        type: 3}
-      propertyPath: m_Name
-      value: WinterGroundRock (42)
-      objectReference: {fileID: 0}
     - target: {fileID: 6503769927826279851, guid: 410fa1947d1cc1246a20cef9517cf7d0,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -32135,6 +32035,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1452641802217029215, guid: 410fa1947d1cc1246a20cef9517cf7d0,
+        type: 3}
+      propertyPath: m_Name
+      value: WinterGroundRock (42)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 410fa1947d1cc1246a20cef9517cf7d0, type: 3}
@@ -32215,10 +32120,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1053764671}
     m_Modifications:
-    - target: {fileID: 1321102975, guid: 6bfdbfdfc7f8f5a4cb98436db660e656, type: 3}
-      propertyPath: m_Name
-      value: WinterBarrel
-      objectReference: {fileID: 0}
     - target: {fileID: 1321102978, guid: 6bfdbfdfc7f8f5a4cb98436db660e656, type: 3}
       propertyPath: m_LocalPosition.x
       value: -49.482
@@ -32275,6 +32176,10 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 1321102975, guid: 6bfdbfdfc7f8f5a4cb98436db660e656, type: 3}
+      propertyPath: m_Name
+      value: WinterBarrel
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6bfdbfdfc7f8f5a4cb98436db660e656, type: 3}
 --- !u!1001 &2004493678
@@ -32284,10 +32189,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1424317551}
     m_Modifications:
-    - target: {fileID: 1321102975, guid: 6bfdbfdfc7f8f5a4cb98436db660e656, type: 3}
-      propertyPath: m_Name
-      value: WinterBarrel (1)
-      objectReference: {fileID: 0}
     - target: {fileID: 1321102978, guid: 6bfdbfdfc7f8f5a4cb98436db660e656, type: 3}
       propertyPath: m_LocalPosition.x
       value: -48.67
@@ -32343,6 +32244,10 @@ PrefabInstance:
     - target: {fileID: 1321102978, guid: 6bfdbfdfc7f8f5a4cb98436db660e656, type: 3}
       propertyPath: m_LocalScale.z
       value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1321102975, guid: 6bfdbfdfc7f8f5a4cb98436db660e656, type: 3}
+      propertyPath: m_Name
+      value: WinterBarrel (1)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6bfdbfdfc7f8f5a4cb98436db660e656, type: 3}
@@ -32412,11 +32317,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 267381138}
     m_Modifications:
-    - target: {fileID: 6903941737923501819, guid: 5b2ce418e585ea244995c1c166f90419,
-        type: 3}
-      propertyPath: m_Name
-      value: WinterGroundRockSnow_v2 (10)
-      objectReference: {fileID: 0}
     - target: {fileID: 7782500242414987673, guid: 5b2ce418e585ea244995c1c166f90419,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -32487,6 +32387,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 6903941737923501819, guid: 5b2ce418e585ea244995c1c166f90419,
+        type: 3}
+      propertyPath: m_Name
+      value: WinterGroundRockSnow_v2 (10)
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5b2ce418e585ea244995c1c166f90419, type: 3}
 --- !u!1 &2023957697 stripped
@@ -32535,41 +32440,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   AngularDrag: 1
   LinearDrag: 1
---- !u!1 &2026341036 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 9206215139098482094, guid: d48c1cb2b26440c4c91261c51fba91c2,
-    type: 3}
-  m_PrefabInstance: {fileID: 206123796}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &2026341039 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 9206215139098482089, guid: d48c1cb2b26440c4c91261c51fba91c2,
     type: 3}
   m_PrefabInstance: {fileID: 206123796}
   m_PrefabAsset: {fileID: 0}
---- !u!111 &2026341043
-Animation:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2026341036}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Animation: {fileID: 7400000, guid: e40ca87c4eea93d4cb06d144d5b0910c, type: 2}
-  m_Animations:
-  - {fileID: 7400000, guid: e40ca87c4eea93d4cb06d144d5b0910c, type: 2}
-  m_WrapMode: 0
-  m_PlayAutomatically: 0
-  m_AnimatePhysics: 0
-  m_CullingType: 0
---- !u!114 &2026341044
+--- !u!114 &2026341044 stripped
 MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 2026341044, guid: d48c1cb2b26440c4c91261c51fba91c2,
+    type: 3}
+  m_PrefabInstance: {fileID: 206123796}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2026341036}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fa0d21e39fb6b6644a1743181d5f5342, type: 3}
@@ -32813,11 +32696,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 267381138}
     m_Modifications:
-    - target: {fileID: 6903941737923501819, guid: 5b2ce418e585ea244995c1c166f90419,
-        type: 3}
-      propertyPath: m_Name
-      value: WinterGroundRockSnow_v2 (5)
-      objectReference: {fileID: 0}
     - target: {fileID: 7782500242414987673, guid: 5b2ce418e585ea244995c1c166f90419,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -32887,6 +32765,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6903941737923501819, guid: 5b2ce418e585ea244995c1c166f90419,
+        type: 3}
+      propertyPath: m_Name
+      value: WinterGroundRockSnow_v2 (5)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5b2ce418e585ea244995c1c166f90419, type: 3}
@@ -32973,11 +32856,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 191823428}
     m_Modifications:
-    - target: {fileID: 7907774561560402860, guid: de8211fb0b8b9974fb2d77029b2fd3c3,
-        type: 3}
-      propertyPath: m_Name
-      value: HouseVillage (1)
-      objectReference: {fileID: 0}
     - target: {fileID: 7907774561560402861, guid: de8211fb0b8b9974fb2d77029b2fd3c3,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -33047,6 +32925,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 0.50000024
+      objectReference: {fileID: 0}
+    - target: {fileID: 7907774561560402860, guid: de8211fb0b8b9974fb2d77029b2fd3c3,
+        type: 3}
+      propertyPath: m_Name
+      value: HouseVillage (1)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: de8211fb0b8b9974fb2d77029b2fd3c3, type: 3}
@@ -33148,11 +33031,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1374057754}
     m_Modifications:
-    - target: {fileID: 744152071347772504, guid: e4493422f2ee2274c886b783b4364538,
-        type: 3}
-      propertyPath: m_Name
-      value: SnowPile_v2 (35)
-      objectReference: {fileID: 0}
     - target: {fileID: 4883029666531477122, guid: e4493422f2ee2274c886b783b4364538,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -33222,6 +33100,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 744152071347772504, guid: e4493422f2ee2274c886b783b4364538,
+        type: 3}
+      propertyPath: m_Name
+      value: SnowPile_v2 (35)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e4493422f2ee2274c886b783b4364538, type: 3}
@@ -33542,10 +33425,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1424317551}
     m_Modifications:
-    - target: {fileID: 1321102975, guid: 6bfdbfdfc7f8f5a4cb98436db660e656, type: 3}
-      propertyPath: m_Name
-      value: WinterBarrel (6)
-      objectReference: {fileID: 0}
     - target: {fileID: 1321102978, guid: 6bfdbfdfc7f8f5a4cb98436db660e656, type: 3}
       propertyPath: m_LocalPosition.x
       value: -48.304
@@ -33601,6 +33480,10 @@ PrefabInstance:
     - target: {fileID: 1321102978, guid: 6bfdbfdfc7f8f5a4cb98436db660e656, type: 3}
       propertyPath: m_LocalScale.z
       value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1321102975, guid: 6bfdbfdfc7f8f5a4cb98436db660e656, type: 3}
+      propertyPath: m_Name
+      value: WinterBarrel (6)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6bfdbfdfc7f8f5a4cb98436db660e656, type: 3}
@@ -34048,10 +33931,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1896139404}
     m_Modifications:
-    - target: {fileID: 1197799949, guid: 3a0c5d52ae2cf9a49ac022ad60c512eb, type: 3}
-      propertyPath: m_Name
-      value: WinterTreeApplesShort (12)
-      objectReference: {fileID: 0}
     - target: {fileID: 1197799952, guid: 3a0c5d52ae2cf9a49ac022ad60c512eb, type: 3}
       propertyPath: m_LocalPosition.x
       value: 8.94
@@ -34095,6 +33974,10 @@ PrefabInstance:
     - target: {fileID: 1197799952, guid: 3a0c5d52ae2cf9a49ac022ad60c512eb, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1197799949, guid: 3a0c5d52ae2cf9a49ac022ad60c512eb, type: 3}
+      propertyPath: m_Name
+      value: WinterTreeApplesShort (12)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3a0c5d52ae2cf9a49ac022ad60c512eb, type: 3}
@@ -34209,11 +34092,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 267381138}
     m_Modifications:
-    - target: {fileID: 1452641802217029215, guid: 410fa1947d1cc1246a20cef9517cf7d0,
-        type: 3}
-      propertyPath: m_Name
-      value: WinterGroundRock (31)
-      objectReference: {fileID: 0}
     - target: {fileID: 6503769927826279851, guid: 410fa1947d1cc1246a20cef9517cf7d0,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -34284,6 +34162,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 1452641802217029215, guid: 410fa1947d1cc1246a20cef9517cf7d0,
+        type: 3}
+      propertyPath: m_Name
+      value: WinterGroundRock (31)
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 410fa1947d1cc1246a20cef9517cf7d0, type: 3}
 --- !u!1001 &2131140084
@@ -34293,11 +34176,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 191823428}
     m_Modifications:
-    - target: {fileID: 7907774561560402860, guid: de8211fb0b8b9974fb2d77029b2fd3c3,
-        type: 3}
-      propertyPath: m_Name
-      value: HouseVillage (2)
-      objectReference: {fileID: 0}
     - target: {fileID: 7907774561560402861, guid: de8211fb0b8b9974fb2d77029b2fd3c3,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -34367,6 +34245,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 0.5000002
+      objectReference: {fileID: 0}
+    - target: {fileID: 7907774561560402860, guid: de8211fb0b8b9974fb2d77029b2fd3c3,
+        type: 3}
+      propertyPath: m_Name
+      value: HouseVillage (2)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: de8211fb0b8b9974fb2d77029b2fd3c3, type: 3}

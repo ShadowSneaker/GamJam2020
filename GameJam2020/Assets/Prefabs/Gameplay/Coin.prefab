@@ -170,6 +170,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Points: 20
   PickupSound:
+    AudioPrefab: {fileID: 8421073127710298883, guid: 3c62bef13c7921541a3336e342a8e430,
+      type: 3}
     RandomClip: 1
     ClipIndex: 0
     Clips:
@@ -189,11 +191,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Coin (1)
       objectReference: {fileID: 0}
-    - target: {fileID: -6057140222963153312, guid: 961e673abc8105e4abf3cc6f631dc86e,
-        type: 3}
-      propertyPath: m_Controller
-      value: 
-      objectReference: {fileID: 9100000, guid: 5abbeb5f68d2595479111b9dd96f055b, type: 2}
     - target: {fileID: -4216859302048453862, guid: 961e673abc8105e4abf3cc6f631dc86e,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -254,6 +251,11 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: a09c36d1371ae7c45953d3b274bd39a5, type: 2}
+    - target: {fileID: -6057140222963153312, guid: 961e673abc8105e4abf3cc6f631dc86e,
+        type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 5abbeb5f68d2595479111b9dd96f055b, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 961e673abc8105e4abf3cc6f631dc86e, type: 3}
 --- !u!1 &2990723484882392088 stripped

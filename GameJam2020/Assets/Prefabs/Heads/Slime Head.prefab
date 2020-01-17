@@ -117,6 +117,7 @@ MonoBehaviour:
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
   DeathSound:
+    AudioPrefab: {fileID: 0}
     RandomClip: 1
     ClipIndex: 0
     Clips: []
@@ -129,7 +130,8 @@ AudioSource:
   m_GameObject: {fileID: 1402660415151821636}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 6874557819137220253, guid: 8a4fbd05c0629134bb7e3b0149d1e030,
+    type: 2}
   m_audioClip: {fileID: 8300000, guid: 104c0a075949dd8428af9612c95f17d7, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
@@ -232,16 +234,21 @@ MonoBehaviour:
   YeetCount: 3
   KeepDrag: 1
   YeetSounds:
+    AudioPrefab: {fileID: 3373149486464485138, guid: 8cb6adff4bc18b844b9c9fb55ab09588,
+      type: 3}
     RandomClip: 1
     ClipIndex: 0
     Clips:
     - {fileID: 8300000, guid: 234eaf5f67c0d2c4bbbdfcd5e6f80ce9, type: 3}
   HitSounds:
+    AudioPrefab: {fileID: 3373149486464485138, guid: 636fd6ec29669a64083909e14001339f,
+      type: 3}
     RandomClip: 1
     ClipIndex: 0
     Clips:
     - {fileID: 8300000, guid: 104c0a075949dd8428af9612c95f17d7, type: 3}
   RestSounds:
+    AudioPrefab: {fileID: 0}
     RandomClip: 0
     ClipIndex: 0
     Clips: []

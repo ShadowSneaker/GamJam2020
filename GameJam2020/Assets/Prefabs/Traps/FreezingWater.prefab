@@ -141,6 +141,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   IceMaterial: {fileID: 2100000, guid: ebc265f88dbe2bf40953ba5a281ffbc5, type: 2}
   WaterSounds:
+    AudioPrefab: {fileID: 0}
     RandomClip: 1
     ClipIndex: 0
     Clips:

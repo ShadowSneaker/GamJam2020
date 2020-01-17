@@ -13,6 +13,10 @@ public class Activator : MonoBehaviour
     [SerializeField]
     private Material ActiveMaterial = null;
 
+    [Tooltip("The sound that is played when this object is activated.")]
+    [SerializeField]
+    private SoundScript ActivationSound = null;
+
     [Tooltip("A reference to the zone mesh.")]
     [SerializeField]
     private MeshRenderer Mesh = null;
@@ -26,6 +30,12 @@ public class Activator : MonoBehaviour
 
 
 
+    private void Awake()
+    {
+        ActivationSound.SetAudio(GetComponent<AudioSource>());
+    }
+
+
     private void OnCollisionEnter2D(Collision2D Other)
     {
         if (!Activated)
@@ -34,10 +44,13 @@ public class Activator : MonoBehaviour
             {
                 if (ActiveMaterial) Mesh.material = ActiveMaterial;
                 Activated = true;
+
                 if (OnCollision != null)
                 {
                     OnCollision.Invoke();
                 }
+
+                ActivationSound.Play();
             }
         }
     }
@@ -51,10 +64,13 @@ public class Activator : MonoBehaviour
             {
                 if (ActiveMaterial) Mesh.material = ActiveMaterial;
                 Activated = true;
+
                 if (OnCollision != null)
                 {
                     OnCollision.Invoke();
                 }
+
+                ActivationSound.Play();
             }
         }
     }

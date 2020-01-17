@@ -5,6 +5,10 @@ using UnityEngine;
 [System.Serializable]
 public class SoundScript
 {
+    [Tooltip("The prefab instance of the sound object")]
+    [SerializeField]
+    private AudioSource AudioPrefab = null;
+
     [Tooltip("Selects a random sound clip to be played everytime this object is played.")]
     public bool RandomClip = true;
 
@@ -16,6 +20,7 @@ public class SoundScript
 
     // A reference to the audio source attached to the object.
     private AudioSource Audio = null;
+    private Transform Trans = null;
 
 
 
@@ -24,6 +29,12 @@ public class SoundScript
     {
         if (Clips.Count > 0)
         {
+            if (AudioPrefab)
+            {
+                CreateSound();
+                return;
+            }
+
             if (Audio)
             {
                 AudioClip PlayClip = Clips[ClipIndex];
@@ -43,6 +54,12 @@ public class SoundScript
     {
         if (Clips.Count > 0)
         {
+            if (AudioPrefab)
+            {
+                CreateSoundIndex();
+                return;
+            }
+
             if (Audio)
             {
                 Audio.clip = Clips[ClipIndex];
@@ -57,6 +74,12 @@ public class SoundScript
     {
         if (Clips.Count > 0)
         {
+            if (AudioPrefab)
+            {
+                CreateSoundRandom();
+                return;
+            }
+
             if (Audio)
             {
                 Audio.clip = GetRandomClip();
@@ -72,6 +95,12 @@ public class SoundScript
     {
         if (Audio)
         {
+            if (AudioPrefab)
+            {
+                CreateSound(Clip);
+                return;
+            }
+
             Audio.clip = Clip;
             Audio.Play();
         }
@@ -116,6 +145,67 @@ public class SoundScript
 
     public void SetAudio(AudioSource InAudio)
     {
-        Audio = InAudio;
+        if (InAudio)
+        {
+            Audio = InAudio;
+            Trans = InAudio.transform;
+        }
+    }
+
+
+    public void SetTransform(Transform InTrans)
+    {
+        Trans = InTrans;
+    }
+
+
+    public AudioClip GetClip()
+    {
+        AudioClip PlayClip = Clips[ClipIndex];
+        if (RandomClip)
+        {
+            PlayClip = GetRandomClip();
+        }
+        return PlayClip;
+    }
+
+
+    private void CreateSound()
+    {
+        AudioSource Inst = GameObject.Instantiate(AudioPrefab, Trans.transform.position, Trans.transform.rotation);
+        Inst.clip = GetClip();
+        Inst.Play();
+        GameObject.Destroy(Inst, Inst.clip.length);
+        return;
+    }
+
+
+    private void CreateSound(AudioClip Clip)
+    {
+        AudioSource Inst = GameObject.Instantiate(AudioPrefab, Trans.transform.position, Trans.transform.rotation);
+        Inst.clip = Clip;
+        Inst.Play();
+        GameObject.Destroy(Inst, Inst.clip.length);
+        return;
+    }
+
+
+    private void CreateSoundIndex()
+    {
+        AudioSource Inst = GameObject.Instantiate(AudioPrefab, Trans.transform.position, Trans.transform.rotation);
+        Inst.clip = Clips[ClipIndex];
+        Inst.Play();
+        GameObject.Destroy(Inst, Inst.clip.length);
+        return;
+    }
+
+
+    private void CreateSoundRandom()
+    {
+        AudioSource Inst = GameObject.Instantiate(AudioPrefab, Trans.transform.position, Trans.transform.rotation);
+        Inst.clip = GetRandomClip();
+        Inst.Play();
+        GameObject.Destroy(Inst, Inst.clip.length);
+        return;
     }
 }

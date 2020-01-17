@@ -120,6 +120,7 @@ MonoBehaviour:
   TheLevelName: 
   TitleText: {fileID: 6141937535959313539}
   UISound:
+    AudioPrefab: {fileID: 0}
     RandomClip: 1
     ClipIndex: 0
     Clips:
@@ -148,6 +149,7 @@ MonoBehaviour:
     type: 3}
   SceneName: 
   UISounds:
+    AudioPrefab: {fileID: 0}
     RandomClip: 1
     ClipIndex: 0
     Clips: []
@@ -160,7 +162,8 @@ AudioSource:
   m_GameObject: {fileID: 15548435912397276}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 4989778137595802298, guid: 9cfe280799067ce408cbb9c33609d4ba,
+    type: 2}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
   m_Volume: 1

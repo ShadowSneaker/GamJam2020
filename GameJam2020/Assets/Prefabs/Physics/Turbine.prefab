@@ -14,6 +14,8 @@ GameObject:
   - component: {fileID: 8446076775435106913}
   - component: {fileID: 8446076775435106912}
   - component: {fileID: 2444884554179723632}
+  - component: {fileID: 2026341043}
+  - component: {fileID: 2026341044}
   m_Layer: 0
   m_Name: Turbine
   m_TagString: Wind
@@ -49,7 +51,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 5}
+  m_Offset: {x: 0, y: 8.467548}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -60,7 +62,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 2, y: 10}
+  m_Size: {x: 2, y: 16.935097}
   m_EdgeRadius: 0
 --- !u!114 &8446076775435106919
 MonoBehaviour:
@@ -74,7 +76,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4eb2c349864da2948abb813e50e9a4e5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  BlowStrength: 25
+  BlowStrength: 10
 --- !u!198 &8446076775435106913
 ParticleSystem:
   m_ObjectHideFlags: 0
@@ -4804,19 +4806,20 @@ AudioSource:
   m_GameObject: {fileID: 9206215139098482094}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: -7896056395101025279, guid: 9248394d3e6d86a4f8e860c08511d9a3,
+    type: 2}
   m_audioClip: {fileID: 8300000, guid: abf4b5248e6a80d41bba35930faddf43, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.05
+  m_Volume: 1
   m_Pitch: 1
   Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
   Priority: 128
-  DopplerLevel: 1
-  MinDistance: 1
-  MaxDistance: 30
+  DopplerLevel: 0
+  MinDistance: 10
+  MaxDistance: 20
   Pan2D: 0
   rolloffMode: 0
   BypassEffects: 0
@@ -4851,7 +4854,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 0
+      value: 1
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -4891,6 +4894,34 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!111 &2026341043
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9206215139098482094}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: e40ca87c4eea93d4cb06d144d5b0910c, type: 2}
+  m_Animations:
+  - {fileID: 7400000, guid: e40ca87c4eea93d4cb06d144d5b0910c, type: 2}
+  m_WrapMode: 0
+  m_PlayAutomatically: 0
+  m_AnimatePhysics: 0
+  m_CullingType: 0
+--- !u!114 &2026341044
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9206215139098482094}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa0d21e39fb6b6644a1743181d5f5342, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &7923641108574730615
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -20,7 +20,7 @@ public class OverlayUI : MonoBehaviour
 
     [Tooltip("The Sound that you want the button to make")]
     [SerializeField]
-    private SoundScript UISounds;
+    private SoundScript UISounds = null;
 
     [Tooltip("A reference to the settings UI prefab.")]
     [SerializeField]

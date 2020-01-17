@@ -34,13 +34,20 @@ public class WinUI : MonoBehaviour
     [SerializeField]
     private SoundScript UISound = null;
 
+    private GameObject BackgroundMusic = null;
+    private AudioSource Audio = null;
+
 
 
     private void Start()
     {
-        WinSound.SetAudio(GetComponent<AudioSource>());
+        Audio = GetComponent<AudioSource>();
+        WinSound.SetAudio(Audio);
         WinSound.Play();
         Transition = GetComponent<TransitionScript>();
+
+        BackgroundMusic = GameObject.FindGameObjectWithTag("MusicManager");
+        BackgroundMusic.SetActive(false);
     }
 
 
@@ -63,6 +70,8 @@ public class WinUI : MonoBehaviour
 
     public void LoadMainMenu()
     {
+        Audio.Pause();
+        BackgroundMusic.SetActive(true);
         UISound.PlayNew(transform.position);
         Transition.LoadScene("MainMenu");
     }
@@ -70,6 +79,8 @@ public class WinUI : MonoBehaviour
 
     public void NextLevel()
     {
+        Audio.Pause();
+        BackgroundMusic.SetActive(true);
         UISound.PlayNew(transform.position);
         Transition.LoadScene();
     }
@@ -77,6 +88,8 @@ public class WinUI : MonoBehaviour
 
     public void Replay()
     {
+        Audio.Pause();
+        BackgroundMusic.SetActive(true);
         UISound.PlayNew(transform.position);
         Transition.LoadScene(SceneManager.GetActiveScene().name);
     }

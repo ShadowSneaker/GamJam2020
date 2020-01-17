@@ -1297,11 +1297,14 @@ MonoBehaviour:
   - {fileID: 6578025437165468885}
   - {fileID: 324281189806399449}
   WinSound:
+    AudioPrefab: {fileID: 0}
     RandomClip: 1
     ClipIndex: 0
     Clips:
     - {fileID: 8300000, guid: 895a209d9b6093b41ad7a0d8e05ff2d7, type: 3}
   UISound:
+    AudioPrefab: {fileID: 3751943588955028830, guid: 290fadd8c98c8b841a842bf92c2a17c5,
+      type: 3}
     RandomClip: 1
     ClipIndex: 0
     Clips:
@@ -1324,6 +1327,7 @@ MonoBehaviour:
     type: 3}
   SceneName: Map
   UISounds:
+    AudioPrefab: {fileID: 0}
     RandomClip: 1
     ClipIndex: 0
     Clips: []
@@ -1336,7 +1340,8 @@ AudioSource:
   m_GameObject: {fileID: 4364774833153948292}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: -4587231743589544501, guid: 00584b749d4413f49b035039cd91a404,
+    type: 2}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
   m_Volume: 1

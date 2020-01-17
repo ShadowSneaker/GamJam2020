@@ -135,7 +135,7 @@ PrefabInstance:
     - target: {fileID: 6681681778106990901, guid: 4d7f2bc3def1b78449bc13d1b5c0ae67,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -4.5
+      value: -5.42
       objectReference: {fileID: 0}
     - target: {fileID: 6681681778106990901, guid: 4d7f2bc3def1b78449bc13d1b5c0ae67,
         type: 3}
@@ -186,51 +186,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6681681778106990901, guid: 4d7f2bc3def1b78449bc13d1b5c0ae67,
-        type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6681681778106990901, guid: 4d7f2bc3def1b78449bc13d1b5c0ae67,
-        type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6681681778106990901, guid: 4d7f2bc3def1b78449bc13d1b5c0ae67,
-        type: 3}
-      propertyPath: m_LocalScale.z
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6681681778106990908, guid: 4d7f2bc3def1b78449bc13d1b5c0ae67,
-        type: 3}
-      propertyPath: Power
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 6681681778106990908, guid: 4d7f2bc3def1b78449bc13d1b5c0ae67,
-        type: 3}
-      propertyPath: Damage
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 6681681778106990908, guid: 4d7f2bc3def1b78449bc13d1b5c0ae67,
-        type: 3}
-      propertyPath: IsProximity
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6681681778106990908, guid: 4d7f2bc3def1b78449bc13d1b5c0ae67,
-        type: 3}
-      propertyPath: Radius
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 6681681778106990909, guid: 4d7f2bc3def1b78449bc13d1b5c0ae67,
-        type: 3}
-      propertyPath: m_Radius
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 6681681778106990909, guid: 4d7f2bc3def1b78449bc13d1b5c0ae67,
-        type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4d7f2bc3def1b78449bc13d1b5c0ae67, type: 3}
@@ -615,7 +570,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 856265862}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -15.37, y: 1.85, z: 0}
+  m_LocalPosition: {x: 5.32, y: 1.85, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1445,7 +1400,7 @@ PrefabInstance:
     - target: {fileID: 4530342412884486197, guid: 48af90f2a594acd47b251ed8d4b60365,
         type: 3}
       propertyPath: m_Name
-      value: ActivationDone
+      value: ActivationDrone
       objectReference: {fileID: 0}
     - target: {fileID: 4401163155030272394, guid: 48af90f2a594acd47b251ed8d4b60365,
         type: 3}
