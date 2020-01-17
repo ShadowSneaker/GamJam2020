@@ -90,34 +90,45 @@ public class LevelObject : MonoBehaviour
         Unlocked = Unlock;
         IsCompleted = NewCompleted;
 
-        if (Unlocked || ForceOpen)
+        if (ForceOpen)
         {
-            if (IsCompleted)
+            if (!Mat)
             {
-                if (Completed)
+                Mat = GetComponent<MeshRenderer>();
+            }
+            if (Mat) Mat.material = Completed;
+        }
+        else
+        {
+            if (Unlocked)
+            {
+                if (IsCompleted)
                 {
-                    if (!Mat)
+                    if (Completed)
                     {
-                        Mat = GetComponent<MeshRenderer>();
+                        if (!Mat)
+                        {
+                            Mat = GetComponent<MeshRenderer>();
+                        }
+                        if (Mat) Mat.material = Completed;
                     }
-                    if (Mat) Mat.material = Completed;
+                }
+                else
+                {
+                    if (Incomplete)
+                    {
+                        if (!Mat)
+                        {
+                            Mat = GetComponent<MeshRenderer>();
+                        }
+                        if (Mat) Mat.material = Incomplete;
+                    }
                 }
             }
             else
             {
-                if (Incomplete)
-                {
-                    if (!Mat)
-                    {
-                        Mat = GetComponent<MeshRenderer>();
-                    }
-                    if (Mat) Mat.material = Incomplete;
-                }
+                Mat.material = Locked;
             }
-        }
-        else
-        {
-            Mat.material = Locked;
         }
     }
 }
