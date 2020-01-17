@@ -61,8 +61,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 683f46b048072874286215163de0d5aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  NextLevel: MainMenu
   UI: {fileID: 2581712364659654028, guid: 492c270eef7530f4d9bb55712b7fe4b1, type: 3}
+  StarThresholds: 140000003c00000064000000
+  LevelCount: 0
 --- !u!1001 &6903361535019228465
 PrefabInstance:
   m_ObjectHideFlags: 0
