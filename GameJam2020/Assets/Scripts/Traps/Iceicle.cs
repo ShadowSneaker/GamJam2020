@@ -8,6 +8,10 @@ public class Iceicle : MonoBehaviour
     // this is the iceicles rigid body
     private Rigidbody2D RB;
 
+
+    [SerializeField]
+    private float Damage = 20.0f;
+
     [Tooltip("the sounds for the iceicle falling")]
     [SerializeField]
     private SoundScript IceFall = null;
@@ -43,7 +47,7 @@ public class Iceicle : MonoBehaviour
         {
             if (collision.CompareTag("Player"))
             {
-                collision.GetComponent<HealthScript>().ApplyDamage(35.0f);
+                collision.GetComponent<HealthScript>().ApplyDamage(Damage);
 
             }
 
@@ -58,7 +62,7 @@ public class Iceicle : MonoBehaviour
         {
             if (collision.gameObject.CompareTag("Player"))
             {
-                collision.gameObject.GetComponent<HealthScript>().ApplyDamage(35.0f);
+                collision.gameObject.GetComponent<HealthScript>().ApplyDamage(Damage);
 
             }
 
