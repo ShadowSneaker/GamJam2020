@@ -69,7 +69,7 @@ MonoBehaviour:
   Destroys: 1
   ExplodeOnce: 0
   IsProximity: 1
-  ExplosionDelay: 0.5
+  ExplosionDelay: 1
   ExplosionPrefab: {fileID: 1890048962481059473, guid: 94ea4bbaa13c8b445b53f8a9c0f4077d,
     type: 3}
   SpawnSound: 1
@@ -186,10 +186,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 6681681778106990901}
     m_Modifications:
-    - target: {fileID: 100000, guid: 8329acd25ffd119489ecb4acc0b7fda4, type: 3}
-      propertyPath: m_Name
-      value: at_mine_LOD0
-      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 8329acd25ffd119489ecb4acc0b7fda4, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -245,6 +241,10 @@ PrefabInstance:
     - target: {fileID: 400000, guid: 8329acd25ffd119489ecb4acc0b7fda4, type: 3}
       propertyPath: m_LocalScale.z
       value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 8329acd25ffd119489ecb4acc0b7fda4, type: 3}
+      propertyPath: m_Name
+      value: at_mine_LOD0
       objectReference: {fileID: 0}
     - target: {fileID: 2300000, guid: 8329acd25ffd119489ecb4acc0b7fda4, type: 3}
       propertyPath: m_Materials.Array.size
