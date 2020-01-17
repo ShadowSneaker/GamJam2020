@@ -159,7 +159,7 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 10834}
     - Class: 114
-      Script: {instanceID: 24160}
+      Script: {instanceID: 23780}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 120
@@ -220,6 +220,8 @@ ScriptsOnlyBuild:
     - Class: 82
       Script: {instanceID: 0}
     - Class: 83
+      Script: {instanceID: 0}
+    - Class: 89
       Script: {instanceID: 0}
     - Class: 90
       Script: {instanceID: 0}
@@ -352,6 +354,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 83
       Script: {instanceID: 0}
+    - Class: 89
+      Script: {instanceID: 0}
     - Class: 90
       Script: {instanceID: 0}
     - Class: 91
@@ -429,7 +433,7 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 10834}
     - Class: 114
-      Script: {instanceID: 24160}
+      Script: {instanceID: 23780}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 120
@@ -492,6 +496,8 @@ ScriptsOnlyBuild:
     - Class: 82
       Script: {instanceID: 0}
     - Class: 83
+      Script: {instanceID: 0}
+    - Class: 89
       Script: {instanceID: 0}
     - Class: 90
       Script: {instanceID: 0}
@@ -572,7 +578,7 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 10834}
     - Class: 114
-      Script: {instanceID: 24160}
+      Script: {instanceID: 23780}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 120
@@ -715,7 +721,7 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 10834}
     - Class: 114
-      Script: {instanceID: 24160}
+      Script: {instanceID: 23780}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 120
@@ -802,9 +808,9 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 10514}
     - Class: 114
-      Script: {instanceID: 11614}
+      Script: {instanceID: 11624}
     - Class: 114
-      Script: {instanceID: 24160}
+      Script: {instanceID: 23780}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -2615,7 +2621,7 @@ ScriptsOnlyBuild:
     className: PlayableTrack
   - hash:
       serializedVersion: 2
-      Hash: d208a2adb0c62f65eeb9dc76454f5941
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: BackGroundMusic

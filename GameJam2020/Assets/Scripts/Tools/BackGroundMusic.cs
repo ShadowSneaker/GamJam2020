@@ -4,35 +4,19 @@ using UnityEngine;
 
 public class BackGroundMusic : MonoBehaviour
 {
-    [Tooltip("The music that you want to be played whilst playing the game")]
-    [SerializeField]
-    private SoundScript BackgroundMusicScript = null;
-
-
-    [Tooltip("The Background Music prefab you dont wont destroyed")]
-    [SerializeField]
-    private GameObject SoundManager = null;
 
     // Start is called before the first frame update
     void Start()
     {
-
-        if (!FindObjectOfType<BackGroundMusic>().CompareTag("MusicManager"))
+        var Objects = GameObject.FindGameObjectsWithTag("MusicManager");
+        for (int i = 0; i < Objects.Length; ++i)
         {
-
-            LoadSounds();
-            DontDestroyOnLoad(SoundManager);
-            DontDestroyOnLoad(this);
+            if (Objects[i] != gameObject)
+            {
+                Destroy(Objects[i]);
+            }
         }
-    }
-
-  
-    private void LoadSounds()
-    {
-        BackgroundMusicScript.SetAudio(GetComponent<AudioSource>());
-        BackgroundMusicScript.Play();
-
-        SoundManager = Instantiate(SoundManager);
+        DontDestroyOnLoad(gameObject);
     }
 
 

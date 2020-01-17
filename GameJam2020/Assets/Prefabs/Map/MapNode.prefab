@@ -121,7 +121,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f0f78b40437f4e448bcb9f12d118d53, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ForceOpen: 0
+  ForceOpen: 1
   LevelName: Level 1
   LevelUI: {fileID: 4652529330206876298, guid: d2b4753b33e93594cbd2ba129a9ee93a, type: 3}
   LevelIndex: 0

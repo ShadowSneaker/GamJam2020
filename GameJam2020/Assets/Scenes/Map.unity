@@ -13261,12 +13261,17 @@ PrefabInstance:
     - target: {fileID: 7007933883426296410, guid: 8ddb27d266b88c945870d11808996741,
         type: 3}
       propertyPath: LevelIndex
-      value: 4
+      value: 90
       objectReference: {fileID: 0}
     - target: {fileID: 7007933883426296410, guid: 8ddb27d266b88c945870d11808996741,
         type: 3}
       propertyPath: LevelName
       value: Extra
+      objectReference: {fileID: 0}
+    - target: {fileID: 7007933883426296410, guid: 8ddb27d266b88c945870d11808996741,
+        type: 3}
+      propertyPath: ForceOpen
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8ddb27d266b88c945870d11808996741, type: 3}
