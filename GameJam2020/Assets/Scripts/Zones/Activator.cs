@@ -33,7 +33,7 @@ public class Activator : MonoBehaviour
             if (HasTag(Other.gameObject))
             {
                 if (ActiveMaterial) Mesh.material = ActiveMaterial;
-
+                Activated = true;
                 if (OnCollision != null)
                 {
                     OnCollision.Invoke();
@@ -50,7 +50,7 @@ public class Activator : MonoBehaviour
             if (HasTag(Other.gameObject))
             {
                 if (ActiveMaterial) Mesh.material = ActiveMaterial;
-
+                Activated = true;
                 if (OnCollision != null)
                 {
                     OnCollision.Invoke();
