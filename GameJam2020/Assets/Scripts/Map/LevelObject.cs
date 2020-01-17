@@ -65,7 +65,7 @@ public class LevelObject : MonoBehaviour
                 UIInstance.SetLevelName(LevelName);
 
                 MapPlayer Player = other.GetComponent<MapPlayer>();
-                Saving.LevelInfo Info = (Player.GetSave().Levels.Count >= LevelIndex) ? Player.GetSave().Levels[LevelIndex - 1] : null;
+                Saving.LevelInfo Info = (Player.GetSave() != null && Player.GetSave().Levels.Count >= LevelIndex) ? Player.GetSave().Levels[LevelIndex - 1] : null;
                 
                 UIInstance.UpdateUI(Info);
             }

@@ -35,6 +35,7 @@ public class OverlayUI : MonoBehaviour
 
     public void Start()
     {
+        UISounds.SetAudio(GetComponent<AudioSource>());
         Transition = GetComponent<TransitionScript>();
     }
 
