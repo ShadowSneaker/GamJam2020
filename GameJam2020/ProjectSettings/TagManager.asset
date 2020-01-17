@@ -9,6 +9,7 @@ TagManager:
   - Wind
   - Water
   - Iceicle
+  - MusicManager
   layers:
   - Default
   - TransparentFX
