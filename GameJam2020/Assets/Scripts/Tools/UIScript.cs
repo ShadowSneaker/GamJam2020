@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using UnityEngine.Audio;
 
 
 public class UIScript : MonoBehaviour
@@ -18,6 +19,14 @@ public class UIScript : MonoBehaviour
     [Tooltip("The sprite used for enabling sound.")]
     [SerializeField]
     private Sprite SoundSprite = null;
+
+    [Tooltip("The music mixer reference")]
+    [SerializeField]
+    private AudioMixer MusicMixer = null;
+
+    [Tooltip("The game sound mixer reference")]
+    [SerializeField]
+    private AudioMixer SoundMixer = null;
 
     [Tooltip("The sound(s) that should be played whenever a button is pressed.")]
     [SerializeField]
@@ -91,5 +100,17 @@ public class UIScript : MonoBehaviour
         AudioListener.pause = false;
         AudioListener.volume = 1.0f;
         SoundIcon.sprite = SoundSprite;
+    }
+
+
+    public void SetMusicVolume(float Value)
+    {
+        if (MusicMixer.SetFloat("Music", Value)) Debug.Log("Ran");
+    }
+
+
+    public void SetSoundVolume(float Value)
+    {
+        SoundMixer.SetFloat("Sound", Value);
     }
 }

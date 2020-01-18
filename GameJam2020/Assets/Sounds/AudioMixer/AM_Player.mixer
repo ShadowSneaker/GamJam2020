@@ -59,7 +59,7 @@ AudioMixerController:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: AM_Player
-  m_OutputGroup: {fileID: 24300002, guid: 9d0b7e45450f0b049b7c0892ad266507, type: 2}
+  m_OutputGroup: {fileID: 24300002, guid: 9248394d3e6d86a4f8e860c08511d9a3, type: 2}
   m_MasterGroup: {fileID: 24300002}
   m_Snapshots:
   - {fileID: 24500006}
