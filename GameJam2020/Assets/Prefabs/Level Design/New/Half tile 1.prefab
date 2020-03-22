@@ -11392,6 +11392,7 @@ GameObject:
   - component: {fileID: 7731282230787562257}
   - component: {fileID: 1425836533515519130}
   - component: {fileID: 6220778020568988306}
+  - component: {fileID: 5902784160034670027}
   m_Layer: 0
   m_Name: WinterGroundRockSnow
   m_TagString: Untagged
@@ -11484,3 +11485,17 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.9999998, y: 1.9999998}
   m_EdgeRadius: 0
+--- !u!114 &5902784160034670027
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7883907134121065483}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9db94cedae3a81144884e4eb1d6c6933, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AngularDrag: 1
+  LinearDrag: 1
